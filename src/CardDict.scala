@@ -1,5 +1,6 @@
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkContext, SparkConf}
+import org.apache.spark.storage.StorageLevel
 import org.apache.spark.graphx._
 import org.apache.spark.rdd.RDD
 import scala.collection.mutable  
@@ -17,28 +18,34 @@ object CardDict{
     val conf = new SparkConf().setAppName("SimpleGraphX") 
     val sc = new SparkContext(conf)
 
-    val textfile = sc.textFile("xrli/AllTrans/0*") 
+    val textfile = sc.textFile("xrli/AntiLD/HiveTrans03/*").cache  //.persist(StorageLevel.MEMORY_AND_DISK_SER) 
  
-    val rdd1 = textfile.map(line => line.split("\\001")).map(item=>(item(0)))
-    val rdd2 = textfile.map(line => line.split("\\001")).map(item=>(item(1)))
-    val AllCardList = rdd1.union(rdd2).distinct().collect()
+    val rdd1 = textfile.map(line => line.split("\\001")(0).trim)                //.map(item => item(0))         
+    val rdd2 = textfile.map(line => line.split("\\001")(1).trim)
+    val AllCardList = rdd1.union(rdd2).distinct()
     
     val CardArray = AllCardList.zipWithIndex
+//RDD((card, id))
+
+    println("All card num: " + CardArray.count())
     
-    val CardDictRDD = sc.parallelize(CardArray.map{
+    val CardDictRDD = CardArray.map{
      case (card, idx) => idx.toString() + " " + card
-    })
-    CardDictRDD.saveAsTextFile("xrli/CardDict03")
- 
-    val CardMap: mutable.HashMap[String,String] = new mutable.HashMap()
-    for(pair <- CardArray){
-      CardMap(pair._1) = pair._2.toString()
     }
     
-    val result = textfile.map(line => line.split("\\001")).map(item=>CardMap(item(0))+ " " + CardMap(item(1))+ " " +item(2)+ " " +item(3)) 
-    result.saveAsTextFile("xrli/AllTrans03")
+    CardDictRDD.saveAsTextFile("xrli/AntiLD/CardDict03")
+ 
+//    val CardMap: mutable.HashMap[String,String] = new mutable.HashMap()
+//    for(pair <- CardArray){
+//      CardMap(pair._1) = pair._2.toString()
+//    }
+    
+ 
+    
     sc.stop()
   }
+  
+ 
 }
 
 
