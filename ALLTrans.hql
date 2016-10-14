@@ -1,4 +1,4 @@
-insert overwrite directory 'xrli/AllTrans'
+insert overwrite directory 'xrli/AntiLD/HiveTrans03'
 select * from(  
 select tfr_out_acct_no, tfr_in_acct_no, sum(trans_at) as amount, count(trans_at) as count
 from tbl_common_his_trans
