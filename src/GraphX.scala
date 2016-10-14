@@ -6,7 +6,7 @@ import scala.collection.mutable
 import scala.io.Source  
 
 
-object GraphxNet {
+object GraphX {
   def main(args: Array[String]) {
     //屏蔽日志
     Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
@@ -58,7 +58,7 @@ object GraphxNet {
       val amount = e.attr._1
       val count = e.attr._2
       count > 4
-    }saveAsTextFile("xrli/AntiLD/frequentEdge03")         //.collect.foreach(e => println(s"${e.srcId} to ${e.dstId} att ${e.attr}"))
+    }.saveAsTextFile("xrli/AntiLD/frequentEdge03")         //.collect.foreach(e => println(s"${e.srcId} to ${e.dstId} att ${e.attr}"))
     
 //卡编号1 to 卡编号2  att (金额,次数)
 //231 to 7602 att (210000.0,5)
