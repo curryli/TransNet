@@ -67,7 +67,7 @@ object LoadBigHash {
    var hash:Long  = 0
    for(i <- 0 to str.length-1){
     hash = hash * seed + str.charAt(i)
-    hash = hash & 0x7FFFFFFF
+    hash = hash.&("137438953471".toLong)        //0x1FFFFFFFFF              //固定一下长度
    }
    return hash 
 }
