@@ -18,7 +18,7 @@ object AmountInOut {
     val sc = new SparkContext(conf)
      
     
-    val textfile = sc.textFile("xrli/HiveTrans03").persist(StorageLevel.MEMORY_AND_DISK_SER)       //xrli/testfile.txt
+    val textfile = sc.textFile("xrli/HiveTrans03").persist(StorageLevel.MEMORY_AND_DISK_SER)       //xrli/testfile.txt   xrli/HiveTrans03
     
     
     // 读入时指定编码  
@@ -49,50 +49,74 @@ object AmountInOut {
     // 定义一个默认用户，避免有不存在用户的关系  
     val graph = Graph(verticeRDD, edgeRDD) 
      
-    val inDegrees: VertexRDD[Int] = graph.inDegrees
-    
-    val DegInGraph = graph.outerJoinVertices(graph.inDegrees){
-      (vid, card, inDegOpt) => (card, inDegOpt.getOrElse(0))}
-    
-    
-    val DegInOutGraph = DegInGraph.outerJoinVertices(graph.outDegrees){
-      (vid, p, outDegOpt) => (p._1, p._2, outDegOpt.getOrElse(0))}
-    
-    val SumVRDD = graph.aggregateMessages[(Double,Int)](
-
+    val SumInVRDD = graph.aggregateMessages[(Double,Int)](
       triplet => {   
           triplet.sendToDst(triplet.attr);         //我这边要统计每个节点的(卡号，入读，出度，总金额，总次数)，所以不管是转出金额还是转入金额我们都累加起来
-          triplet.sendToSrc(triplet.attr)
      },
-
+      (a, b) =>  (a._1 + b._1,  a._2 + b._2)
+    )
+    
+    val SumOutVRDD = graph.aggregateMessages[(Double,Int)](
+      triplet => {   
+          triplet.sendToSrc(triplet.attr)         //我这边要统计每个节点的(卡号，入读，出度，总金额，总次数)，所以不管是转出金额还是转入金额我们都累加起来
+     },
       (a, b) =>  (a._1 + b._1,  a._2 + b._2)
     )
     
     
-    val ResultGraph = DegInOutGraph.outerJoinVertices(SumVRDD){
-      (vid, p, q ) => (p._1, p._2, p._3, q.getOrElse((0.0,0)))
-      
+     val SumInGraph = graph.outerJoinVertices(SumInVRDD){
+      (vid, card, q) => (card, q.getOrElse((0.0,0)))
+     }
     
-    }
-    //p: (card, inDegOpt, outDegOpt)   q: case(amountsum,countsum)  
+    val SumInOutGraph = SumInGraph.outerJoinVertices(SumOutVRDD){
+      (vid, p, q) => (p._1, p._2._1,p._2._2, q.getOrElse(0.0,0)._1, q.getOrElse(0.0,0)._2, p._2._1+q.getOrElse(0.0,0)._1, p._2._2+q.getOrElse(0.0,0)._2 )
+     }
+    //card, 金额in，次数in，金额out， 次数out， 总金额，总次数
     
-
-//    //(id,(卡号,入度,出度,(总金额,总次数)))
+    //SumInOutGraph.vertices.collect().foreach(println)
     
-   
     
-//    println("vertices :")
-//    graph.vertices.saveAsTextFile("xrli/Hashvertices")
-//    ResultGraph.vertices.collect().foreach(println)
+     val SortedAmountIn = SumInOutGraph.vertices.sortBy(_._2._2, false)
+     SortedAmountIn.saveAsTextFile("xrli/TransNettest/SortedAmountIn")   //按出度排序
     
-//    println("edges :")
-//    graph.edges.saveAsTextFile("xrli/Hashedges")
+     val SortedAmountOut= SumInOutGraph.vertices.sortBy(_._2._4, false)
+     SortedAmountOut.saveAsTextFile("xrli/TransNettest/SortedAmountOut")   //按出度排序
+     
+     val SortedAmount = SumInOutGraph.vertices.sortBy(_._2._6, false)
+     SortedAmount.saveAsTextFile("xrli/TransNettest/SortedAmount")   //按出度排序
     
-    val SortedAmount = ResultGraph.vertices.sortBy(_._2._4._1, false)
-    SortedAmount.saveAsTextFile("xrli/TransNet/SortedAmount")   //按出度排序
+     
+     val SortedCountIn = SumInOutGraph.vertices.sortBy(_._2._3, false)
+     SortedCountIn.saveAsTextFile("xrli/TransNettest/SortedCountIn")   //按出度排序
     
-    val SortedCount = ResultGraph.vertices.sortBy(_._2._4._2, false)
-    SortedCount.saveAsTextFile("xrli/TransNet/SortedCount")   //按出度排序
+     val SortedCountOut= SumInOutGraph.vertices.sortBy(_._2._5, false)
+     SortedCountOut.saveAsTextFile("xrli/TransNettest/SortedCountOut")   //按出度排序
+     
+     val SortedCount = SumInOutGraph.vertices.sortBy(_._2._7, false)
+     SortedCount.saveAsTextFile("xrli/TransNettest/SortedCount")   //按出度排序
+     
+    
+    
+//    val SumVRDD = graph.aggregateMessages[(Double,Int)](
+//
+//      triplet => {   
+//          triplet.sendToDst(triplet.attr);         //我这边要统计每个节点的(卡号，入读，出度，总金额，总次数)，所以不管是转出金额还是转入金额我们都累加起来
+//          triplet.sendToSrc(triplet.attr)
+//     },
+//
+//      (a, b) =>  (a._1 + b._1,  a._2 + b._2)
+//    )
+//    
+//    val ResultGraph = graph.outerJoinVertices(SumVRDD){
+//      (vid, card, q) => (card, q.getOrElse((0.0,0)))
+//   }
+//    //p:  card    q: case(amountsum,countsum)  
+//    
+//    val SortedAmount = ResultGraph.vertices.sortBy(_._2._1, false)
+//    SortedAmount.saveAsTextFile("xrli/TransNet/SortedAmount")   //按出度排序
+//    
+//    val SortedCount = ResultGraph.vertices.sortBy(_._2._2, false)
+//    SortedCount.saveAsTextFile("xrli/TransNet/SortedCount")   //按出度排序
     
     sc.stop()
   }
