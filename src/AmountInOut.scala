@@ -70,8 +70,8 @@ object AmountInOut {
     
     val SumInOutGraph = SumInGraph.outerJoinVertices(SumOutVRDD){
       (vid, p, q) => (p._1, p._2._1,p._2._2, q.getOrElse(0.0,0)._1, q.getOrElse(0.0,0)._2,
-          p._2._1+q.getOrElse(0.0,0)._1, p._2._2+q.getOrElse(0.0,0)._2, p._2._1-q.getOrElse(0.0,0)._1,
-          (p._2._1-q.getOrElse(0.0,0)._1)/(p._2._1+q.getOrElse(0.0,0)._1)    
+          p._2._1+q.getOrElse(0.0,0)._1, p._2._2+q.getOrElse(0.0,0)._2, math.abs( p._2._1-q.getOrElse(0.0,0)._1),
+          math.abs(p._2._1-q.getOrElse(0.0,0)._1)/(p._2._1+q.getOrElse(0.0,0)._1)    
       )
      }
     //card, 金额in，次数in，金额out， 次数out， 总金额，总次数， 金额净差, 净总比
