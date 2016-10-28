@@ -14,11 +14,11 @@ object AmountInOut {
     Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.OFF)
  
     //设置运行环境
-    val conf = new SparkConf().setAppName("SortDegree") 
+    val conf = new SparkConf().setAppName("AmountInOut") 
     val sc = new SparkContext(conf)
      
     
-    val textfile = sc.textFile("xrli/HiveTrans03").persist(StorageLevel.MEMORY_AND_DISK_SER)       //xrli/testfile.txt   xrli/HiveTrans03
+    val textfile = sc.textFile("xrli/HiveTrans03/*").persist(StorageLevel.MEMORY_AND_DISK_SER)       //xrli/testfile.txt   xrli/HiveTrans03
     
     
     // 读入时指定编码  
@@ -69,33 +69,40 @@ object AmountInOut {
      }
     
     val SumInOutGraph = SumInGraph.outerJoinVertices(SumOutVRDD){
-      (vid, p, q) => (p._1, p._2._1,p._2._2, q.getOrElse(0.0,0)._1, q.getOrElse(0.0,0)._2, p._2._1+q.getOrElse(0.0,0)._1, p._2._2+q.getOrElse(0.0,0)._2 )
+      (vid, p, q) => (p._1, p._2._1,p._2._2, q.getOrElse(0.0,0)._1, q.getOrElse(0.0,0)._2,
+          p._2._1+q.getOrElse(0.0,0)._1, p._2._2+q.getOrElse(0.0,0)._2, p._2._1-q.getOrElse(0.0,0)._1,
+          (p._2._1-q.getOrElse(0.0,0)._1)/(p._2._1+q.getOrElse(0.0,0)._1)    
+      )
      }
-    //card, 金额in，次数in，金额out， 次数out， 总金额，总次数
+    //card, 金额in，次数in，金额out， 次数out， 总金额，总次数， 金额净差, 净总比
     
     //SumInOutGraph.vertices.collect().foreach(println)
     
     
      val SortedAmountIn = SumInOutGraph.vertices.sortBy(_._2._2, false)
-     SortedAmountIn.saveAsTextFile("xrli/TransNettest/SortedAmountIn")   //按出度排序
+     SortedAmountIn.saveAsTextFile("xrli/TransNettest/SortedAmountIn")   // 
     
      val SortedAmountOut= SumInOutGraph.vertices.sortBy(_._2._4, false)
-     SortedAmountOut.saveAsTextFile("xrli/TransNettest/SortedAmountOut")   //按出度排序
+     SortedAmountOut.saveAsTextFile("xrli/TransNettest/SortedAmountOut")   // 
      
      val SortedAmount = SumInOutGraph.vertices.sortBy(_._2._6, false)
-     SortedAmount.saveAsTextFile("xrli/TransNettest/SortedAmount")   //按出度排序
+     SortedAmount.saveAsTextFile("xrli/TransNettest/SortedAmount")   // 
     
      
      val SortedCountIn = SumInOutGraph.vertices.sortBy(_._2._3, false)
-     SortedCountIn.saveAsTextFile("xrli/TransNettest/SortedCountIn")   //按出度排序
+     SortedCountIn.saveAsTextFile("xrli/TransNettest/SortedCountIn")   // 
     
      val SortedCountOut= SumInOutGraph.vertices.sortBy(_._2._5, false)
-     SortedCountOut.saveAsTextFile("xrli/TransNettest/SortedCountOut")   //按出度排序
+     SortedCountOut.saveAsTextFile("xrli/TransNettest/SortedCountOut")   // 
      
      val SortedCount = SumInOutGraph.vertices.sortBy(_._2._7, false)
-     SortedCount.saveAsTextFile("xrli/TransNettest/SortedCount")   //按出度排序
+     SortedCount.saveAsTextFile("xrli/TransNettest/SortedCount")   // 
      
-    
+     val SortedExp = SumInOutGraph.vertices.sortBy(_._2._8, false)
+     SortedExp.saveAsTextFile("xrli/TransNettest/SortedExp")   // 
+	 
+	   val SortedRatio = SumInOutGraph.vertices.sortBy(_._2._9, false)
+     SortedRatio.saveAsTextFile("xrli/TransNettest/SortedRatio")   // 
     
 //    val SumVRDD = graph.aggregateMessages[(Double,Int)](
 //
