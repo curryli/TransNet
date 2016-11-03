@@ -37,7 +37,7 @@ object SortByTime {
     val sc = new SparkContext(conf)
      
     //hadoop fs -cp hdfs://nameservice1/user/hive/warehouse/teletransweek TeleTrans/teletransweek
-    val textfile = sc.textFile("TeleTrans/TransTime/*")         //.persist(StorageLevel.MEMORY_AND_DISK_SER) 
+    val textfile = sc.textFile("TeleTrans/TransSort/*")         //.persist(StorageLevel.MEMORY_AND_DISK_SER) 
     //  "TeleTrans/TransTime/000132_0"
      
     val pairWithSortkey = textfile.map{line=>
@@ -74,13 +74,6 @@ object SortByTime {
     
     
 }
-
-
-
-
-
-
-
 
 
 
