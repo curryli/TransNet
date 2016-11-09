@@ -1,4 +1,4 @@
-//hadoop jar TransDelta.jar  TransDelta -Dmapreduce.job.queuename=root.default TeleTrans/TransSort TeleTrans/Deltatest
+//hadoop jar TransDelta.jar  TransDelta -Dmapreduce.job.queuename=root.default TeleTrans/TransSort/000000_0 TeleTrans/Deltatest
  
 import java.io.IOException;
 import java.text.ParseException;
