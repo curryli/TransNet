@@ -21,12 +21,6 @@ INSERT OVERWRITE TABLE trans0405
 select tfr_in_acct_no, tfr_out_acct_no, trans_at, pdate, loc_trans_tm, acpt_ins_id_cd, trans_md, cross_dist_in
 from tbl_common_his_trans where pdate>='20150401' and pdate<='20150531';
 
-insert overwrite directory 'TeleTrans/Sum04'
-select * from(  
-select tfr_in_acct_no, tfr_out_acct_no, sum(trans_at) as amount, count(trans_at) as count
-from TeleTransMonth
-group by tfr_in_acct_no, tfr_out_acct_no
-)tmp2;
 
 
  
