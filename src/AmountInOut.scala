@@ -1,9 +1,8 @@
+
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkContext, SparkConf}
 import org.apache.spark.graphx._
-import org.apache.spark.rdd.RDD
-import scala.collection.mutable 
-import scala.io.Source  
 import org.apache.spark.storage.StorageLevel
 
 

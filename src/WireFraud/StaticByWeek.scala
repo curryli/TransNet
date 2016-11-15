@@ -8,18 +8,18 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.rdd.RDD.rddToPairRDDFunctions
 
 
-object SumByWeek {
+object StaticByWeek {
   def main(args: Array[String]) {
     //屏蔽日志
     Logger.getLogger("org.apache.spark").setLevel(Level.WARN)
     Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.OFF)
  
     //设置运行环境
-    val conf = new SparkConf().setAppName("SimpleGraphX") 
+    val conf = new SparkConf().setAppName("StaticByWeek") 
     val sc = new SparkContext(conf)
      
     //hadoop fs -cp hdfs://nameservice1/user/hive/warehouse/teletransweek TeleTrans/teletransweek
-    val textfile = sc.textFile("TeleTrans/teletransweek").persist(StorageLevel.MEMORY_AND_DISK_SER) 
+    val textfile = sc.textFile("TeleTrans/trans0405").persist(StorageLevel.MEMORY_AND_DISK_SER) 
     // 读入时指定编码  
      
     val PeriodDicts: mutable.HashMap[Int, Int] = new mutable.HashMap[Int, Int]()
@@ -40,18 +40,15 @@ object SumByWeek {
     
     val outrdd = textfile.map{line=>
       val Token = line.split("\\001")
-      val tfr_out_acct_no = Token(0)
-      val dateperiod = DataMap(Token(1))
-      val amount = Token(2).toDouble 
-      val count = Token(3).toDouble
-      ((tfr_out_acct_no, dateperiod), (amount, count))
+      val tfr_in_acct_no = Token(0)
+      val dateperiod = DataMap(Token(3))
+      val trans_at = Token(2).toDouble 
+      val one = 1
+      ((tfr_in_acct_no, dateperiod), (trans_at, one))
     }
     
-	  val SumByWeekRDD = outrdd.reduceByKey((x,y) => (x._1 + y._1 , x._2  + y._2 ))
-	  
-	  val SumByWeek = SumByWeekRDD.map(temp =>
-      (temp._1._1, temp._1._2, temp._2._1, temp._2._2)   
-    ) //.saveAsTextFile("TeleTrans/SumByWeek")
+	  val SumByWeek= outrdd.reduceByKey((x,y) => (x._1 + y._1 , x._2  + y._2 ))
+	     .map(temp => (temp._1._1, temp._1._2, temp._2._1, temp._2._2)) //.saveAsTextFile("TeleTrans/SumByWeek")
 	  
 	  
 	  //SumByWeek.filter(temp => temp._3.matches("^.*[.].*[.].*$")).saveAsTextFile("TeleTrans/test")
@@ -94,10 +91,7 @@ object SumByWeek {
         return ff;
     }
     
-  
-    
-    
-      
+
 //  def getVar(alist :List[Double] ) :Double ={
 //        var avg  = 0.0 
 //        val len = alist.length

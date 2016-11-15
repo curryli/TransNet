@@ -1,3 +1,6 @@
+//hadoop jar TeleTrans.jar  WireFraud.SecondarySort -Dmapreduce.job.queuename=root.default TeleTrans/trans0405 TeleTrans/Delta0405
+
+
 package WireFraud;
 
 import java.io.DataInput;
@@ -207,14 +210,15 @@ public class SecondarySort {
 		      			}
 		      		}
 				    
+				    String pdate = curTS.substring(0, 8);
 				    
-				    String tempInfo = card + "\t" + DeltaT + "\t" + DeltaM + "\t" + Deltamt;
+				    String tempInfo = card + "\t" + pdate + "\t" + DeltaT + "\t" + DeltaM + "\t" + Deltamt;
  	
 				    lasttime = curtime;
 				    lastM = curM; 
 				   
 				    result.set( tempInfo);
-				    context.write(new Text(""), result);
+				    context.write(result,new Text(""));
 			}
 			}
 		}
