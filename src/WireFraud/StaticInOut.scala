@@ -17,7 +17,7 @@ object StaticInOut {
     val sc = new SparkContext(conf)
      
     
-    val textfile = sc.textFile("TeleTrans/StaticMD5/*").persist(StorageLevel.MEMORY_AND_DISK_SER)       //xrli/testfile.txt   xrli/HiveTrans03
+    val textfile = sc.textFile(args(0)).persist(StorageLevel.MEMORY_AND_DISK_SER)       //xrli/testfile.txt   xrli/HiveTrans03
     
     
     // 读入时指定编码  

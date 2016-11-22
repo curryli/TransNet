@@ -1,0 +1,220 @@
+set mapreduce.job.queuename=root.queue2;
+
+select count(distinct(tfr_in_acct_no)), count(*) from tele_trans1516;
+
+select count(distinct(tfr_in_acct_no)), count(*) from tele_use1516;            
+
+tele_trans1516 一共存在148473790张卡发生转入交易，共涉及366781606笔转账交易
+tele_use1516          
+                       
+ 					 
+						 
+select 
+count(case when dam>='100000' then 1 else null end),
+count(case when dam>='500000' then 1 else null end),
+count(case when dam>='1000000' then 1 else null end),
+count(case when dam>='2500000' then 1 else null end),
+count(case when dam>='5000000' then 1 else null end), 
+count(case when dam>='7500000' then 1 else null end),
+count(case when dam>='10000000' then 1 else null end),
+count(case when dam>='25000000' then 1 else null end),
+count(case when dam>='50000000' then 1 else null end),
+count(case when dam>='75000000' then 1 else null end),
+count(case when dam>='100000000' then 1 else null end),
+count(case when dam>='250000000' then 1 else null end),
+count(case when dam>='500000000' then 1 else null end),
+count(case when dam>='750000000' then 1 else null end),
+count(case when dam>='1000000000' then 1 else null end)
+from AvgByDay1516;
+
+发生交易天数里的平均每天转入金额大于*万的卡号  
+17829897  9057116 6145670 2528920 932132  148780  108345  31718   14878   8209    5698    1600       701     371     267
+
+
+
+select 
+count(case when dac>='1' then 1 else null end),
+count(case when dac>='2' then 1 else null end), 
+count(case when dac>='3' then 1 else null end),  
+count(case when dac>='4' then 1 else null end), 
+count(case when dac>='5' then 1 else null end),
+count(case when dac>='6' then 1 else null end),
+count(case when dac>='7' then 1 else null end), 
+count(case when dac>='8' then 1 else null end),  
+count(case when dac>='9' then 1 else null end), 
+count(case when dac>='10' then 1 else null end),
+count(case when dac>='20' then 1 else null end),
+count(case when dac>='30' then 1 else null end),
+count(case when dac>='40' then 1 else null end),
+count(case when dac>='50' then 1 else null end),
+count(case when dac>='60' then 1 else null end),
+count(case when dac>='70' then 1 else null end),
+count(case when dac>='80' then 1 else null end),
+count(case when dac>='90' then 1 else null end),
+count(case when dac>='100' then 1 else null end),
+count(case when dac>='200' then 1 else null end),
+count(case when dac>='300' then 1 else null end),
+count(case when dac>='400' then 1 else null end),
+count(case when dac>='500' then 1 else null end),
+count(case when dac>='600' then 1 else null end),
+count(case when dac>='700' then 1 else null end),
+count(case when dac>='800' then 1 else null end),
+count(case when dac>='900' then 1 else null end),
+count(case when dac>='1000' then 1 else null end)
+from AvgByDay1516;
+
+发生交易天数里平均每天转入次数大于*次的卡号   
+23430690        882139  110235  30928   13555   7320    5008    3926    3218    2760    1226    878     714     632     558     499     456     425     406     287     206     142     95      79      60   49       40      35
+
+
+
+--测试删除
+set mapreduce.job.queuename=root.queue2;
+
+
+
+--测试删除
+
+
+
+
+select 
+count(case when dloc>='1' then 1 else null end),
+count(case when dloc>='2' then 1 else null end),  
+count(case when dloc>='3' then 1 else null end),  
+count(case when dloc>='4' then 1 else null end),  
+count(case when dloc>='5' then 1 else null end),
+count(case when dloc>='6' then 1 else null end),
+count(case when dloc>='7' then 1 else null end),
+count(case when dloc>='8' then 1 else null end),
+count(case when dloc>='9' then 1 else null end), 
+count(case when dloc>='10' then 1 else null end),
+count(case when dloc>='20' then 1 else null end),
+count(case when dloc>='30' then 1 else null end),
+count(case when dloc>='40' then 1 else null end),
+count(case when dloc>='50' then 1 else null end),
+count(case when dloc>='60' then 1 else null end),
+count(case when dloc>='70' then 1 else null end),
+count(case when dloc>='80' then 1 else null end),
+count(case when dloc>='90' then 1 else null end),
+count(case when dloc>='100' then 1 else null end)
+from AvgByDay1516;
+发生交易天数里平均每天来自多少地方的转账 
+23430690  36808   1106    411     235     179     145     115     84      68      8       2       0
+
+
+select 
+count(case when dforeign>='1' then 1 else null end), 
+count(case when dforeign>='2' then 1 else null end), 
+count(case when dforeign>='3' then 1 else null end), 
+count(case when dforeign>='4' then 1 else null end), 
+count(case when dforeign>='5' then 1 else null end), 
+count(case when dforeign>='6' then 1 else null end), 
+count(case when dforeign>='7' then 1 else null end), 
+count(case when dforeign>='8' then 1 else null end), 
+count(case when dforeign>='9' then 1 else null end),  
+count(case when dforeign>='10' then 1 else null end),
+count(case when dforeign>='20' then 1 else null end),
+count(case when dforeign>='30' then 1 else null end),
+count(case when dforeign>='40' then 1 else null end),
+count(case when dforeign>='50' then 1 else null end),
+count(case when dforeign>='60' then 1 else null end),
+count(case when dforeign>='70' then 1 else null end),
+count(case when dforeign>='80' then 1 else null end),
+count(case when dforeign>='90' then 1 else null end),
+count(case when dforeign>='100' then 1 else null end),
+count(case when dforeign>='200' then 1 else null end),
+count(case when dforeign>='300' then 1 else null end),
+count(case when dforeign>='400' then 1 else null end),
+count(case when dforeign>='500' then 1 else null end),
+count(case when dforeign>='600' then 1 else null end),
+count(case when dforeign>='700' then 1 else null end),
+count(case when dforeign>='800' then 1 else null end),
+count(case when dforeign>='900' then 1 else null end),
+count(case when dforeign>='1000' then 1 else null end)
+from AvgByDay1516;
+发生交易天数里平均每天异地转入次数
+22930801  849411  101537  27377   11471   6610    4529    3568    2945    2542    1178    853     697     617     547     489     448     421     404     287     206     142     95      79      60   49       40      35
+
+
+
+
+select 
+count(case when msum>='100000' then 1 else null end),
+count(case when msum>='500000' then 1 else null end),
+count(case when msum>='1000000' then 1 else null end),
+count(case when msum>='2500000' then 1 else null end),
+count(case when msum>='5000000' then 1 else null end), 
+count(case when msum>='7500000' then 1 else null end),
+count(case when msum>='10000000' then 1 else null end),
+count(case when msum>='25000000' then 1 else null end),
+count(case when msum>='50000000' then 1 else null end),
+count(case when msum>='75000000' then 1 else null end),
+count(case when msum>='100000000' then 1 else null end),
+count(case when msum>='250000000' then 1 else null end),
+count(case when msum>='500000000' then 1 else null end),
+count(case when msum>='750000000' then 1 else null end),
+count(case when msum>='1000000000' then 1 else null end),
+count(case when msum>='2500000000' then 1 else null end),
+count(case when msum>='5000000000' then 1 else null end),
+count(case when msum>='7500000000' then 1 else null end),
+count(case when msum>='10000000000' then 1 else null end)
+from StaticAll1516;
+总金额达到以上金额的卡片数 6629347 1424316 346911  10421   744
+
+select count(case when csum>'1' then 1 else null end) as count1,  
+count(case when csum>='5' then 1 else null end) as count2,  
+count(case when csum>='10' then 1 else null end) as count3,
+count(case when csum>='100' then 1 else null end) as count4,
+count(case when csum>='1000' then 1 else null end) as count5
+from StaticAll1516;
+总次数达到以上金额的卡片数 4300384 319748  62907   1864    483
+
+
+select count(case when mavg>='100000' then 1 else null end) as count1,  
+count(case when mavg>='500000' then 1 else null end) as count2,  
+count(case when mavg>='1000000' then 1 else null end) as count3,
+count(case when mavg>='5000000' then 1 else null end) as count4,
+count(case when mavg>='10000000' then 1 else null end) as count5,
+count(case when mavg>='100000000' then 1 else null end) as count6,
+count(case when mavg>='1000000000' then 1 else null end) as count7
+from StaticAll1516;
+平均每笔金额达到以上次数的    17733245        8886224 5972886 816053  77390   4601    0
+
+select count(case when locsum>'1' then 1 else null end) as count1,  
+count(case when locsum>='5' then 1 else null end) as count2,  
+count(case when locsum>='10' then 1 else null end) as count3,
+count(case when locsum>='100' then 1 else null end) as count4,
+count(case when locsum>='1000' then 1 else null end) as count5
+from StaticAll1516;
+一共来自多少地方的转账大于阈值的卡片数 657310  9432    1558    10      0 
+
+
+select count(case when foreignsum>'1' then 1 else null end) as count1,  
+count(case when foreignsum>='5' then 1 else null end) as count2,  
+count(case when foreignsum>='10' then 1 else null end) as count3,
+count(case when foreignsum>='100' then 1 else null end) as count4,
+count(case when foreignsum>='1000' then 1 else null end) as count5,
+count(case when foreignsum>='10000' then 1 else null end) as count6
+from StaticAll1516;
+总共异地转入次数大于阈值的卡片数 4181659 303475  58715   1720    481     91
+
+
+
+
+
+
+
+drop table Delta1516;
+drop table StaticDelta1516;
+drop table StaticByDay1516;
+drop table DayInfo1516;
+drop table AvgByDay1516;
+drop table AbnDay1516;
+drop table StaticDeltamt1516;
+drop table StaticAll1516;
+drop table AvgDelta1516;
+drop table AllInfo1516;
+drop table StaticOut1516;
+drop table transMD51516;
+drop table StaticMD51516;
