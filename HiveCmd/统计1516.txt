@@ -5,31 +5,62 @@ select count(distinct(tfr_in_acct_no)), count(*) from tele_trans1516;
 select count(distinct(tfr_in_acct_no)), count(*) from tele_use1516;            
 
 tele_trans1516 一共存在148473790张卡发生转入交易，共涉及366781606笔转账交易
-tele_use1516          
+tele_use1516        145308446                362558464  
                        
  					 
 						 
+
 select 
 count(case when dam>='100000' then 1 else null end),
+count(case when dam>='200000' then 1 else null end),
+count(case when dam>='300000' then 1 else null end),
+count(case when dam>='400000' then 1 else null end),
 count(case when dam>='500000' then 1 else null end),
+count(case when dam>='600000' then 1 else null end),
+count(case when dam>='700000' then 1 else null end),
+count(case when dam>='800000' then 1 else null end),
+count(case when dam>='900000' then 1 else null end),
 count(case when dam>='1000000' then 1 else null end),
-count(case when dam>='2500000' then 1 else null end),
-count(case when dam>='5000000' then 1 else null end), 
-count(case when dam>='7500000' then 1 else null end),
+count(case when dam>='2000000' then 1 else null end),
+count(case when dam>='3000000' then 1 else null end),
+count(case when dam>='4000000' then 1 else null end),
+count(case when dam>='5000000' then 1 else null end),
+count(case when dam>='6000000' then 1 else null end),
+count(case when dam>='7000000' then 1 else null end),
+count(case when dam>='8000000' then 1 else null end),
+count(case when dam>='9000000' then 1 else null end), 
 count(case when dam>='10000000' then 1 else null end),
-count(case when dam>='25000000' then 1 else null end),
+count(case when dam>='20000000' then 1 else null end),
+count(case when dam>='30000000' then 1 else null end),
+count(case when dam>='40000000' then 1 else null end),
 count(case when dam>='50000000' then 1 else null end),
-count(case when dam>='75000000' then 1 else null end),
+count(case when dam>='60000000' then 1 else null end),
+count(case when dam>='70000000' then 1 else null end),
+count(case when dam>='80000000' then 1 else null end),
+count(case when dam>='90000000' then 1 else null end),
 count(case when dam>='100000000' then 1 else null end),
-count(case when dam>='250000000' then 1 else null end),
+count(case when dam>='200000000' then 1 else null end),
+count(case when dam>='300000000' then 1 else null end),
+count(case when dam>='400000000' then 1 else null end),
 count(case when dam>='500000000' then 1 else null end),
-count(case when dam>='750000000' then 1 else null end),
-count(case when dam>='1000000000' then 1 else null end)
+count(case when dam>='600000000' then 1 else null end),
+count(case when dam>='700000000' then 1 else null end),
+count(case when dam>='800000000' then 1 else null end),
+count(case when dam>='900000000' then 1 else null end),
+count(case when dam>='1000000000' then 1 else null end),
+count(case when dam>='2000000000' then 1 else null end),
+count(case when dam>='3000000000' then 1 else null end),
+count(case when dam>='4000000000' then 1 else null end),
+count(case when dam>='5000000000' then 1 else null end),
+count(case when dam>='6000000000' then 1 else null end),
+count(case when dam>='7000000000' then 1 else null end),
+count(case when dam>='8000000000' then 1 else null end),
+count(case when dam>='9000000000' then 1 else null end),
+count(case when dam>='10000000000' then 1 else null end)
 from AvgByDay1516;
 
 发生交易天数里的平均每天转入金额大于*万的卡号  
-17829897  9057116 6145670 2528920 932132  148780  108345  31718   14878   8209    5698    1600       701     371     267
-
+109811572       88656462        74399357        65114459        59405126        51327201        47772161        44992872        42613980        40713227        23169369        13953257        8867106 5713555       1317309 1104589 950790  843490  755130  324613  197850  139559  108162  78263   64626   54941   46978   39952   15687   9673    6659    5004    3544    2937    2516    2158    1843    543     199  102      57      24      14      13      9       7
 
 
 select 
@@ -60,21 +91,26 @@ count(case when dac>='600' then 1 else null end),
 count(case when dac>='700' then 1 else null end),
 count(case when dac>='800' then 1 else null end),
 count(case when dac>='900' then 1 else null end),
-count(case when dac>='1000' then 1 else null end)
+count(case when dac>='1000' then 1 else null end),
+count(case when dac>='2000' then 1 else null end),
+count(case when dac>='3000' then 1 else null end),
+count(case when dac>='4000' then 1 else null end),
+count(case when dac>='5000' then 1 else null end),
+count(case when dac>='6000' then 1 else null end),
+count(case when dac>='7000' then 1 else null end),
+count(case when dac>='8000' then 1 else null end),
+count(case when dac>='9000' then 1 else null end),
+count(case when dac>='10000' then 1 else null end)
 from AvgByDay1516;
 
 发生交易天数里平均每天转入次数大于*次的卡号   
-23430690        882139  110235  30928   13555   7320    5008    3926    3218    2760    1226    878     714     632     558     499     456     425     406     287     206     142     95      79      60   49       40      35
-
+145308446       4424351 585484  166365  72768   36688   24742   19229   15580   13296   5580    3753    2861    2322    1909    1658    1477    1295    1170    719     482     337     266     223     181  152      126     107     23      7       5       3       2       1       0       0       0
 
 
 --测试删除
 set mapreduce.job.queuename=root.queue2;
 
-
-
---测试删除
-
+ 
 
 
 
@@ -100,7 +136,7 @@ count(case when dloc>='90' then 1 else null end),
 count(case when dloc>='100' then 1 else null end)
 from AvgByDay1516;
 发生交易天数里平均每天来自多少地方的转账 
-23430690  36808   1106    411     235     179     145     115     84      68      8       2       0
+145308446       174270  5728    1714    799     500     330     228     165     129     16      5 0
 
 
 select 
@@ -131,77 +167,261 @@ count(case when dforeign>='600' then 1 else null end),
 count(case when dforeign>='700' then 1 else null end),
 count(case when dforeign>='800' then 1 else null end),
 count(case when dforeign>='900' then 1 else null end),
-count(case when dforeign>='1000' then 1 else null end)
+count(case when dforeign>='1000' then 1 else null end),
+count(case when dforeign>='2000' then 1 else null end),
+count(case when dforeign>='3000' then 1 else null end),
+count(case when dforeign>='4000' then 1 else null end),
+count(case when dforeign>='5000' then 1 else null end),
+count(case when dforeign>='6000' then 1 else null end),
+count(case when dforeign>='7000' then 1 else null end),
+count(case when dforeign>='8000' then 1 else null end),
+count(case when dforeign>='9000' then 1 else null end),
+count(case when dforeign>='10000' then 1 else null end)
 from AvgByDay1516;
 发生交易天数里平均每天异地转入次数
-22930801  849411  101537  27377   11471   6610    4529    3568    2945    2542    1178    853     697     617     547     489     448     421     404     287     206     142     95      79      60   49       40      35
-
-
+OK
+142241494       4243210 531067  143212  58533   31788   21314   16453   13356   11391   4849    3283    2567    2108    1782    1566    1416    1256    1149    717     481     337     266     223     181  152      126     107     23      7       5       3       2       1       0       0       0
 
 
 select 
 count(case when msum>='100000' then 1 else null end),
+count(case when msum>='200000' then 1 else null end),
+count(case when msum>='300000' then 1 else null end),
+count(case when msum>='400000' then 1 else null end),
 count(case when msum>='500000' then 1 else null end),
+count(case when msum>='600000' then 1 else null end),
+count(case when msum>='700000' then 1 else null end),
+count(case when msum>='800000' then 1 else null end),
+count(case when msum>='900000' then 1 else null end),
 count(case when msum>='1000000' then 1 else null end),
-count(case when msum>='2500000' then 1 else null end),
-count(case when msum>='5000000' then 1 else null end), 
-count(case when msum>='7500000' then 1 else null end),
+count(case when msum>='2000000' then 1 else null end),
+count(case when msum>='3000000' then 1 else null end),
+count(case when msum>='4000000' then 1 else null end),
+count(case when msum>='5000000' then 1 else null end),
+count(case when msum>='6000000' then 1 else null end),
+count(case when msum>='7000000' then 1 else null end),
+count(case when msum>='8000000' then 1 else null end),
+count(case when msum>='9000000' then 1 else null end), 
 count(case when msum>='10000000' then 1 else null end),
-count(case when msum>='25000000' then 1 else null end),
+count(case when msum>='20000000' then 1 else null end),
+count(case when msum>='30000000' then 1 else null end),
+count(case when msum>='40000000' then 1 else null end),
 count(case when msum>='50000000' then 1 else null end),
-count(case when msum>='75000000' then 1 else null end),
+count(case when msum>='60000000' then 1 else null end),
+count(case when msum>='70000000' then 1 else null end),
+count(case when msum>='80000000' then 1 else null end),
+count(case when msum>='90000000' then 1 else null end),
 count(case when msum>='100000000' then 1 else null end),
-count(case when msum>='250000000' then 1 else null end),
+count(case when msum>='200000000' then 1 else null end),
+count(case when msum>='300000000' then 1 else null end),
+count(case when msum>='400000000' then 1 else null end),
 count(case when msum>='500000000' then 1 else null end),
-count(case when msum>='750000000' then 1 else null end),
+count(case when msum>='600000000' then 1 else null end),
+count(case when msum>='700000000' then 1 else null end),
+count(case when msum>='800000000' then 1 else null end),
+count(case when msum>='900000000' then 1 else null end),
 count(case when msum>='1000000000' then 1 else null end),
-count(case when msum>='2500000000' then 1 else null end),
+count(case when msum>='2000000000' then 1 else null end),
+count(case when msum>='3000000000' then 1 else null end),
+count(case when msum>='4000000000' then 1 else null end),
 count(case when msum>='5000000000' then 1 else null end),
-count(case when msum>='7500000000' then 1 else null end),
-count(case when msum>='10000000000' then 1 else null end)
+count(case when msum>='6000000000' then 1 else null end),
+count(case when msum>='7000000000' then 1 else null end),
+count(case when msum>='8000000000' then 1 else null end),
+count(case when msum>='9000000000' then 1 else null end),
+count(case when msum>='10000000000' then 1 else null end),
+count(case when msum>='20000000000' then 1 else null end),
+count(case when msum>='30000000000' then 1 else null end),
+count(case when msum>='40000000000' then 1 else null end),
+count(case when msum>='50000000000' then 1 else null end),
+count(case when msum>='60000000000' then 1 else null end),
+count(case when msum>='70000000000' then 1 else null end),
+count(case when msum>='80000000000' then 1 else null end),
+count(case when msum>='90000000000' then 1 else null end),
+count(case when msum>='100000000000' then 1 else null end)
 from StaticAll1516;
-总金额达到以上金额的卡片数 6629347 1424316 346911  10421   744
+总金额达到以上金额的卡片数
+117696791       100155430       87551082        78863487        73130917        65156771        61331966        58398378        55726755        53575834        34468815        24326177        18493227     14515271 9069227 7641653 6541273 5642120 4897963 1636403 885531  583875  429744  327811  267244  225557  193445  167989  66532   41571   30258   23827   19264   16379   14359   12762   11521   5376    3402 2499     1975    1641    1382    1192    1030    915     401     224     153     109     77      60      49      36      31
 
-select count(case when csum>'1' then 1 else null end) as count1,  
-count(case when csum>='5' then 1 else null end) as count2,  
-count(case when csum>='10' then 1 else null end) as count3,
-count(case when csum>='100' then 1 else null end) as count4,
-count(case when csum>='1000' then 1 else null end) as count5
+
+select 
+count(case when csum>='1' then 1 else null end),
+count(case when csum>='2' then 1 else null end), 
+count(case when csum>='3' then 1 else null end),  
+count(case when csum>='4' then 1 else null end), 
+count(case when csum>='5' then 1 else null end),
+count(case when csum>='6' then 1 else null end),
+count(case when csum>='7' then 1 else null end), 
+count(case when csum>='8' then 1 else null end),  
+count(case when csum>='9' then 1 else null end), 
+count(case when csum>='10' then 1 else null end),
+count(case when csum>='20' then 1 else null end),
+count(case when csum>='30' then 1 else null end),
+count(case when csum>='40' then 1 else null end),
+count(case when csum>='50' then 1 else null end),
+count(case when csum>='60' then 1 else null end),
+count(case when csum>='70' then 1 else null end),
+count(case when csum>='80' then 1 else null end),
+count(case when csum>='90' then 1 else null end),
+count(case when csum>='100' then 1 else null end),
+count(case when csum>='200' then 1 else null end),
+count(case when csum>='300' then 1 else null end),
+count(case when csum>='400' then 1 else null end),
+count(case when csum>='500' then 1 else null end),
+count(case when csum>='600' then 1 else null end),
+count(case when csum>='700' then 1 else null end),
+count(case when csum>='800' then 1 else null end),
+count(case when csum>='900' then 1 else null end),
+count(case when csum>='1000' then 1 else null end),
+count(case when csum>='2000' then 1 else null end),
+count(case when csum>='3000' then 1 else null end),
+count(case when csum>='4000' then 1 else null end),
+count(case when csum>='5000' then 1 else null end),
+count(case when csum>='6000' then 1 else null end),
+count(case when csum>='7000' then 1 else null end),
+count(case when csum>='8000' then 1 else null end),
+count(case when csum>='9000' then 1 else null end),
+count(case when csum>='10000' then 1 else null end),
+count(case when csum>='20000' then 1 else null end),
+count(case when csum>='30000' then 1 else null end),
+count(case when csum>='40000' then 1 else null end),
+count(case when csum>='50000' then 1 else null end),
+count(case when csum>='60000' then 1 else null end),
+count(case when csum>='70000' then 1 else null end),
+count(case when csum>='80000' then 1 else null end),
+count(case when csum>='90000' then 1 else null end),
+count(case when csum>='100000' then 1 else null end)
 from StaticAll1516;
-总次数达到以上金额的卡片数 4300384 319748  62907   1864    483
+总次数达到以上金额的卡片数
+145308446       56052110        30536846        19698088        13866958        10282196        7871870 6158049 4886037 3913284 733568  317460  184145  123683  89793   69144   55627   45801   38841   14042 7238     4908    3930    3254    2821    2491    2242    2082    1222    935     756     668     599     559     513     457     423     249     182     143     116     101     86      75      64      56
 
 
-select count(case when mavg>='100000' then 1 else null end) as count1,  
-count(case when mavg>='500000' then 1 else null end) as count2,  
-count(case when mavg>='1000000' then 1 else null end) as count3,
-count(case when mavg>='5000000' then 1 else null end) as count4,
-count(case when mavg>='10000000' then 1 else null end) as count5,
-count(case when mavg>='100000000' then 1 else null end) as count6,
-count(case when mavg>='1000000000' then 1 else null end) as count7
+select 
+count(case when mavg>='100000' then 1 else null end),
+count(case when mavg>='200000' then 1 else null end),
+count(case when mavg>='300000' then 1 else null end),
+count(case when mavg>='400000' then 1 else null end),
+count(case when mavg>='500000' then 1 else null end),
+count(case when mavg>='600000' then 1 else null end),
+count(case when mavg>='700000' then 1 else null end),
+count(case when mavg>='800000' then 1 else null end),
+count(case when mavg>='900000' then 1 else null end),
+count(case when mavg>='1000000' then 1 else null end),
+count(case when mavg>='2000000' then 1 else null end),
+count(case when mavg>='3000000' then 1 else null end),
+count(case when mavg>='4000000' then 1 else null end),
+count(case when mavg>='5000000' then 1 else null end),
+count(case when mavg>='6000000' then 1 else null end),
+count(case when mavg>='7000000' then 1 else null end),
+count(case when mavg>='8000000' then 1 else null end),
+count(case when mavg>='9000000' then 1 else null end), 
+count(case when mavg>='10000000' then 1 else null end),
+count(case when mavg>='20000000' then 1 else null end),
+count(case when mavg>='30000000' then 1 else null end),
+count(case when mavg>='40000000' then 1 else null end),
+count(case when mavg>='50000000' then 1 else null end),
+count(case when mavg>='60000000' then 1 else null end),
+count(case when mavg>='70000000' then 1 else null end),
+count(case when mavg>='80000000' then 1 else null end),
+count(case when mavg>='90000000' then 1 else null end),
+count(case when mavg>='100000000' then 1 else null end),
+count(case when mavg>='200000000' then 1 else null end),
+count(case when mavg>='300000000' then 1 else null end),
+count(case when mavg>='400000000' then 1 else null end),
+count(case when mavg>='500000000' then 1 else null end),
+count(case when mavg>='600000000' then 1 else null end),
+count(case when mavg>='700000000' then 1 else null end),
+count(case when mavg>='800000000' then 1 else null end),
+count(case when mavg>='900000000' then 1 else null end),
+count(case when mavg>='1000000000' then 1 else null end)
 from StaticAll1516;
-平均每笔金额达到以上次数的    17733245        8886224 5972886 816053  77390   4601    0
+平均每笔金额达到以上次数的 
+109217032       87775308        73405276        64064980        58334479        50151116        46615959        43823983        41458790        39567436        22033937        12898450        7966986 5008063       801603  728571  668852  619300  576267  280628  168739  118112  90733   64296   52732   44560   37961   32319   11788   6536    3891    2423    1021    551     288     121     0
 
-select count(case when locsum>'1' then 1 else null end) as count1,  
-count(case when locsum>='5' then 1 else null end) as count2,  
-count(case when locsum>='10' then 1 else null end) as count3,
-count(case when locsum>='100' then 1 else null end) as count4,
-count(case when locsum>='1000' then 1 else null end) as count5
+select
+count(case when locsum>='1' then 1 else null end),
+count(case when locsum>='2' then 1 else null end),  
+count(case when locsum>='3' then 1 else null end),  
+count(case when locsum>='4' then 1 else null end),  
+count(case when locsum>='5' then 1 else null end),
+count(case when locsum>='6' then 1 else null end),
+count(case when locsum>='7' then 1 else null end),
+count(case when locsum>='8' then 1 else null end),
+count(case when locsum>='9' then 1 else null end), 
+count(case when locsum>='10' then 1 else null end),
+count(case when locsum>='20' then 1 else null end),
+count(case when locsum>='30' then 1 else null end),
+count(case when locsum>='40' then 1 else null end),
+count(case when locsum>='50' then 1 else null end),
+count(case when locsum>='60' then 1 else null end),
+count(case when locsum>='70' then 1 else null end),
+count(case when locsum>='80' then 1 else null end),
+count(case when locsum>='90' then 1 else null end),
+count(case when locsum>='100' then 1 else null end),
+count(case when locsum>='200' then 1 else null end),
+count(case when locsum>='300' then 1 else null end),
+count(case when locsum>='400' then 1 else null end),
+count(case when locsum>='500' then 1 else null end),
+count(case when locsum>='600' then 1 else null end),
+count(case when locsum>='700' then 1 else null end),
+count(case when locsum>='800' then 1 else null end),
+count(case when locsum>='900' then 1 else null end),
+count(case when locsum>='1000' then 1 else null end)
 from StaticAll1516;
-一共来自多少地方的转账大于阈值的卡片数 657310  9432    1558    10      0 
+一共来自多少地方的转账大于阈值的卡片数
+145308446       16894695        3262848 984905  424017  231125  144440  97955   70344   52587   8523    2985    1404    778     493     321     221     167     133     20      8       7       4       1    0
 
 
-select count(case when foreignsum>'1' then 1 else null end) as count1,  
-count(case when foreignsum>='5' then 1 else null end) as count2,  
-count(case when foreignsum>='10' then 1 else null end) as count3,
-count(case when foreignsum>='100' then 1 else null end) as count4,
-count(case when foreignsum>='1000' then 1 else null end) as count5,
-count(case when foreignsum>='10000' then 1 else null end) as count6
+select
+count(case when foreignsum>='1' then 1 else null end), 
+count(case when foreignsum>='2' then 1 else null end), 
+count(case when foreignsum>='3' then 1 else null end), 
+count(case when foreignsum>='4' then 1 else null end), 
+count(case when foreignsum>='5' then 1 else null end), 
+count(case when foreignsum>='6' then 1 else null end), 
+count(case when foreignsum>='7' then 1 else null end), 
+count(case when foreignsum>='8' then 1 else null end), 
+count(case when foreignsum>='9' then 1 else null end),  
+count(case when foreignsum>='10' then 1 else null end),
+count(case when foreignsum>='20' then 1 else null end),
+count(case when foreignsum>='30' then 1 else null end),
+count(case when foreignsum>='40' then 1 else null end),
+count(case when foreignsum>='50' then 1 else null end),
+count(case when foreignsum>='60' then 1 else null end),
+count(case when foreignsum>='70' then 1 else null end),
+count(case when foreignsum>='80' then 1 else null end),
+count(case when foreignsum>='90' then 1 else null end),
+count(case when foreignsum>='100' then 1 else null end),
+count(case when foreignsum>='200' then 1 else null end),
+count(case when foreignsum>='300' then 1 else null end),
+count(case when foreignsum>='400' then 1 else null end),
+count(case when foreignsum>='500' then 1 else null end),
+count(case when foreignsum>='600' then 1 else null end),
+count(case when foreignsum>='700' then 1 else null end),
+count(case when foreignsum>='800' then 1 else null end),
+count(case when foreignsum>='900' then 1 else null end),
+count(case when foreignsum>='1000' then 1 else null end),
+count(case when foreignsum>='2000' then 1 else null end),
+count(case when foreignsum>='3000' then 1 else null end),
+count(case when foreignsum>='4000' then 1 else null end),
+count(case when foreignsum>='5000' then 1 else null end),
+count(case when foreignsum>='6000' then 1 else null end),
+count(case when foreignsum>='7000' then 1 else null end),
+count(case when foreignsum>='8000' then 1 else null end),
+count(case when foreignsum>='9000' then 1 else null end),
+count(case when foreignsum>='10000' then 1 else null end),
+count(case when foreignsum>='20000' then 1 else null end),
+count(case when foreignsum>='30000' then 1 else null end),
+count(case when foreignsum>='40000' then 1 else null end),
+count(case when foreignsum>='50000' then 1 else null end),
+count(case when foreignsum>='60000' then 1 else null end),
+count(case when foreignsum>='70000' then 1 else null end),
+count(case when foreignsum>='80000' then 1 else null end),
+count(case when foreignsum>='90000' then 1 else null end),
+count(case when foreignsum>='100000' then 1 else null end)
 from StaticAll1516;
-总共异地转入次数大于阈值的卡片数 4181659 303475  58715   1720    481     91
-
-
-
-
+总共异地转入次数大于阈值的卡片数 
+142964424       54793576        29721410        19112519        13417616        9929827 7587108 5923874 4691813 3751451 695284  297855  171298  114239  82486   63060   50450   41307   34833   12060   5877 3901     3133    2601    2283    2037    1860    1736    1081    847     715     648     586     545     500     450     420     249     182     143     116     101     86      75      64      56
 
 
 

@@ -4,7 +4,7 @@ set mapred.min.split.size.per.node=1024000000;
 set mapred.min.split.size.per.rack=1024000000;
 set mapreduce.jobtracker.split.metainfo.maxsize = -1;
 
--- 提取时间段所有数据方便后续操作
+-- 提取时间段所有数据方便后续操作   转入卡号 转出卡号  金额 日期 时间 受理机构（后4位地区代码） 交易模式（2异地） 是否跨境
 CREATE TABLE IF NOT EXISTS tele_trans1606(
 tfr_in_acct_no string,
 tfr_out_acct_no string,

@@ -1,0 +1,34 @@
+hive -e"set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat;
+set mapred.max.split.size=1024000000;
+set mapred.min.split.size.per.node=1024000000;
+set mapred.min.split.size.per.rack=1024000000;
+set mapreduce.jobtracker.split.metainfo.maxsize = -1;
+
+-- 提取时间段所有数据方便后续操作 
+-- 卡号  金额 日期 时间 受理机构（后4位地区代码） 交易模式（2异地） 是否跨境, 商户代码+终端号确定唯一ATM
+CREATE TABLE IF NOT EXISTS quxian_1606(
+pri_acct_no_conv string,
+trans_at double, 
+pdate string,
+loc_trans_tm string,
+acpt_ins_id_cd string,
+trans_md string,
+cross_dist_in string,
+mchnt_cd string,
+term_id string
+);
+ 
+INSERT OVERWRITE TABLE quxian_1606
+select pri_acct_no_conv, trans_at, pdate, loc_trans_tm, acpt_ins_id_cd, trans_md, cross_dist_in, mchnt_cd, term_id
+from tbl_common_his_trans 
+where trans_id='S24' and pdate>='20160601' and pdate<='20160630';
+
+
+#将MR quxianSort排序好的结果计算上下两笔取现的结果建表
+hadoop fs -cp hdfs://nameservice1/user/hive/warehouse/quxian_1606 TeleTrans/quxian_1606
+hadoop jar TeleTrans.jar  WireFraud.quxianSort -Dmapreduce.job.queuename=root.spark TeleTrans/quxian_1606 TeleTrans/saveDquxian_1606
+hadoop fs -cp TeleTrans/saveDquxian_1606 TeleTrans/Dtquxian_1606
+
+Dtquxian_1606 内容如下
+009b641830bd933bf16e0475da39f5a6        20160617        20000.0        05357000000000053570001    0       502.75
+card                                     pdate           money                  ATM            isCross    DeltaT;

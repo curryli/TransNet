@@ -65,7 +65,7 @@ object StaticInOut {
     val SumInOutGraph = SumInGraph.outerJoinVertices(SumOutVRDD){
       (vid, p, q) => (p._1, p._2._1,p._2._2, q.getOrElse(0.0,0,0,0)._1, q.getOrElse(0.0,0,0,0)._2,
           p._2._1+q.getOrElse(0.0,0,0,0)._1, p._2._2+q.getOrElse(0.0,0,0,0)._2, math.abs( p._2._1-q.getOrElse(0.0,0,0,0)._1),
-          math.abs(p._2._1-q.getOrElse(0.0,0,0,0)._1)/(p._2._1+q.getOrElse(0.0,0,0,0)._1), p._2._3+q.getOrElse(0.0,0,0,0)._3   
+          math.abs(p._2._1-q.getOrElse(0.0,0,0,0)._1)/(p._2._1+q.getOrElse(0.0,0,0,0)._1).toDouble, p._2._3+q.getOrElse(0.0,0,0,0)._3   
       )
      }
     //card, 金额in，次数in，金额out， 次数out， 总金额，总次数， 金额净差, 净总比,总异地笔数
@@ -74,41 +74,35 @@ object StaticInOut {
     
     
      val SortedAmountIn = SumInOutGraph.vertices.sortBy(_._2._2, false)
-     SortedAmountIn.saveAsTextFile("TeleTrans/InOut/SortedAmountIn")   // 
+     SortedAmountIn.saveAsTextFile(args(1) + "SortedAmountIn")   // 
     
      val SortedAmountOut= SumInOutGraph.vertices.sortBy(_._2._4, false)
-     SortedAmountOut.saveAsTextFile("TeleTrans/InOut/SortedAmountOut")   // 
+     SortedAmountOut.saveAsTextFile(args(1) + "SortedAmountOut")   // 
      
      val SortedAmount = SumInOutGraph.vertices.sortBy(_._2._6, false)
-     SortedAmount.saveAsTextFile("TeleTrans/InOut/SortedAmount")   // 
+     SortedAmount.saveAsTextFile(args(1) + "SortedAmount")   // 
     
      
      val SortedCountIn = SumInOutGraph.vertices.sortBy(_._2._3, false)
-     SortedCountIn.saveAsTextFile("TeleTrans/InOut/SortedCountIn")   // 
+     SortedCountIn.saveAsTextFile(args(1) + "SortedCountIn")   // 
     
      val SortedCountOut= SumInOutGraph.vertices.sortBy(_._2._5, false)
-     SortedCountOut.saveAsTextFile("TeleTrans/InOut/SortedCountOut")   // 
+     SortedCountOut.saveAsTextFile(args(1) + "SortedCountOut")   // 
      
      val SortedCount = SumInOutGraph.vertices.sortBy(_._2._7, false)
-     SortedCount.saveAsTextFile("TeleTrans/InOut/SortedCount")   // 
+     SortedCount.saveAsTextFile(args(1) + "SortedCount")   // 
      
      val SortedExp = SumInOutGraph.vertices.sortBy(_._2._8, false)
-     SortedExp.saveAsTextFile("TeleTrans/InOut/SortedExp")   // 
+     SortedExp.saveAsTextFile(args(1) + "SortedExp")   // 
 	 
 	   val SortedRatio = SumInOutGraph.vertices.sortBy(_._2._9, false)
-     SortedRatio.saveAsTextFile("TeleTrans/InOut/SortedRatio")   // 
+     SortedRatio.saveAsTextFile(args(1) + "SortedRatio")   // 
      
      val SortedForeign = SumInOutGraph.vertices.sortBy(_._2._10, false)
-     SortedForeign.saveAsTextFile("TeleTrans/InOut/SortedForeign")   // 
+     SortedForeign.saveAsTextFile(args(1) + "SortedForeign")   // 
 
     
-     
-     
-     
-     
-     
-     val inDegrees: VertexRDD[Int] = graph.inDegrees
-    
+//链接分析    
     val DegInGraph = graph.outerJoinVertices(graph.inDegrees){
       (vid, card, inDegOpt) => (card, inDegOpt.getOrElse(0))}
     
@@ -118,25 +112,113 @@ object StaticInOut {
 //) v2 ON v1.id = v2.id
     
     val DegInOutGraph = DegInGraph.outerJoinVertices(graph.outDegrees){
-      (vid, p, outDegOpt) => (p._1, p._2, outDegOpt.getOrElse(0))}
+      (vid, p, outDegOpt) => (p._1, p._2, outDegOpt.getOrElse(0),  p._2+outDegOpt.getOrElse(0),
+          math.abs(p._2-outDegOpt.getOrElse(0))/(p._2+outDegOpt.getOrElse(0)).toDouble )}
     
-// (id,(卡号,入度,出度))    
-    
-    
-//  val maxDegIn = sc.parallelize(DegInOutGraph.vertices.sortBy(_._2._2, false).take(100000)).saveAsTextFile("xrli/TransNet/maxDegIn")   //按入度排序
-    val SortedDegOut = DegInOutGraph.vertices.sortBy(_._2._3, false)
-    SortedDegOut.saveAsTextFile("TeleTrans/InOut/SortedDegOut")   //按出度排序
-    
-    val SortedDegIn = DegInOutGraph.vertices.sortBy(_._2._2, false)
-    SortedDegIn.saveAsTextFile("TeleTrans/InOut/SortedDegIn")  
 
-    val MaxInOut = sc.parallelize(SortedDegOut.take(100000)).intersection(sc.parallelize(SortedDegIn.take(100000)))
+    val pgranks = graph.pageRank(0.001).vertices
+    val DegGraph = DegInOutGraph.outerJoinVertices(pgranks){
+      (vid, p, rankOpt) => (p._1, p._2, p._3, p._4, p._5,  rankOpt.getOrElse(0.0))
+    }
     
-    MaxInOut.saveAsTextFile("TeleTrans/InOut/MaxInOut")
+    
+// (id,(卡号,入度,出度,总度数，出入度比,pagerank))    
+      
+    val SortedDegIn = DegGraph.vertices.sortBy(_._2._2, false)
+    SortedDegIn.saveAsTextFile(args(1) + "SortedDegIn")  
+
+    val SortedDegOut = DegGraph.vertices.sortBy(_._2._3, false)
+    SortedDegOut.saveAsTextFile(args(1) + "SortedDegOut")   //按出度排序
+    
+    val SortedDeg = DegGraph.vertices.sortBy(_._2._4, false)
+    SortedDeg.saveAsTextFile(args(1) + "SortedDeg")   //按出度排序
+    
+    val SortedDegRatio = DegGraph.vertices.sortBy(_._2._5, false)
+    SortedDegRatio.saveAsTextFile(args(1) + "SortedDegRatio")   //按出度排序
+    
+    val SortedPgRank = DegGraph.vertices.sortBy(_._2._6, false)
+    SortedPgRank.saveAsTextFile(args(1) + "SortedPgRank")   //按出度排序
+    
+ 
+    val MaxInOut = sc.parallelize(SortedDegOut.take(100000)).intersection(sc.parallelize(SortedDegIn.take(100000)))
+    MaxInOut.saveAsTextFile(args(1) + "MaxInOut")
+    
+    val MostDeg = sc.parallelize(SortedDeg.take(100000))
+                   .intersection(sc.parallelize(SortedDegRatio.take(100000)))
+                   .intersection(sc.parallelize(SortedPgRank.take(100000)))
+                    
+                   
+                   
+                   
+    val MostSum =  sc.parallelize(SortedAmount.take(100000))                 
+                   .intersection(sc.parallelize(SortedCount.take(100000)))
+                   .intersection(sc.parallelize(SortedRatio.take(100000)))
+                   
+              
+    
+    val MostSuspect = MostSum.join(MostDeg) 
+    
+    MostSuspect.saveAsTextFile(args(1) + "MostSuspect")
+    
+   
+    
+    
+    
+    
+    
+    //DegInOutGraph.vertices.filter(_._2._2 >1000)
+    val threList = List(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50,60,70,80,90,100,200,300,400,500,600,700,800,900,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000)
+    var InCountListStr = ""
+    var OutCountListStr = ""
+    var DegCountListStr = ""
+    
+    threList.foreach(thre=>
+       InCountListStr = InCountListStr + DegInOutGraph.vertices.filter(_._2._2 >=thre).count().toString() + "\n"
+       )
+ 
+    threList.foreach(thre=>
+       OutCountListStr = OutCountListStr + DegInOutGraph.vertices.filter(_._2._3 >=thre).count().toString() + "\n"
+       )
+       
+    threList.foreach(thre=>
+       DegCountListStr = DegCountListStr + DegInOutGraph.vertices.filter(_._2._4 >=thre).count().toString() + "\n"
+       )
+       
+       
+    
+ 
+    val resultStr = "InCountListStr:\n" + InCountListStr + "OutCountListStr:\n" + OutCountListStr + "DegCountListStr:\n" + DegCountListStr 
+    
+    sc.parallelize(List(resultStr)).saveAsTextFile(args(1) + "DegCountInfo")
     
      
+     
     sc.stop()
-  }
-  
-   
+  }  
 }
+
+
+
+
+
+
+//spark-submit \
+//--class WireFraud.StaticInOut \
+//--master yarn \
+//--deploy-mode cluster \
+//--queue root.default \
+//--driver-memory 7g \
+//--executor-memory 7G \
+//--num-executors 500 \
+//TeleTrans.jar \
+//TeleTrans/StaticMD51516 TeleTrans/InOut1516/
+
+
+
+
+
+
+
+
+
+
