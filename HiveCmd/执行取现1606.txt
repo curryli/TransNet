@@ -29,6 +29,9 @@ hadoop fs -cp hdfs://nameservice1/user/hive/warehouse/quxian_1606 TeleTrans/quxi
 hadoop jar TeleTrans.jar  WireFraud.quxianSort -Dmapreduce.job.queuename=root.spark TeleTrans/quxian_1606 TeleTrans/saveDquxian_1606
 hadoop fs -cp TeleTrans/saveDquxian_1606 TeleTrans/Dtquxian_1606
 
+hadoop jar TeleTrans2.jar  WireFraud.SortATM -Dmapreduce.job.queuename=root.default TeleTrans/quxian_1606 TeleTrans/saveATM_1606
+hadoop fs -cp TeleTrans/saveATM_1606 TeleTrans/SortATM_1606
+
 Dtquxian_1606 内容如下
 009b641830bd933bf16e0475da39f5a6        20160617        20000.0        05357000000000053570001    0       502.75
 card                                     pdate           money                  ATM            isCross    DeltaT;
