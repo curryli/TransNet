@@ -3,6 +3,8 @@ set mapred.max.split.size=1024000000;
 set mapred.min.split.size.per.node=1024000000;
 set mapred.min.split.size.per.rack=1024000000;
 set mapreduce.jobtracker.split.metainfo.maxsize = -1;
+set mapreduce.job.queuename=root.queue2;
+
 
 -- 提取时间段所有数据方便后续操作 
 -- 卡号  金额 日期 时间 受理机构（后4位地区代码） 交易模式（2异地） 是否跨境, 商户代码+终端号确定唯一ATM
@@ -35,3 +37,160 @@ hadoop fs -cp TeleTrans/saveATM_1606 TeleTrans/SortATM_1606
 Dtquxian_1606 内容如下
 009b641830bd933bf16e0475da39f5a6        20160617        20000.0        05357000000000053570001    0       502.75
 card                                     pdate           money                  ATM            isCross    DeltaT;
+
+
+
+
+
+import sys
+import re
+import os
+
+with open("MostSumForeign.txt",'r') as FILEIN:
+    with open("SusCard.txt",'w') as FILEOUT:
+        for line in FILEIN:
+            print>>FILEOUT, line.split(",")[1]
+
+--2、 在整个时间T内，对每个账户进行聚合统计
+hadoop fs -cp TeleTrans/saveCrossATM_1606/  TeleTrans/CrossATM_1606
+
+
+CREATE TABLE IF NOT EXISTS CrossATM_1606(
+card string,
+pdate string, 
+money double,
+ATM string,
+isCross string,
+trans_md string,
+DeltaT double 
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
+
+
+load data inpath 'TeleTrans/CrossATM_1606' into table CrossATM_1606;
+
+
+
+
+CREATE TABLE IF NOT EXISTS StaticCrossATM_1606(
+card string,
+msum double, 
+csum int,
+mavg double,
+mstd double,
+mcv double
+);
+
+INSERT OVERWRITE TABLE StaticCrossATM_1606
+select card, sum(money) as msum, count(money) as csum, 
+avg(money) as mavg, stddev(money) as mstd, stddev(money)/avg(money) as mcv
+from CrossATM_1606
+group by card; 
+
+
+hadoop fs -cp hdfs://nameservice1/user/hive/warehouse/staticcrossatm_1606 TeleTrans/StaticCrossATM_1606
+
+
+create table if not exists SuspectCards(card string);
+load data local inpath 'SusCard.txt' into table SuspectCards;
+
+select * from StaticCrossATM_1606 t1
+left semi join SuspectCards t2
+on t1.card=t2.card
+;
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS FATM_5000_1606(
+ATM string,
+pdate string, 
+money double,
+card string,
+isCross string,
+trans_md string,
+DeltaT double,
+cardDiff int
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE;
+
+
+//FATM_5000_1606 异地  大额  cardDiff区分是否换卡
+hadoop fs -cp TeleTrans/saveFATM_5000_1606/ TeleTrans/FATM_5000_1606
+load data inpath 'TeleTrans/FATM_5000_1606' into table FATM_5000_1606;
+
+
+select * from FATM_5000_1606 where cardDiff=1 limit 100;
+
+
+CREATE TABLE IF NOT EXISTS StaticFATM_5000_1606(
+ATM string,
+abnCount int
+);
+
+
+//同一台ATM 在极短时间内发生 多张卡 异地  大额取现  
+INSERT OVERWRITE TABLE StaticFATM_5000_1606
+select ATM, count(case when DeltaT<=1 and cardDiff=1 then 1 else null end) as abnCount
+from FATM_5000_1606
+group by ATM
+order by abnCount DESC;
+
+
+select count(*) from StaticFATM_5000_1606;   一共 329402台ATM
+select count(*) from StaticFATM_5000_1606 where abnCount>5;
+OK
+  
+  
+select * from FATM_5000_1606 where ATM in 
+（）
+
+
+////////////////////////////////////////
+
+hive -e "set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat;
+set mapred.max.split.size=1024000000;
+set mapred.min.split.size.per.node=1024000000;
+set mapred.min.split.size.per.rack=1024000000;
+set mapreduce.jobtracker.split.metainfo.maxsize = -1;
+set mapreduce.job.queuename=root.queue2;
+
+
+create table if not exists fraudCards(card string);
+load data local inpath 'fraudCards.txt' into table fraudCards;
+
+
+create table if not exists fraudCards_md5(card string);
+
+INSERT OVERWRITE TABLE fraudCards_md5
+select arlab.hmacmd5(reverse(concat(length(card),card))) from fraudCards;
+
+drop table fraudCards;
+
+select * from SuspectCards t1
+left semi join fraudCards_md5 t2
+on t1.card=t2.card;
+
+
+select * from tele_trans1516 t1
+left semi join fraudCards_md5 t2
+on t1.tfr_in_acct_no=t2.card
+union all
+select * from tele_trans1516 t1
+left semi join fraudCards_md5 t2
+on t1.tfr_in_acct_no=t2.card
+
+
+
+
+select * from tbl_common_his_trans t1 
+left semi join fraudCards_md5 t2
+on t1.tfr_in_acct_no=t2.card
+where t1.trans_id='S33' and t1.pdate>='20160101' and t1.pdate<='20160631'; 
+"

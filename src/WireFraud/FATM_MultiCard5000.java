@@ -1,4 +1,5 @@
-//hadoop jar TeleTrans2.jar  WireFraud.CrossATM -Dmapreduce.job.queuename=root.default TeleTrans/quxian_1606 TeleTrans/saveCrossATM_1606
+
+//hadoop jar TeleTrans.jar  WireFraud.FATM_MultiCard5000 -Dmapreduce.job.queuename=root.spark TeleTrans/quxian_1606 TeleTrans/saveFATM_5000_1606 
 
 
 package WireFraud;
@@ -25,7 +26,7 @@ import org.apache.hadoop.util.GenericOptionsParser;
 
 import WireFraud.MultiSortUtil;
 
-public class CrossATM {
+public class FATM_MultiCard5000 {
  
 
 	public static class UpdateMapper extends Mapper<LongWritable, Text, MultiSortUtil.KeyPair, Text> {
@@ -46,8 +47,8 @@ public class CrossATM {
             	String ATM = list[7] + list[8];
 
                 String money = list[1];
-            	String newstr = card + " " + time + " " + money + " " + ATM + " " + isCross + " " + trans_md;
-                keyPair.set(card, time); 
+            	String newstr = ATM + " " + time + " " + money + " " + card + " " + isCross + " " + trans_md;
+                keyPair.set(ATM, time); 
             	info.set(newstr);
             	
             }
@@ -65,18 +66,23 @@ public class CrossATM {
 		    String curtime ="";
 			String lasttime = "";
 			 
+			String curCard ="";
+			String lastCard = "";
+			int cardDiff = 0;
 
 			for (Text info : lines) {
 				if(!info.toString().isEmpty()){
 				  String[] list = info.toString().split("\\s");
-				  String card = list[0];
+				  String ATM = list[0];
 				  String money = list[2];
-				  String ATM = list[3];
+				  String card = list[3];
 				  String isCross = list[4];
 				  String trans_md = list[5];
 	              String curTS = list[1];
+	              curCard = card;
 				  
-	              if(isCross.equals("1") && curTS.length()==14){	
+	              //异地  大额  cardDiff区分是否换卡
+	              if(curTS.length()==14 && trans_md.equals("2") && Double.valueOf(money)>=500000){	
 					curtime = curTS.substring(0, 4) + "-" + curTS.substring(4, 6) + "-" + curTS.substring(6, 8) +
 		      				  " " + curTS.substring(8, 10) + ":" + curTS.substring(10, 12) + ":" + curTS.substring(12, 14);
 	 
@@ -94,10 +100,15 @@ public class CrossATM {
 				    
 				    String pdate = curTS.substring(0, 8);
 				    
-				    String tempInfo = card + "\t" + pdate + "\t" + money + "\t"+ ATM + "\t" + isCross + "\t" +trans_md + "\t" + DeltaT;
+				    if(curCard.equals(lastCard))
+				    	cardDiff = 0;
+				    else
+				    	cardDiff = 1;
+				    
+				    String tempInfo = ATM + "\t" + pdate + "\t" + money + "\t"+ card + "\t" + isCross + "\t" +trans_md + "\t" + DeltaT + "\t" + cardDiff;
  	
+				    lastCard = curCard;
 				    lasttime = curtime;
-			 
 				   
 				    result.set( tempInfo);
 				    context.write(result,new Text(""));
@@ -114,9 +125,9 @@ public class CrossATM {
 		Configuration conf = new Configuration();
 		//conf.set("mapreduce.job.queuename", "root.default");
 		String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
-		Job job = new Job(conf,"CrossATM");
+		Job job = new Job(conf,"ForeignATMSort");
 
-		job.setJarByClass(CrossATM.class); // 设置运行jar中的class名称
+		job.setJarByClass(ForeignATMSort.class); // 设置运行jar中的class名称
 		
 		job.setPartitionerClass(MultiSortUtil.FirstPartitioner.class);
 		job.setGroupingComparatorClass(MultiSortUtil.GroupingComparator.class);

@@ -92,7 +92,9 @@ public class MultiSortUtil {
 	public static class FirstPartitioner extends Partitioner<KeyPair, Text> {
 		@Override
 		public int getPartition(KeyPair key, Text value, int numPartitions) {
-			return Math.abs(key.getFirst().hashCode()) % numPartitions;
+			return Math.abs(key.getFirst().hashCode()) % numPartitions;                  
+			//虽然我们在mapper里面  keyPair.set(card, time);   context.write(keyPair, info);  但其实是说我们根据  (card, time)两个元素进行排序，
+			//但是进入reducer的key就是card，因为Partitioner函数指定了只用  (card, time)里面的第一个(first) 进行分区
 		}
 	}
 
