@@ -1,3 +1,8 @@
+nohup hive -f test.sql > test.out &
+nohup bash test.sh > test.out & 
+
+
+
 hive -e"set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat;
 set mapred.max.split.size=1024000000;
 set mapred.min.split.size.per.node=1024000000;
@@ -22,7 +27,7 @@ from tbl_common_his_trans
 where trans_id='S33' and pdate>='20160601' and pdate<='20160631';
 
 
---选择交易金额只有1分、10分、1元、10元和100元的测试交易，待删除
+--选择交易金额只有1分、10分、1元、10元和100元的测试交易，待删除  思路是如果一张卡的交易次数 和该卡1分、10分、1元、10元和100元的次数相等
 CREATE TABLE IF NOT EXISTS removeTest(
 tfr_in_acct_no string,
 transcnt bigint
