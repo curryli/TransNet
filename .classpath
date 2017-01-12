@@ -2,7 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/spark-assembly-1.5.0-cdh5.6.0-hadoop2.6.0-cdh5.6.0.jar"/>
 	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/hadoop-common-2.6.0-cdh5.6.0.jar"/>
 	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/hadoopjar/mapreduce/activation-1.1.jar"/>
 	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/hadoopjar/mapreduce/apacheds-i18n-2.0.0-M15.jar"/>
@@ -77,5 +76,11 @@
 	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/hadoopjar/hdfs/slf4j-api-1.7.5.jar"/>
 	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/hadoopjar/hdfs/slf4j-log4j12.jar"/>
 	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/yarn-conf"/>
+	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/sparkJars/spark1/datanucleus-api-jdo-3.2.6.jar"/>
+	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/sparkJars/spark1/datanucleus-core-3.2.10.jar"/>
+	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/sparkJars/spark1/datanucleus-rdbms-3.2.9.jar"/>
+	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/sparkJars/spark1/spark-1.6.1-yarn-shuffle.jar"/>
+	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/sparkJars/spark1/spark-assembly-1.6.1-hadoop2.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64/eclipse/sparkJars/spark1/spark-examples-1.6.1-hadoop2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
