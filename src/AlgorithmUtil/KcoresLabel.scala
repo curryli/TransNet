@@ -125,7 +125,7 @@ object KcoresLabel {
               val saveVerticesDF = sqlContext.createDataFrame(rowRDDsave, schema)
       
               var tempDF = allVerticesDF.join(saveVerticesDF, allVerticesDF("vid") === saveVerticesDF("vid"), "left_outer").drop(saveVerticesDF("vid"))
-             // tempDF.show()
+               tempDF.show()
               
               curVdd = tempDF.map{ x =>(x.getLong(0), 
               if(!x.isNullAt(2))
@@ -142,7 +142,7 @@ object KcoresLabel {
         }
 
         println(k)
-        //curVdd.collect().foreach(println)
+        curVdd.collect().foreach(println)
         curVdd.map{ x =>(x._1,  if (x._2 == 0) (k-1)  else x._2)} 
           
   }
