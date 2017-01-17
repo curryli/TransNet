@@ -124,15 +124,16 @@ object KcoresLabel {
               val rowRDDsave = saveVertices.map(p=>Row(p._1.toLong, p._2))     //原本p._1  是VertexId类型的, Row  不支持这种类型，所以需要转换成Long型
               val saveVerticesDF = sqlContext.createDataFrame(rowRDDsave, schema)
       
-              var tempDF = allVerticesDF.join(saveVerticesDF, allVerticesDF("vid") === saveVerticesDF("vid"), "left_outer").drop(saveVerticesDF("vid"))
-               tempDF.show()
+              var tempDF = allVerticesDF.join(saveVerticesDF, allVerticesDF("vid") === saveVerticesDF("vid"), "left_outer").drop(saveVerticesDF("vid")) 
+              tempDF.show(2)  //这里没有show结果就不对，暂时不知道为什么
               
-              curVdd = tempDF.map{ x =>(x.getLong(0), 
-              if(!x.isNullAt(2))
-                 x.getInt(2)  
-              else  
-                 x.getInt(1) 
-                                       ) }
+              curVdd = tempDF.map{ x =>
+               (x.getLong(0), 
+                              if(!x.isNullAt(2))
+                                 x.getInt(2)  
+                              else  
+                                 x.getInt(1) 
+                ) }
                       
               rowRDDAll = curVdd.map(p=>Row(p._1.toLong, p._2)) 
                
@@ -141,8 +142,7 @@ object KcoresLabel {
               k = k+1
         }
 
-        println(k)
-        curVdd.collect().foreach(println)
+        println("maxK is " + k)
         curVdd.map{ x =>(x._1,  if (x._2 == 0) (k-1)  else x._2)} 
           
   }

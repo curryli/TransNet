@@ -64,11 +64,11 @@ object Kcorestest {
     KcoreVertices.collect().foreach(println)
     
     
-    val result = AlgorithmUtil.KcoresLabel.KLabeledVertices(graph, 5, sc)
+    val result = AlgorithmUtil.KcoresLabel.KLabeledVertices(graph, 9, sc)
     
     println("KLabeledVertices  vertices: ")
     result.collect().foreach(println)
-    
+     
     sc.stop()
 }
   
