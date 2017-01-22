@@ -46,6 +46,8 @@ object Kcorestest {
       Edge(2L, 3L, 99),
       Edge(3L, 1L, 99),
       Edge(2L, 4L, 99),
+      Edge(1L, 4L, 99),
+      Edge(3L, 4L, 99),
       Edge(4L, 5L, 99),
       Edge(5L, 2L, 99),
       Edge(5L, 6L, 99),
@@ -59,6 +61,7 @@ object Kcorestest {
  
     //构造图Graph[VD,ED]
     var graph = Graph(vertexRDD, edgeRDD)
+    
     val KcoreVertices =  KcoresLabel.maxKVertices(graph,2)
     println("maxKVertices labeled vertices: ")
     KcoreVertices.collect().foreach(println)

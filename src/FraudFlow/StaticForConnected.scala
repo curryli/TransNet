@@ -12,11 +12,13 @@ import org.apache.spark.graphx._
 import org.apache.spark.storage.StorageLevel
 import org.apache.spark.sql.functions._
 import AlgorithmUtil._
+import scala.reflect.ClassTag
 
 object StaticForConnected { 
    private val startDate = "20160707"
-   private val endDate = "20160710"
+   private val endDate = "20160707"
    private val KMax = 10
+   
   
   def main(args: Array[String]) { 
      //屏蔽日志
@@ -50,17 +52,19 @@ object StaticForConnected {
       s"hp_settle_dt, " +
       s"loc_trans_tm, " +
       s"substring(acpt_ins_id_cd,-4,4) as region_cd, " +
-      s"trans_md, " +
+      s"trim(trans_md), " +
       s"mchnt_tp, " +
       s"mchnt_cd, " +
       s"card_accptr_nm_addr, " +
-      s"cross_dist_in, " +
+      s"loc_trans_tm, " +
       s"cast(total_disc_at as int) " +
       s"from hbkdb.dtdtrs_dlt_cups where " +
       s"hp_settle_dt>=$startDate and hp_settle_dt<=$endDate and trans_id ='S33' ")
-        .toDF("srccard","dstcard","money","date","time","region_cd","trans_md","mchnt_tp","mchnt_cd","card_accptr_nm_addr","cross_dist_in","total_disc_at")
+        .toDF("srccard","dstcard","money","date","time","region_cd","trans_md","mchnt_tp","mchnt_cd","card_accptr_nm_addr", "loc_trans_tm", "total_disc_at")
         .repartition(100)
   
+    data.show(5)
+        
     println("SQL done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes." )    
         
     import sqlContext.implicits._   
@@ -70,24 +74,36 @@ object StaticForConnected {
     
     //println(verticeRDD.count())
     
-    val edgeRDD = data.map { line=>
+      val edgeRDD = data.map { line=>
         val srcId = HashEncode.HashMD5(line.getString(0))
         val dstId = HashEncode.HashMD5(line.getString(1))
         val money = line.getLong(2)
         val region_cd = line.getString(5)
-        val isForeign = if(line.getString(6)=='2') 1 else 0  // 异地交易次数+1            交易模式    1 同城   2 异地   3 跨境
+        val isForeign = if(line.getString(6).equals("2")) 1 else 0  // 异地交易次数+1            交易模式    1 同城   2 异地   3 跨境
         val mchnt_tp = line.getString(7)
         val mchnt_cd =  line.getString(8)
-        val addrDetail = line.getString(9) 
-        val iscross =  if(line.getString(10)=='1') 1 else 0  //是否跨境  1是 0否
+        val addrDetail = line.getString(9)  
+        val trans_hour = line.getString(10).substring(0, 2).toInt
+        val isnight =  if(trans_hour>0 && trans_hour<6) 1 else 0  //是否夜间交易  1是 0否
         val charge = line.getInt(11)
-        Edge(srcId, dstId, (1, money, region_cd, isForeign, mchnt_tp, mchnt_cd, addrDetail, iscross, charge))
+        Edge(srcId, dstId, (1, money, region_cd, isForeign, mchnt_tp, mchnt_cd, addrDetail, isnight, charge))
     }
     
     var origraph = Graph(verticeRDD, edgeRDD).partitionBy(PartitionStrategy.RandomVertexCut)    //必须在调用groupEdges之前调用Graph.partitionBy 。
     
-    var graph = origraph.groupEdges((ea,eb) => (ea._1+eb._1, ea._2+eb._2, ea._3, ea._4+eb._4, ea._5, ea._6, ea._7, ea._8+eb._8, ea._9+eb._9))
-    //每条边是  两个账号之间的转账关系，权重是（总次数,总金额， 转账地址，异地交易次数，商户类型，商户代码，详细地址，跨境交易次数）
+//    println("origraph")
+//    origraph.edges.take(5).foreach(println)
+//    println("need origraph")
+//    origraph.edges.filter(f=>f.attr._4.toInt==1).take(5).foreach(println)
+    
+    var graph = origraph.groupEdges((ea,eb) => (ea._1+eb._1, ea._2+eb._2, ea._3, ea._4+eb._4, ea._5, ea._6, ea._7, ea._8+eb._8, ea._9+eb._9))    //每条边是  两个账号之间的转账关系，权重是（总次数,总金额， 转账地址，异地交易次数，商户类型，商户代码，详细地址，跨境交易次数）
+    
+//    println("graph")
+//    graph.edges.take(5).foreach(println)
+//    println("need1 graph")
+//    graph.edges.filter(f=>f.attr._4.toInt>1).take(5).foreach(println)
+//    println("need2 graph")
+//    graph.edges.filter(f=>f.attr._8.toInt>1).take(5).foreach(println)
     
     
     val tempDegGraph = graph.outerJoinVertices(graph.degrees){
@@ -151,8 +167,7 @@ object StaticForConnected {
      // cCountgraph 的顶点属性为  (vid,原密卡号，对应团体, 对应团体规模)
     println("create cCountgraph done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes.")
     
-   
-    
+  
     val KLabeledVertices = AlgorithmUtil.KcoresLabel.KLabeledVertices(graph, KMax, sc)
  
     println("create Kcores done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes.")
@@ -257,13 +272,13 @@ object StaticForConnected {
       val transCount = f.attr._1
       val money = f.attr._2
       val foreignCount = f.attr._4
-      val crossCount = f.attr._8
+      val nightCount = f.attr._8
       val charge = f.attr._9
 //      val region_cd = f.attr._3
 //      val mchnt_tp = f.attr._5
 //      val mchnt_cd = f.attr._6
 //      val addrDetail = f.attr._7  
-      (ccLabel, (money, transCount, foreignCount, crossCount,charge))
+      (ccLabel, (money, transCount, foreignCount, nightCount,charge))
     }).reduceByKey((e1, e2) => (e1._1+e2._1, e1._2+e2._2, e1._3+e2._3, e1._4+e2._4, e1._5+e2._5))
 
     var ccEdgeDistDF = tempGraph3.triplets.map(f => {
@@ -326,7 +341,7 @@ object StaticForConnected {
     var ccgraphRdd = ccVerticeRdd.leftOuterJoin(ccEdgeRdd).map(f => {
       val eProp = f._2._2.getOrElse("N","N","N","N","N","N","N","N","N")
       (f._1, f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7, 
-        eProp._1, eProp._2, eProp._3, eProp._4, eProp._5, eProp._5, eProp._6, eProp._7, eProp._8, eProp._9)
+        eProp._1, eProp._2, eProp._3, eProp._4, eProp._5, eProp._6, eProp._7, eProp._8, eProp._9)
     }) 
      
     ccgraphRdd = ccgraphRdd.filter(f=>f._1 != 0L)
@@ -334,7 +349,7 @@ object StaticForConnected {
     //ccLabel, 团体规模, 最大K, 最大入度, 最大出度, 最大度, BigK数目, 过渡节点数
     // 总交易金额, 总交易次数, 总异地交易次数, 总跨境交易次数，总手续费， 交易省市总数，商户类型总数，商户代码总数，交易地点总数
     
-//ccLabel,ccNum, maxK, maxInDeg, maxOutDeg, maxDeg, BigKNum, TransNum, totalMoney, totalTransCount, foreignCount, crossCount, charge, provinceCount, regionCount, mchnttpCount, mchntcdCount, addrDetailCount
+//ccLabel,ccNum, maxK, maxInDeg, maxOutDeg, maxDeg, BigKNum, TransNum, totalMoney, totalTransCount, foreignCount, nightCount, charge, regionCount, mchnttpCount, mchntcdCount, addrDetailCount
 
     println("ccgraphRdd created in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes.")
     
