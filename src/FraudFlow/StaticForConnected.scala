@@ -56,7 +56,7 @@ object StaticForConnected {
       s"mchnt_tp, " +
       s"mchnt_cd, " +
       s"card_accptr_nm_addr, " +
-      s"loc_trans_tm, " +
+      s"loc_trans_tm, " +          //重复
       s"cast(total_disc_at as int) " +
       s"from hbkdb.dtdtrs_dlt_cups where " +
       s"hp_settle_dt>=$startDate and hp_settle_dt<=$endDate and trans_id ='S33' ")
@@ -79,7 +79,7 @@ object StaticForConnected {
         val dstId = HashEncode.HashMD5(line.getString(1))
         val money = line.getLong(2)
         val region_cd = line.getString(5)
-        val isForeign = if(line.getString(6).equals("2")) 1 else 0  // 异地交易次数+1            交易模式    1 同城   2 异地   3 跨境
+        val isForeign = if(line.getString(6).equals("2")) 1 else 0  // 异地交易次数+1            交易模式    1 同城   2 异地    4 跨境
         val mchnt_tp = line.getString(7)
         val mchnt_cd =  line.getString(8)
         val addrDetail = line.getString(9)  
