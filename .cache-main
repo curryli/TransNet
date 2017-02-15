@@ -28,7 +28,7 @@ name hashing:
 1 items
 0 -> false
 products:
-528 items
+591 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Users\Administrator\Desktop\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$1.class
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Users\Administrator\Desktop\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$2.class
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Users\Administrator\Desktop\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$3.class
@@ -328,6 +328,69 @@ C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> C:\Users\Admi
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash$$anonfun$main$3.class
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash$.class
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$1.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$10.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$11.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$12.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$13.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$14.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$15.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$16.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$17.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$18.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$19.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$2.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$20.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$21.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$22.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$23.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$3.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$4.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$5.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$6.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$7.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$8.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$9.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$1.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$10.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$11.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$12.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$13.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$14.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$15.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$16.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$17.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$18.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$2.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$3.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$4.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$5.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$6.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$7.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$8.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$9.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$EdgePropery.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$VertexProperty.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$card_VP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$card_VP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$consume_at_EP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$consume_at_EP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$mchnt_cd_VP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$mchnt_cd_VP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$query_at_EP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$query_at_EP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$quxian_at_EP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$quxian_at_EP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$region_VP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$region_VP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$term_id_VP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$term_id_VP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_EP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_EP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_at_EP$.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_at_EP.class
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute.class
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$1.class
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$10.class
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$11.class
@@ -558,7 +621,7 @@ C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> C:\Us
 C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> C:\Users\Administrator\Desktop\TransNet\bin\WireFraud\StaticInOut$.class
 C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> C:\Users\Administrator\Desktop\TransNet\bin\WireFraud\StaticInOut.class
 binary dependencies:
-77 items
+79 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala -> C:\Program Files\Java\jre1.8.0_101\lib\jce.jar
@@ -598,6 +661,8 @@ C:\Users\Administrator\Desktop\TransNet\src\LoadBigHash.scala -> C:\Program File
 C:\Users\Administrator\Desktop\TransNet\src\LoadBigHash.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiGraph.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
@@ -637,7 +702,7 @@ C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticGraphx.scala -> D:\s
 C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 direct source dependencies:
-23 items
+24 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\Pregel.scala
 C:\Users\Administrator\Desktop\TransNet\src\FraudFlow\Kcorestest.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\KcoresLabel.scala
 C:\Users\Administrator\Desktop\TransNet\src\FraudFlow\StaticForConnected.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
@@ -645,6 +710,7 @@ C:\Users\Administrator\Desktop\TransNet\src\FraudFlow\StaticForConnected.scala -
 C:\Users\Administrator\Desktop\TransNet\src\FraudFlow\StaticForConnected.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\KcoresLabel.scala
 C:\Users\Administrator\Desktop\TransNet\src\FraudFlow\TestV5.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
 C:\Users\Administrator\Desktop\TransNet\src\FraudFlow\transGraph.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiGraph.scala -> C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala
 C:\Users\Administrator\Desktop\TransNet\src\TransDelta.java -> C:\Users\Administrator\Desktop\TransNet\src\TransDelta.java
@@ -676,7 +742,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-528 items
+591 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents$
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents$$anonfun$1
@@ -976,6 +1042,69 @@ C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> LoadUsingHash
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> LoadUsingHash$$anonfun$main$1
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> LoadUsingHash$$anonfun$main$2
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> LoadUsingHash$$anonfun$main$3
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$1
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$10
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$11
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$12
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$13
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$14
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$15
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$16
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$17
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$18
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$19
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$2
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$20
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$21
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$22
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$23
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$3
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$4
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$5
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$6
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$7
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$8
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$9
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$1
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$10
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$11
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$12
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$13
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$14
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$15
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$16
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$17
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$18
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$2
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$3
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$4
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$5
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$6
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$7
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$8
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$$anonfun$main$9
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$EdgePropery
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$VertexProperty
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$card_VP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$card_VP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$consume_at_EP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$consume_at_EP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$mchnt_cd_VP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$mchnt_cd_VP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$query_at_EP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$query_at_EP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$quxian_at_EP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$quxian_at_EP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$region_VP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$region_VP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$term_id_VP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$term_id_VP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$trans_EP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$trans_EP$
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$trans_at_EP
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> MultiEvent.MultiCompute$trans_at_EP$
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> MultiEvent.MultiFromHive
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> MultiEvent.MultiFromHive$
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> MultiEvent.MultiFromHive$$anonfun$1
@@ -1208,7 +1337,7 @@ C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> WireF
 used names:
 0 items
 product stamps:
-528 items
+591 items
 C:\Users\Administrator\Desktop\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$1.class -> lastModified(1486952109422)
 C:\Users\Administrator\Desktop\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$2.class -> lastModified(1486952109447)
 C:\Users\Administrator\Desktop\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$3.class -> lastModified(1486952109451)
@@ -1508,49 +1637,112 @@ C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash$$anonfun$main$2.class 
 C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash$$anonfun$main$3.class -> lastModified(1486952110653)
 C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash$.class -> lastModified(1486952110636)
 C:\Users\Administrator\Desktop\TransNet\bin\LoadUsingHash.class -> lastModified(1486952110633)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$1.class -> lastModified(1486981677480)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$10.class -> lastModified(1486981677495)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$11.class -> lastModified(1486981677495)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$12.class -> lastModified(1486981677495)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$13.class -> lastModified(1486981677495)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$14.class -> lastModified(1486981677511)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$15.class -> lastModified(1486981677511)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$16.class -> lastModified(1486981677511)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$17.class -> lastModified(1486981677511)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$18.class -> lastModified(1486981677526)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$19.class -> lastModified(1486981677526)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$2.class -> lastModified(1486981677542)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$20.class -> lastModified(1486981677542)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$21.class -> lastModified(1486981677558)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$22.class -> lastModified(1486981677558)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$23.class -> lastModified(1486981677573)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$3.class -> lastModified(1486981677573)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$4.class -> lastModified(1486981677573)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$5.class -> lastModified(1486981677589)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$6.class -> lastModified(1486981677589)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$7.class -> lastModified(1486981677589)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$8.class -> lastModified(1486981677589)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$9.class -> lastModified(1486981677604)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$1.class -> lastModified(1486981677604)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$10.class -> lastModified(1486981677604)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$11.class -> lastModified(1486981677604)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$12.class -> lastModified(1486981677620)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$13.class -> lastModified(1486981677620)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$14.class -> lastModified(1486981677620)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$15.class -> lastModified(1486981677620)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$16.class -> lastModified(1486981677636)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$17.class -> lastModified(1486981677636)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$18.class -> lastModified(1486981677636)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$2.class -> lastModified(1486981677636)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$3.class -> lastModified(1486981677636)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$4.class -> lastModified(1486981677651)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$5.class -> lastModified(1486981677651)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$6.class -> lastModified(1486981677651)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$7.class -> lastModified(1486981677667)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$8.class -> lastModified(1486981677667)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$9.class -> lastModified(1486981677667)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$.class -> lastModified(1486981677480)
-C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive.class -> lastModified(1486981677417)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$1.class -> lastModified(1487148261789)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$10.class -> lastModified(1487148261805)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$11.class -> lastModified(1487148261805)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$12.class -> lastModified(1487148261805)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$13.class -> lastModified(1487148261805)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$14.class -> lastModified(1487148261820)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$15.class -> lastModified(1487148261820)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$16.class -> lastModified(1487148261820)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$17.class -> lastModified(1487148261820)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$18.class -> lastModified(1487148261836)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$19.class -> lastModified(1487148261867)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$2.class -> lastModified(1487148261867)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$20.class -> lastModified(1487148261867)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$21.class -> lastModified(1487148261883)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$22.class -> lastModified(1487148261883)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$23.class -> lastModified(1487148261883)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$3.class -> lastModified(1487148261883)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$4.class -> lastModified(1487148261898)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$5.class -> lastModified(1487148261898)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$6.class -> lastModified(1487148261898)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$7.class -> lastModified(1487148261898)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$8.class -> lastModified(1487148261914)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$9.class -> lastModified(1487148261914)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$1.class -> lastModified(1487148261976)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$10.class -> lastModified(1487148261976)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$11.class -> lastModified(1487148261976)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$12.class -> lastModified(1487148261992)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$13.class -> lastModified(1487148261992)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$14.class -> lastModified(1487148261992)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$15.class -> lastModified(1487148261992)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$16.class -> lastModified(1487148261992)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$17.class -> lastModified(1487148262007)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$18.class -> lastModified(1487148262007)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$2.class -> lastModified(1487148262007)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$3.class -> lastModified(1487148262007)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$4.class -> lastModified(1487148262023)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$5.class -> lastModified(1487148262023)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$6.class -> lastModified(1487148262023)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$7.class -> lastModified(1487148262023)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$8.class -> lastModified(1487148262039)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$$anonfun$main$9.class -> lastModified(1487148262039)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$.class -> lastModified(1487148261773)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$card_VP$.class -> lastModified(1487148262054)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$card_VP.class -> lastModified(1487148262054)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$consume_at_EP$.class -> lastModified(1487148262054)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$consume_at_EP.class -> lastModified(1487148262070)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$EdgePropery.class -> lastModified(1487148262039)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$mchnt_cd_VP$.class -> lastModified(1487148262070)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$mchnt_cd_VP.class -> lastModified(1487148262070)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$query_at_EP$.class -> lastModified(1487148262085)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$query_at_EP.class -> lastModified(1487148262085)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$quxian_at_EP$.class -> lastModified(1487148262085)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$quxian_at_EP.class -> lastModified(1487148262101)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$region_VP$.class -> lastModified(1487148262101)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$region_VP.class -> lastModified(1487148262101)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$term_id_VP$.class -> lastModified(1487148262117)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$term_id_VP.class -> lastModified(1487148262117)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_at_EP$.class -> lastModified(1487148262132)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_at_EP.class -> lastModified(1487148262148)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_EP$.class -> lastModified(1487148262132)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$trans_EP.class -> lastModified(1487148262132)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute$VertexProperty.class -> lastModified(1487148262039)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiCompute.class -> lastModified(1487148261710)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$1.class -> lastModified(1487144518865)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$10.class -> lastModified(1487144518865)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$11.class -> lastModified(1487144518881)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$12.class -> lastModified(1487144518897)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$13.class -> lastModified(1487144518897)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$14.class -> lastModified(1487144518897)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$15.class -> lastModified(1487144518897)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$16.class -> lastModified(1487144518912)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$17.class -> lastModified(1487144518912)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$18.class -> lastModified(1487144518912)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$19.class -> lastModified(1487144518912)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$2.class -> lastModified(1487144518928)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$20.class -> lastModified(1487144518928)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$21.class -> lastModified(1487144518943)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$22.class -> lastModified(1487144518943)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$23.class -> lastModified(1487144518959)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$3.class -> lastModified(1487144518959)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$4.class -> lastModified(1487144518959)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$5.class -> lastModified(1487144518975)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$6.class -> lastModified(1487144518975)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$7.class -> lastModified(1487144518975)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$8.class -> lastModified(1487144518975)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$9.class -> lastModified(1487144518975)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$1.class -> lastModified(1487144518990)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$10.class -> lastModified(1487144518990)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$11.class -> lastModified(1487144518990)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$12.class -> lastModified(1487144518990)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$13.class -> lastModified(1487144518990)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$14.class -> lastModified(1487144518990)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$15.class -> lastModified(1487144519006)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$16.class -> lastModified(1487144519006)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$17.class -> lastModified(1487144519006)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$18.class -> lastModified(1487144519006)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$2.class -> lastModified(1487144519021)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$3.class -> lastModified(1487144519021)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$4.class -> lastModified(1487144519021)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$5.class -> lastModified(1487144519021)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$6.class -> lastModified(1487144519021)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$7.class -> lastModified(1487144519037)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$8.class -> lastModified(1487144519037)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$$anonfun$main$9.class -> lastModified(1487144519037)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive$.class -> lastModified(1487144518865)
+C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiFromHive.class -> lastModified(1487144518787)
 C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiGraph$$anonfun$1.class -> lastModified(1486977994067)
 C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiGraph$$anonfun$2.class -> lastModified(1486977994069)
 C:\Users\Administrator\Desktop\TransNet\bin\MultiEvent\MultiGraph$$anonfun$3.class -> lastModified(1486977994072)
@@ -1738,7 +1930,7 @@ C:\Users\Administrator\Desktop\TransNet\bin\WireFraud\StaticInOut$$anonfun$main$
 C:\Users\Administrator\Desktop\TransNet\bin\WireFraud\StaticInOut$.class -> lastModified(1486952110928)
 C:\Users\Administrator\Desktop\TransNet\bin\WireFraud\StaticInOut.class -> lastModified(1486952110923)
 source stamps:
-38 items
+39 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> hash(cbaa01c45ebbd1022557dd112ab30026d0f34530)
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala -> hash(77b29b228a076c3e2cc37964d87a26b99393d42a)
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\KcoresLabel.scala -> hash(189c97db21cf19ace3a41c5cf33f418a210db13c)
@@ -1758,7 +1950,8 @@ C:\Users\Administrator\Desktop\TransNet\src\GraphX.scala -> hash(95681762d51f672
 C:\Users\Administrator\Desktop\TransNet\src\JudgeHash.scala -> hash(99f56d21fe1508c708134535c07d291b063a29f3)
 C:\Users\Administrator\Desktop\TransNet\src\LoadBigHash.scala -> hash(7c33c187befc80b9d06e32a7010df73b8efe121d)
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> hash(896b390f7ce42f331881329520ebe70fc1673791)
-C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> hash(7ef5feed34c6cbfc83dec8534f41642eb2f56c08)
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> hash(862955ba77c875d0903388ad7a2d8a01240700c9)
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> hash(85aa781274fa88b347e1f2068a4856c66d85dd0d)
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiGraph.scala -> hash(db49cd6968290ceb52a4adf976f13a2f3a322e3f)
 C:\Users\Administrator\Desktop\TransNet\src\ReplaceByDict.scala -> hash(3dbe8e8b09b480b4d1781dc265a00d216178a442)
 C:\Users\Administrator\Desktop\TransNet\src\SortByTime.scala -> hash(bb8d65ad1f0e849e1bcb6b4a952874f84ffb6430)
@@ -1786,9 +1979,9 @@ class names:
 3 items
 C:\Program Files\Java\jre1.8.0_101\lib\jce.jar -> javax.crypto.Mac
 C:\Program Files\Java\jre1.8.0_101\lib\rt.jar -> java.lang.Object
-D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar -> scala.Unit
+D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar -> scala.Serializable
 internal apis:
-38 items
+39 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAEm0zmAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAhQWxnb3JpdGhtVXRpbC5Db25uZWN0ZWRDb21wb25lbnRzdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgBNdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBOc3EAfgBBdAADQW55c3EAfgBFc3EAfgBIdXEAfgBLAAAAAnNxAH4ATXQABXNjYWxhcQB+AFRwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQADUFsZ29yaXRobVV0aWxzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVo1P/rSdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABTLqgHEXrvRAiVX3REqswAm0PNFMA==
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala -> 
@@ -1827,8 +2020,10 @@ C:\Users\Administrator\Desktop\TransNet\src\LoadBigHash.scala ->
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHD8y0SGAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAALTG9hZEJpZ0hhc2h1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AUXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AD14cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AEVbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADRzcQB+AER0AAVBcnJheXEAfgBKdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AER0AAZTdHJpbmdzcQB+AEhzcQB+AEt1cQB+AE4AAAADc3EAfgBQdAAEamF2YXNxAH4AUHQABGxhbmdxAH4AVXBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgBpAAAAAnNxAH4ARHQABk9iamVjdHEAfgBtc3EAfgBEdAADQW55cQB+AEpwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFaNT/60nVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcYmludAArQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEZXNrdG9wXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUfDPBh778gLnQbjKnAQ33O47+Eh0=
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAnFV2cAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAANTG9hZFVzaW5nSGFzaHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVo1P/rSdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABSJazkPfOQvMxiBMpUg6+cPwWc3kQ==
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDwxFjBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAXTXVsdGlFdmVudC5NdWx0aUNvbXB1dGV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AUXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AD14cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AEVbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADRzcQB+AER0AAVBcnJheXEAfgBKdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AER0AAZTdHJpbmdzcQB+AEhzcQB+AEt1cQB+AE4AAAADc3EAfgBQdAAEamF2YXNxAH4AUHQABGxhbmdxAH4AVXBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgBpAAAAAnNxAH4ARHQABk9iamVjdHEAfgBtc3EAfgBEdAADQW55cQB+AEpwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQACk11bHRpRXZlbnRzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVpA8Yo0dXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABSGKVW6d8h10JAziK16LYoBJAcAyQ==
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDcDUy6AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAYTXVsdGlFdmVudC5NdWx0aUZyb21IaXZldXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AApNdWx0aUV2ZW50c3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFaNwOqbnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcYmludAArQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEZXNrdG9wXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUfvX+7TTGy/yD3shTT0FkLrL1bAg=
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDcDUy6AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAYTXVsdGlFdmVudC5NdWx0aUZyb21IaXZldXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AApNdWx0aUV2ZW50c3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFaQLgvAXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcYmludAArQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEZXNrdG9wXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUhap4EnT6iLNH4fIGikhWxm2F3Q0=
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiGraph.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBYxoGkAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAVTXVsdGlFdmVudC5NdWx0aUdyYXBodXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AApNdWx0aUV2ZW50c3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFaNstzB3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcYmludAArQzpcVXNlcnNcQWRtaW5pc3RyYXRvclxEZXNrdG9wXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU20nNaWgpDOtSpK35dvE6LzoyLj8=
 C:\Users\Administrator\Desktop\TransNet\src\ReplaceByDict.scala -> 
@@ -1868,7 +2063,7 @@ rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhf
 external apis:
 0 items
 source infos:
-38 items
+39 items
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> 
 AAAAAAAAAAA=
 C:\Users\Administrator\Desktop\TransNet\src\AlgorithmUtil\HashEncode.scala -> 
@@ -1906,6 +2101,8 @@ AAAAAAAAAAA=
 C:\Users\Administrator\Desktop\TransNet\src\LoadBigHash.scala -> 
 AAAAAAAAAAA=
 C:\Users\Administrator\Desktop\TransNet\src\LoadUsingHash.scala -> 
+AAAAAAAAAAA=
+C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiCompute.scala -> 
 AAAAAAAAAAA=
 C:\Users\Administrator\Desktop\TransNet\src\MultiEvent\MultiFromHive.scala -> 
 AAAAAAAAAAA=
@@ -1946,7 +2143,7 @@ AAAAAAAAAAA=
 C:\Users\Administrator\Desktop\TransNet\src\WireFraud\StaticInOut.scala -> 
 AAAAAAAAAAA=
 compilations:
-257 items
+259 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGFkvnt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGFl+Sx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGF7EAN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
@@ -2204,3 +2401,5 @@ compilations:
 254 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWjbNhpZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 255 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWjbUUW91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 256 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWjcDqm51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
+257 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWkC4LwF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
+258 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWkDxijR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
