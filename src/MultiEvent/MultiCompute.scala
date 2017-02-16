@@ -358,7 +358,7 @@ object MultiCompute {
 	        }
 	        
 	        case "trans_at" => {
-	           val edgeType = "trans_to" 
+	           val edgeType = "trans_at" 
 	           val trans_to_EP = ea.trans_to_EP
              val trans_at_EP = new trans_at_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at) 
              val quxian_at_EP = ea.quxian_at_EP
@@ -368,7 +368,7 @@ object MultiCompute {
 	        }
 	        
 	        case "quxian_at" => {
-	           val edgeType = "trans_to" 
+	           val edgeType = "quxian_at" 
 	           val trans_to_EP = ea.trans_to_EP
 	           val trans_at_EP = ea.trans_at_EP
              val quxian_at_EP = new quxian_at_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at)
@@ -378,7 +378,7 @@ object MultiCompute {
 	        }
 	        
 	        case "query_at" => {
-	           val edgeType = "trans_to" 
+	           val edgeType = "query_at" 
 	           val trans_to_EP = ea.trans_to_EP
 	           val trans_at_EP = ea.trans_at_EP
              val quxian_at_EP = ea.quxian_at_EP
@@ -388,7 +388,7 @@ object MultiCompute {
 	        }
 	        
 	        case "consume_at" => {
-	           val edgeType = "trans_to" 
+	           val edgeType = "consume_at" 
 	           val trans_to_EP = ea.trans_to_EP
 	           val trans_at_EP = ea.trans_at_EP
              val quxian_at_EP = ea.quxian_at_EP
@@ -404,15 +404,15 @@ object MultiCompute {
      println("Ggraph Edge Num is: " + Ggraph.numEdges)
     
      println("trans_to edges:")
-     Ggraph.edges.filter(f=>f.attr.edgeType.equals("trans_to")).take(20).foreach(println)
+     Ggraph.edges.filter(f=>f.attr.edgeType.equals("trans_to")).take(50).foreach(println)
      println("trans_at edges:")
-     Ggraph.edges.filter(f=>f.attr.edgeType.equals("trans_at")).take(2).foreach(println)
+     Ggraph.edges.filter(f=>f.attr.edgeType.equals("trans_at")).take(50).foreach(println)
      println("quxian_at edges:")
-     Ggraph.edges.filter(f=>f.attr.edgeType.equals("quxian_at")).take(2).foreach(println)
+     Ggraph.edges.filter(f=>f.attr.edgeType.equals("quxian_at")).take(50).foreach(println)
      println("query_at edges:")
-     Ggraph.edges.filter(f=>f.attr.edgeType.equals("query_at")).take(2).foreach(println) 
+     Ggraph.edges.filter(f=>f.attr.edgeType.equals("query_at")).take(50).foreach(println) 
      println("consume_at edges:")
-     Ggraph.edges.filter(f=>f.attr.edgeType.equals("consume_at")).take(2).foreach(println) 
+     Ggraph.edges.filter(f=>f.attr.edgeType.equals("consume_at")).take(50).foreach(println) 
     
     sc.stop()
     
