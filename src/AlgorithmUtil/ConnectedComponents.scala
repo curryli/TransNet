@@ -20,8 +20,8 @@ object ConnectedComponents {
    */
   def run[VD: ClassTag, ED: ClassTag](graph: Graph[VD, ED]): Graph[VertexId, ED] = {
     val ccGraph = graph.mapVertices { case (vid, _) => vid }
-    println("Edges Count:\t"+ccGraph.edges.count)
-    println("Vertex Count:\t"+ccGraph.vertices.count)
+//    println("Edges Count:\t"+ccGraph.edges.count)
+//    println("Vertex Count:\t"+ccGraph.vertices.count)
     def sendMessage(edge: EdgeTriplet[VertexId, ED]): Iterator[(VertexId, VertexId)] = {
       if (edge.srcAttr < edge.dstAttr) {
         Iterator((edge.dstId, edge.srcAttr))

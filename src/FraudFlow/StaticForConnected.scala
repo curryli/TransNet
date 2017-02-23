@@ -105,7 +105,9 @@ object StaticForConnected {
 //    println("need2 graph")
 //    graph.edges.filter(f=>f.attr._8.toInt>1).take(5).foreach(println)
     
-    
+    println("graph Vertex Num is: " + graph.numVertices)
+    println("graph Edge Num is: " + graph.numEdges)
+     
     val tempDegGraph = graph.outerJoinVertices(graph.degrees){
       (vid, encard, DegOpt) => (encard, DegOpt.getOrElse(0))
     }

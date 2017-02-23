@@ -345,11 +345,12 @@ object MultiCompute {
     
     //groupedges  只对 srcId和dstId都相相等的边进行合并， 而由于顶点是唯一的，所以srcId和dstId都相当的两条边不会出现不同类型的边，所以可以放心合并
  
-    var Ggraph = graph.groupEdges((ea,eb) => 
+     var Ggraph = graph.groupEdges((ea,eb) => 
        ea.edgeType match {
 	        case "trans_to" => {
 	           val edgeType = "trans_to" 
-	           val trans_to_EP = new trans_to_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at)
+	           val trans_to_EP = new trans_to_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, 
+	               ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at )
              val trans_at_EP = ea.trans_at_EP
              val quxian_at_EP = ea.quxian_at_EP
              val query_at_EP =  ea.query_at_EP
@@ -360,7 +361,8 @@ object MultiCompute {
 	        case "trans_at" => {
 	           val edgeType = "trans_at" 
 	           val trans_to_EP = ea.trans_to_EP
-             val trans_at_EP = new trans_at_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at) 
+             val trans_at_EP = new trans_at_EP(ea.trans_at_EP.money+eb.trans_at_EP.money, ea.trans_at_EP.date, ea.trans_at_EP.loc_trans_tm,
+                 ea.trans_at_EP.trans_md, ea.trans_at_EP.total_disc_at+eb.trans_at_EP.total_disc_at ) 
              val quxian_at_EP = ea.quxian_at_EP
              val query_at_EP =  ea.query_at_EP
              val consume_at_EP = ea.consume_at_EP
@@ -371,7 +373,8 @@ object MultiCompute {
 	           val edgeType = "quxian_at" 
 	           val trans_to_EP = ea.trans_to_EP
 	           val trans_at_EP = ea.trans_at_EP
-             val quxian_at_EP = new quxian_at_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at)
+             val quxian_at_EP = new quxian_at_EP(ea.quxian_at_EP.money+eb.quxian_at_EP.money, ea.quxian_at_EP.date, ea.quxian_at_EP.loc_trans_tm,
+                 ea.quxian_at_EP.trans_md, ea.quxian_at_EP.total_disc_at+eb.quxian_at_EP.total_disc_at )
              val query_at_EP =  ea.query_at_EP
              val consume_at_EP = ea.consume_at_EP
              new Edge_Property_Class(edgeType,trans_to_EP,trans_at_EP,quxian_at_EP,query_at_EP,consume_at_EP)
@@ -382,7 +385,8 @@ object MultiCompute {
 	           val trans_to_EP = ea.trans_to_EP
 	           val trans_at_EP = ea.trans_at_EP
              val quxian_at_EP = ea.quxian_at_EP
-             val query_at_EP = new query_at_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at)
+             val query_at_EP = new query_at_EP(ea.query_at_EP.money+eb.query_at_EP.money, ea.query_at_EP.date, ea.query_at_EP.loc_trans_tm, 
+                 ea.query_at_EP.trans_md, ea.query_at_EP.total_disc_at+eb.query_at_EP.total_disc_at )
              val consume_at_EP = ea.consume_at_EP
              new Edge_Property_Class(edgeType,trans_to_EP,trans_at_EP,quxian_at_EP,query_at_EP,consume_at_EP)
 	        }
@@ -393,14 +397,14 @@ object MultiCompute {
 	           val trans_at_EP = ea.trans_at_EP
              val quxian_at_EP = ea.quxian_at_EP
              val query_at_EP = ea.query_at_EP
-             val consume_at_EP = new consume_at_EP(ea.trans_to_EP.money+eb.trans_to_EP.money, ea.trans_to_EP.date, ea.trans_to_EP.loc_trans_tm, ea.trans_to_EP.trans_md, ea.trans_to_EP.total_disc_at+eb.trans_to_EP.total_disc_at)
+             val consume_at_EP = new consume_at_EP(ea.consume_at_EP.money+eb.consume_at_EP.money, ea.consume_at_EP.date, ea.consume_at_EP.loc_trans_tm,
+                 ea.consume_at_EP.trans_md, ea.consume_at_EP.total_disc_at+eb.consume_at_EP.total_disc_at )
              new Edge_Property_Class(edgeType,trans_to_EP,trans_at_EP,quxian_at_EP,query_at_EP,consume_at_EP)
 	        }
-	        
-	        case _ => {throw new IllegalStateException("invalid StateException!")}
+         
+	       case _ => {throw new IllegalStateException("invalid StateException!")}
 	      }
      )
-     
      println("Ggraph Edge Num is: " + Ggraph.numEdges)
     
      println("trans_to edges:")
