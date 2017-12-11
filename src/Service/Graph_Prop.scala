@@ -17,8 +17,8 @@ import scala.collection.mutable
 import scala.collection.mutable.HashSet
 
 object Graph_Prop { 
-   private val startDate = "20170107"
-   private val endDate = "20170107"
+   private val startDate = "20170101"
+   private val endDate = "20170101"
    private val KMax = 10
    
   
@@ -116,6 +116,8 @@ object Graph_Prop {
           charge = line.getDouble(18)/100
         }catch{  
            case e: java.lang.ClassCastException => charge = 0.0
+           case e2: java.lang.NullPointerException => charge = 0.0
+           
         }
         
         Edge(srcId, dstId, (1, money, charge, isnight, isForeign,    card_class, mchnt_tp, trans_chnl, acpt_ins_tp, resp_cd4,  acpt_bank, mchnt_cd, term_id, fwd_ins_id_cd, rcv_ins_id_cd ))
@@ -124,7 +126,7 @@ object Graph_Prop {
     }
     
     var origraph = Graph(verticeRDD, edgeRDD).partitionBy(PartitionStrategy.RandomVertexCut)    //必须在调用groupEdges之前调用Graph.partitionBy 。
-    
+   
     println("origraph")
     println("origraph Vertex Num is: " + origraph.numVertices)
     println("origraph Edge Num is: " + origraph.numEdges)
@@ -215,7 +217,7 @@ object Graph_Prop {
       (vid, encard, DegOpt) => (encard, DegOpt.getOrElse(0))
     }
      
-     //去除边出入度和为2的图
+     //去除边出入度和为2的图      顶点为(顶点名称，度数)
     var coregraph = tempDegGraph.subgraph(epred = triplet => (triplet.srcAttr._2 + triplet.dstAttr._2) > 2) 
  
     println("coregraph done.")
@@ -261,7 +263,7 @@ object Graph_Prop {
     var joinedDF = cVDF.join(cCDF, cVDF("cc") === cCDF("cc"), "left_outer").drop(cVDF("cc"))
     joinedDF.show(5)  //(vid,顶点名称，对应团体, 规模) 
 
-    val VidconnectedCount = joinedDF.map(row=>(row.getLong(0), (row.getString(1),row.getLong(2),row.getInt(3))))
+    val VidconnectedCount = joinedDF.map(row=>(row.getLong(0), (row.getString(1),row.getLong(2),row.getInt(3))))  //(vid,顶点名称，对应团体,团体规模)
 
     println("create VidconnectedCount done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes.")
     VidconnectedCount.take(5).foreach(println)
@@ -269,7 +271,7 @@ object Graph_Prop {
     //VidconnectedCount    RDD(Vid, (顶点名称(即原密卡号)，对应团体, 对应团体规模)) 
 
     val cCountgraph = coregraph.outerJoinVertices(VidconnectedCount){
-      (vid, oldProperty, vccCountprop) => vccCountprop.getOrElse(("0",0L,0))
+      (vid, oldProperty, vccCountprop) => vccCountprop.getOrElse(("0",0L,0))       //这里把顶点名称和度数扔了，只保留   (顶点名称，对应团体,团体规模)
     }
      // cCountgraph 的顶点属性为  (vid,原密卡号，对应团体, 对应团体规模)
     println("create cCountgraph done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes.")
@@ -322,12 +324,12 @@ object Graph_Prop {
     var InOutDF = sumInVDF.join(sumOutVDF, sumInVDF("vid") === sumOutVDF("vid"), "left_outer").drop(sumInVDF("vid"))
     InOutDF.show(10)
     InOutDF = InOutDF.filter(InOutDF("sumIn").isNotNull &&  InOutDF("sumOut").isNotNull )
-    val pureSum = InOutDF.map(row=>(row.getLong(1), (math.abs(row.getLong(0)-row.getLong(2)), math.abs(row.getLong(0)-row.getLong(2))/math.abs(row.getLong(0)+row.getLong(2)))))
+    val pureSum = InOutDF.map(row=>(row.getLong(1), (math.abs(row.getDouble(0)-row.getDouble(2)), math.abs(row.getDouble(0)-row.getDouble(2))/math.abs(row.getDouble(0)+row.getDouble(2)))))
     
  
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
     val tempGraph3 = tempGraph2.outerJoinVertices(pureSum){
-      (vid, oldProperty, pureSumOpt) => (oldProperty._1, oldProperty._2, oldProperty._3, oldProperty._4, oldProperty._5, oldProperty._6,  pureSumOpt.getOrElse((9999L,9999L))) 
+      (vid, oldProperty, pureSumOpt) => (oldProperty._1, oldProperty._2, oldProperty._3, oldProperty._4, oldProperty._5, oldProperty._6,  pureSumOpt.getOrElse((9999.0,9999.0))) 
     }    
     
     //  (vid,原密卡号，对应团体, 对应团体规模，maxKcoreLabel,入度,出度, 净流通金额)
@@ -348,7 +350,9 @@ object Graph_Prop {
       val outDeg = f._2._6
       val degree = inDeg + outDeg
       
-      val transNode = if(f._2._7._1.get < 500 || f._2._7._2.get < 0.01 ) 1 else 0 
+      val a = f._2._7
+      
+      val transNode = if(f._2._7._1 < 500 || f._2._7._2< 0.01 ) 1 else 0 
  
       
       (ccLabel, (ccCount, KcoreLabel, inDeg, outDeg, degree, BigK, transNode))
@@ -456,27 +460,27 @@ object Graph_Prop {
   
       
     val ccEdgeRdd = ccEdgeGroupRdd.leftOuterJoin(regionCdRdd).map(f => {
-      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3,f._2._1._4, f._2._1._5, f._2._2.getOrElse(0)))
+      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3,f._2._1._4, f._2._1._5,f._2._1._6, f._2._1._7, f._2._1._8, f._2._1._9,f._2._1._10, f._2._1._11,f._2._1._12, f._2._1._13, f._2._2.getOrElse(0)))
     }).leftOuterJoin(mchntTpRdd).map(f => {
-      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._2.getOrElse(0)))
+      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7, f._2._1._8, f._2._1._9,f._2._1._10, f._2._1._11,f._2._1._12, f._2._1._13,f._2._1._14,f._2._2.getOrElse(0)))
     }).leftOuterJoin(mchntCdRdd).map(f => {
-      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7, f._2._2.getOrElse(0)))
+      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7,f._2._1._8, f._2._1._9,f._2._1._10, f._2._1._11,f._2._1._12, f._2._1._13,f._2._1._14, f._2._1._15, f._2._2.getOrElse(0)))
     }).leftOuterJoin(addrCdRdd).map(f => {
-      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7, f._2._1._8, f._2._2.getOrElse(0)))
+      (f._1, (f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7, f._2._1._8,f._2._1._9,f._2._1._10, f._2._1._11,f._2._1._12, f._2._1._13,f._2._1._14, f._2._1._15, f._2._1._16, f._2._2.getOrElse(0)))
     })  
     
     ccEdgeRdd.take(5).foreach(println)  
     
     var ccgraphRdd = ccVerticeRdd.leftOuterJoin(ccEdgeRdd).map(f => {
-      val eProp = f._2._2.getOrElse("N","N","N","N","N","N","N","N","N")
+      val eProp = f._2._2.getOrElse("N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N","N")
       (f._1, f._2._1._1, f._2._1._2, f._2._1._3, f._2._1._4, f._2._1._5, f._2._1._6, f._2._1._7, 
-        eProp._1, eProp._2, eProp._3, eProp._4, eProp._5, eProp._6, eProp._7, eProp._8, eProp._9)
+        eProp._1, eProp._2, eProp._3, eProp._4, eProp._5,  eProp._7, eProp._8,   eProp._11, eProp._12, eProp._13, eProp._14, eProp._15, eProp._16, eProp._17) //不能超过23个
     }) 
      
     ccgraphRdd = ccgraphRdd.filter(f=>f._1 != 0L)
     
     //ccLabel, 团体规模, 最大K, 最大入度, 最大出度, 最大度, BigK数目, 过渡节点数
-    // 总交易金额, 总交易次数, 总异地交易次数, 总跨境交易次数，总手续费， 交易省市总数，商户类型总数，商户代码总数，交易地点总数
+    // transCount,money,charge,nightCount,foreignCount,   most_mchnt_tp,most_trans_chnl,  acpt_bank_discnt,mchnt_cd_discnt,term_id_discnt,fwd_ins_id_cd_discnt,rcv_ins_id_cd_discnt
     
 //ccLabel,ccNum, maxK, maxInDeg, maxOutDeg, maxDeg, BigKNum, TransNum, totalMoney, totalTransCount, foreignCount, nightCount, charge, regionCount, mchnttpCount, mchntcdCount, addrDetailCount
 
@@ -486,6 +490,35 @@ object Graph_Prop {
     
     //ccgraphRdd.saveAsTextFile("xrli/TeleFraud/" + startDate + "_" + (endDate.toLong-startDate.toLong).toString()  + "/graphProp")
      
+    
+    
+    
+    var filtered_cc_rdd = ccgraphRdd.filter(f=>(f._1 > 200) & 
+                                       (f._2 > 5 )  & 
+                                       (f._5 > 50))
+                                       
+//    var filtered_ccs = filtered_cc_rdd.distinct.map(_._1)
+//      
+//    println("filtered_ccs count: " +  filtered_ccs.count())
+//    
+//    for(cc<-filtered_ccs){
+//        var subG = cCountgraph.subgraph(vpred = (id, property) => property._2.equals(cc),   // cCountgraph  property: (顶点名称，对应团体,团体规模)
+//        epred = epred => epred.srcAttr._2.equals(cc) || epred.dstAttr._2.equals(cc)) 
+//        
+//        println("subG.vertices.count(): " +  subG.vertices.count())
+//        subG.unpersist(blocking = false)
+//    }
+    
+    var filtered_ccs = filtered_cc_rdd.distinct.map(_._1).collect().toSeq.toSet
+    
+    var subG = cCountgraph.subgraph(vpred = (id, property) =>  filtered_ccs.contains(property._2), 
+                                    epred = epred => filtered_ccs.contains(epred.srcAttr._2) || filtered_ccs.contains(epred.dstAttr._2)) 
+    
+    
+    println("subG.vertices.count(): " +  subG.vertices.count()) 
+    
+    
+    
     println("All flow done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes.")
     
 
