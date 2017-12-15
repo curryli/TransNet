@@ -28,7 +28,7 @@ name hashing:
 1 items
 0 -> false
 products:
-801 items
+953 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$1.class
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$2.class
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$3.class
@@ -682,7 +682,11 @@ D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\Tra
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$65.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$66.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$67.class
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$68.class
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$69.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$7.class
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$70.class
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$71.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$8.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$9$$anonfun$apply$10.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$9.class
@@ -699,6 +703,154 @@ D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\Tra
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator3$1.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop$.class
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\bin\Service\Graph_Prop.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$10.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$11.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$12.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$2.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$3.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$4.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$5.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$6.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$7.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$8$$anonfun$apply$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$8.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$9.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator1$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator10$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator2$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator3$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator4$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator5$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator6$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator7$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator8$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator9$1.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$.class
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$10.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$11.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$12$$anonfun$apply$10.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$12.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$13.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$14.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$15.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$16$$anonfun$apply$11.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$16.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$17.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$18.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$19.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$2.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$20$$anonfun$apply$12.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$20.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$21.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$22.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$23.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$24$$anonfun$apply$13.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$24.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$25.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$26.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$27.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$28$$anonfun$apply$14.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$28.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$29.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$3.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$30.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$31$$anonfun$apply$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$31.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$32.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$33.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$34.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$35.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$36.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$37.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$38.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$39.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$4.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$40.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$41$$anonfun$apply$15.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$41.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$42$$anonfun$apply$3.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$42.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$43$$anonfun$apply$4.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$43.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$44$$anonfun$apply$5.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$44.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$45.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$46.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$47.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$48$$anonfun$apply$16.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$48.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$49.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$5.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$50.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$51.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$52.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$53.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$54.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$55.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$56.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$57.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$58.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$59.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$6.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$60.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$61$$anonfun$apply$6.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$61.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$62$$anonfun$apply$7.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$62.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$63$$anonfun$apply$8.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$63.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$64$$anonfun$apply$9.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$64.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$65$$anonfun$66.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$65.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$67.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$68.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$69.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$7.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$70.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$71.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$72.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$73.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$74.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$75.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$76.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$77.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$78.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$79.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$8.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$80$$anonfun$apply$17.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$80.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$81.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$82.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$83.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$84.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$9.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$2.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$3$$anonfun$apply$2.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$3.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$4.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$5.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$6.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$7.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator1$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator10$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator11$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator12$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator13$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator2$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator3$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator4$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator5$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator6$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator7$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator8$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator9$1.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices$.class
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\bin\Service\SusVertices.class
 D:\githubProjects\TransNet\src\SortByTime.scala -> D:\githubProjects\TransNet\bin\MultiSort.class
 D:\githubProjects\TransNet\src\SortByTime.scala -> D:\githubProjects\TransNet\bin\SortByTime$$anonfun$1.class
 D:\githubProjects\TransNet\src\SortByTime.scala -> D:\githubProjects\TransNet\bin\SortByTime$$anonfun$BKDRHash$1.class
@@ -831,7 +983,7 @@ D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\githubProjects\
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\githubProjects\TransNet\bin\WireFraud\StaticInOut$.class
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\githubProjects\TransNet\bin\WireFraud\StaticInOut.class
 binary dependencies:
-71 items
+75 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> C:\Program Files\Java\jre1.8.0_101\lib\jce.jar
@@ -887,6 +1039,10 @@ D:\githubProjects\TransNet\src\ReplaceByDict.scala -> C:\Program Files\Java\jre1
 D:\githubProjects\TransNet\src\ReplaceByDict.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\SortByTime.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\SortByTime.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\SortDegree.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
@@ -904,7 +1060,7 @@ D:\githubProjects\TransNet\src\WireFraud\StaticGraphx.scala -> D:\scala-SDK-4.3.
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 direct source dependencies:
-16 items
+19 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\Pregel.scala
 D:\githubProjects\TransNet\src\FraudFlow\Kcorestest.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
 D:\githubProjects\TransNet\src\FraudFlow\StaticForConnected.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
@@ -921,6 +1077,9 @@ D:\githubProjects\TransNet\src\MultiEvent\StaticGraph.scala -> D:\githubProjects
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
 direct external dependencies:
 0 items
 public inherited source dependencies:
@@ -936,7 +1095,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-801 items
+953 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents$
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents$$anonfun$1
@@ -1592,7 +1751,11 @@ D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$a
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$65
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$66
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$67
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$68
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$69
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$7
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$70
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$71
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$8
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$9
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$anonfun$9$$anonfun$apply$10
@@ -1607,6 +1770,154 @@ D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$a
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$typecreator1$1
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$typecreator2$1
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> Service.Graph_Prop$$typecreator3$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$10
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$11
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$12
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$2
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$3
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$4
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$5
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$6
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$7
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$8
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$8$$anonfun$apply$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$anonfun$9
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator1$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator10$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator2$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator3$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator4$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator5$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator6$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator7$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator8$1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> Service.Merge_vertice_prop$$typecreator9$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$10
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$11
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$12
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$12$$anonfun$apply$10
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$13
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$14
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$15
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$16
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$16$$anonfun$apply$11
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$17
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$18
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$19
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$2
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$20
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$20$$anonfun$apply$12
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$21
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$22
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$23
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$24
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$24$$anonfun$apply$13
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$25
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$26
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$27
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$28
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$28$$anonfun$apply$14
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$29
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$3
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$30
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$31
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$31$$anonfun$apply$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$32
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$33
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$34
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$35
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$36
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$37
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$38
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$39
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$4
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$40
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$41
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$41$$anonfun$apply$15
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$42
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$42$$anonfun$apply$3
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$43
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$43$$anonfun$apply$4
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$44
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$44$$anonfun$apply$5
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$45
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$46
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$47
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$48
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$48$$anonfun$apply$16
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$49
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$5
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$50
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$51
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$52
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$53
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$54
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$55
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$56
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$57
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$58
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$59
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$6
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$60
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$61
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$61$$anonfun$apply$6
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$62
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$62$$anonfun$apply$7
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$63
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$63$$anonfun$apply$8
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$64
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$64$$anonfun$apply$9
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$65
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$65$$anonfun$66
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$67
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$68
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$69
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$7
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$70
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$71
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$72
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$73
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$74
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$75
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$76
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$77
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$78
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$79
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$8
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$80
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$80$$anonfun$apply$17
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$81
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$82
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$83
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$84
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$9
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$2
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$3
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$3$$anonfun$apply$2
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$4
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$5
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$6
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$anonfun$main$7
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator1$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator10$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator11$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator12$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator13$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator2$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator3$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator4$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator5$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator6$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator7$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator8$1
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> Service.SusVertices$$typecreator9$1
 D:\githubProjects\TransNet\src\SortByTime.scala -> MultiSort
 D:\githubProjects\TransNet\src\SortByTime.scala -> SortByTime
 D:\githubProjects\TransNet\src\SortByTime.scala -> SortByTime$
@@ -1741,7 +2052,7 @@ D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> WireFraud.StaticIn
 used names:
 0 items
 product stamps:
-801 items
+953 items
 D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$1.class -> lastModified(1491887226706)
 D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$2.class -> lastModified(1491887226710)
 D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$3.class -> lastModified(1491887226712)
@@ -2318,101 +2629,253 @@ D:\githubProjects\TransNet\bin\ReplaceByDict$$anonfun$2.class -> lastModified(14
 D:\githubProjects\TransNet\bin\ReplaceByDict$$anonfun$3.class -> lastModified(1491887228013)
 D:\githubProjects\TransNet\bin\ReplaceByDict$.class -> lastModified(1491887228008)
 D:\githubProjects\TransNet\bin\ReplaceByDict.class -> lastModified(1491887228006)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$1.class -> lastModified(1512974396381)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$10.class -> lastModified(1512974396389)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$11.class -> lastModified(1512974396393)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$12.class -> lastModified(1512974396397)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$13$$anonfun$apply$11.class -> lastModified(1512974396406)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$13.class -> lastModified(1512974396401)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$14.class -> lastModified(1512974396410)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$15.class -> lastModified(1512974396414)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$16.class -> lastModified(1512974396417)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$17$$anonfun$apply$12.class -> lastModified(1512974396425)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$17.class -> lastModified(1512974396421)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$18.class -> lastModified(1512974396429)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$19.class -> lastModified(1512974396433)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$2.class -> lastModified(1512974396437)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$20.class -> lastModified(1512974396441)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$21$$anonfun$apply$13.class -> lastModified(1512974396450)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$21.class -> lastModified(1512974396445)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$22.class -> lastModified(1512974396454)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$23.class -> lastModified(1512974396458)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$24.class -> lastModified(1512974396463)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$25$$anonfun$apply$14.class -> lastModified(1512974396473)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$25.class -> lastModified(1512974396469)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$26.class -> lastModified(1512974396477)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$27.class -> lastModified(1512974396485)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$28$$anonfun$apply$1.class -> lastModified(1512974396494)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$28.class -> lastModified(1512974396490)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$29.class -> lastModified(1512974396500)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$3.class -> lastModified(1512974396504)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$30.class -> lastModified(1512974396510)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$31.class -> lastModified(1512974396515)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$32.class -> lastModified(1512974396519)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$33.class -> lastModified(1512974396523)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$34.class -> lastModified(1512974396528)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$35.class -> lastModified(1512974396533)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$36.class -> lastModified(1512974396538)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$37.class -> lastModified(1512974396542)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$38$$anonfun$apply$15.class -> lastModified(1512974396553)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$38.class -> lastModified(1512974396548)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$39$$anonfun$apply$3.class -> lastModified(1512974396561)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$39.class -> lastModified(1512974396557)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$4.class -> lastModified(1512974396565)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$40$$anonfun$apply$4.class -> lastModified(1512974396572)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$40.class -> lastModified(1512974396569)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$41$$anonfun$apply$5.class -> lastModified(1512974396580)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$41.class -> lastModified(1512974396577)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$42.class -> lastModified(1512974396585)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$43.class -> lastModified(1512974396590)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$44.class -> lastModified(1512974396594)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$45$$anonfun$apply$16.class -> lastModified(1512974396603)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$45.class -> lastModified(1512974396599)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$46.class -> lastModified(1512974396610)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$47.class -> lastModified(1512974396617)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$48.class -> lastModified(1512974396624)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$49.class -> lastModified(1512974396633)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$5.class -> lastModified(1512974396638)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$50.class -> lastModified(1512974396644)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$51.class -> lastModified(1512974396652)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$52.class -> lastModified(1512974396658)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$53.class -> lastModified(1512974396663)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$54.class -> lastModified(1512974396668)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$55.class -> lastModified(1512974396672)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$56.class -> lastModified(1512974396675)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$57.class -> lastModified(1512974396679)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$58$$anonfun$apply$6.class -> lastModified(1512974396688)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$58.class -> lastModified(1512974396684)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$59$$anonfun$apply$7.class -> lastModified(1512974396697)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$59.class -> lastModified(1512974396693)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$6.class -> lastModified(1512974396708)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$60$$anonfun$apply$8.class -> lastModified(1512974396717)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$60.class -> lastModified(1512974396714)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$61$$anonfun$apply$9.class -> lastModified(1512974396726)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$61.class -> lastModified(1512974396722)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$62$$anonfun$63.class -> lastModified(1512974396734)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$62.class -> lastModified(1512974396731)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$64.class -> lastModified(1512974396738)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$65.class -> lastModified(1512974396742)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$66.class -> lastModified(1512974396745)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$67.class -> lastModified(1512974396749)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$7.class -> lastModified(1512974396753)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$8.class -> lastModified(1512974396756)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$9$$anonfun$apply$10.class -> lastModified(1512974396764)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$9.class -> lastModified(1512974396760)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$1.class -> lastModified(1512974396768)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$2.class -> lastModified(1512974396772)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$3$$anonfun$apply$2.class -> lastModified(1512974396780)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$3.class -> lastModified(1512974396776)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$4.class -> lastModified(1512974396784)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$5.class -> lastModified(1512974396788)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$6.class -> lastModified(1512974396792)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$7.class -> lastModified(1512974396796)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator1$1.class -> lastModified(1512974396804)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator2$1.class -> lastModified(1512974396809)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator3$1.class -> lastModified(1512974396814)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop$.class -> lastModified(1512974396372)
-D:\githubProjects\TransNet\bin\Service\Graph_Prop.class -> lastModified(1512974396273)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$1.class -> lastModified(1513330259878)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$10.class -> lastModified(1513330259889)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$11.class -> lastModified(1513330259897)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$12.class -> lastModified(1513330259909)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$13$$anonfun$apply$11.class -> lastModified(1513330259921)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$13.class -> lastModified(1513330259916)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$14.class -> lastModified(1513330259928)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$15.class -> lastModified(1513330259932)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$16.class -> lastModified(1513330259935)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$17$$anonfun$apply$12.class -> lastModified(1513330259969)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$17.class -> lastModified(1513330259957)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$18.class -> lastModified(1513330259973)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$19.class -> lastModified(1513330259978)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$2.class -> lastModified(1513330259984)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$20.class -> lastModified(1513330259987)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$21$$anonfun$apply$13.class -> lastModified(1513330260000)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$21.class -> lastModified(1513330259994)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$22.class -> lastModified(1513330260005)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$23.class -> lastModified(1513330260011)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$24.class -> lastModified(1513330260015)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$25$$anonfun$apply$14.class -> lastModified(1513330260030)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$25.class -> lastModified(1513330260026)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$26.class -> lastModified(1513330260035)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$27.class -> lastModified(1513330260046)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$28$$anonfun$apply$1.class -> lastModified(1513330260073)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$28.class -> lastModified(1513330260051)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$29.class -> lastModified(1513330260078)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$3.class -> lastModified(1513330260082)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$30.class -> lastModified(1513330260085)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$31.class -> lastModified(1513330260089)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$32.class -> lastModified(1513330260093)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$33.class -> lastModified(1513330260096)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$34.class -> lastModified(1513330260101)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$35.class -> lastModified(1513330260105)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$36.class -> lastModified(1513330260115)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$37.class -> lastModified(1513330260120)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$38$$anonfun$apply$15.class -> lastModified(1513330260128)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$38.class -> lastModified(1513330260125)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$39$$anonfun$apply$3.class -> lastModified(1513330260140)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$39.class -> lastModified(1513330260132)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$4.class -> lastModified(1513330260144)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$40$$anonfun$apply$4.class -> lastModified(1513330260152)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$40.class -> lastModified(1513330260149)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$41$$anonfun$apply$5.class -> lastModified(1513330260160)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$41.class -> lastModified(1513330260156)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$42.class -> lastModified(1513330260164)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$43.class -> lastModified(1513330260168)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$44.class -> lastModified(1513330260172)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$45$$anonfun$apply$16.class -> lastModified(1513330260180)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$45.class -> lastModified(1513330260177)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$46.class -> lastModified(1513330260187)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$47.class -> lastModified(1513330260194)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$48.class -> lastModified(1513330260201)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$49.class -> lastModified(1513330260208)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$5.class -> lastModified(1513330260212)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$50.class -> lastModified(1513330260231)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$51.class -> lastModified(1513330260243)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$52.class -> lastModified(1513330260248)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$53.class -> lastModified(1513330260255)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$54.class -> lastModified(1513330260259)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$55.class -> lastModified(1513330260262)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$56.class -> lastModified(1513330260266)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$57.class -> lastModified(1513330260271)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$58$$anonfun$apply$6.class -> lastModified(1513330260282)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$58.class -> lastModified(1513330260278)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$59$$anonfun$apply$7.class -> lastModified(1513330260293)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$59.class -> lastModified(1513330260288)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$6.class -> lastModified(1513330260310)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$60$$anonfun$apply$8.class -> lastModified(1513330260321)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$60.class -> lastModified(1513330260315)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$61$$anonfun$apply$9.class -> lastModified(1513330260329)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$61.class -> lastModified(1513330260326)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$62$$anonfun$63.class -> lastModified(1513330260338)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$62.class -> lastModified(1513330260334)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$64.class -> lastModified(1513330260341)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$65.class -> lastModified(1513330260345)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$66.class -> lastModified(1513330260349)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$67.class -> lastModified(1513330260354)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$68.class -> lastModified(1513330260358)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$69.class -> lastModified(1513330260362)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$7.class -> lastModified(1513330260365)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$70.class -> lastModified(1513330260370)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$71.class -> lastModified(1513330260373)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$8.class -> lastModified(1513330260377)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$9$$anonfun$apply$10.class -> lastModified(1513330260384)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$9.class -> lastModified(1513330260380)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$1.class -> lastModified(1513330260388)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$2.class -> lastModified(1513330260393)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$3$$anonfun$apply$2.class -> lastModified(1513330260401)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$3.class -> lastModified(1513330260397)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$4.class -> lastModified(1513330260405)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$5.class -> lastModified(1513330260409)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$6.class -> lastModified(1513330260412)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$anonfun$main$7.class -> lastModified(1513330260415)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator1$1.class -> lastModified(1513330260422)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator2$1.class -> lastModified(1513330260426)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$$typecreator3$1.class -> lastModified(1513330260430)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop$.class -> lastModified(1513330259868)
+D:\githubProjects\TransNet\bin\Service\Graph_Prop.class -> lastModified(1513330259718)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$1.class -> lastModified(1513330260464)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$10.class -> lastModified(1513330260468)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$11.class -> lastModified(1513330260472)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$12.class -> lastModified(1513330260476)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$2.class -> lastModified(1513330260479)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$3.class -> lastModified(1513330260487)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$4.class -> lastModified(1513330260491)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$5.class -> lastModified(1513330260495)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$6.class -> lastModified(1513330260499)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$7.class -> lastModified(1513330260503)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$8$$anonfun$apply$1.class -> lastModified(1513330260515)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$8.class -> lastModified(1513330260508)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$anonfun$9.class -> lastModified(1513330260518)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator1$1.class -> lastModified(1513330260522)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator10$1.class -> lastModified(1513330260526)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator2$1.class -> lastModified(1513330260530)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator3$1.class -> lastModified(1513330260537)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator4$1.class -> lastModified(1513330260541)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator5$1.class -> lastModified(1513330260545)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator6$1.class -> lastModified(1513330260549)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator7$1.class -> lastModified(1513330260553)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator8$1.class -> lastModified(1513330260557)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$$typecreator9$1.class -> lastModified(1513330260575)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop$.class -> lastModified(1513330260459)
+D:\githubProjects\TransNet\bin\Service\Merge_vertice_prop.class -> lastModified(1513330260435)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$1.class -> lastModified(1513330260619)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$10.class -> lastModified(1513330260625)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$11.class -> lastModified(1513330260628)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$12$$anonfun$apply$10.class -> lastModified(1513330260636)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$12.class -> lastModified(1513330260632)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$13.class -> lastModified(1513330260640)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$14.class -> lastModified(1513330260644)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$15.class -> lastModified(1513330260647)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$16$$anonfun$apply$11.class -> lastModified(1513330260655)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$16.class -> lastModified(1513330260651)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$17.class -> lastModified(1513330260659)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$18.class -> lastModified(1513330260664)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$19.class -> lastModified(1513330260668)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$2.class -> lastModified(1513330260672)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$20$$anonfun$apply$12.class -> lastModified(1513330260680)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$20.class -> lastModified(1513330260676)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$21.class -> lastModified(1513330260684)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$22.class -> lastModified(1513330260688)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$23.class -> lastModified(1513330260691)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$24$$anonfun$apply$13.class -> lastModified(1513330260699)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$24.class -> lastModified(1513330260695)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$25.class -> lastModified(1513330260703)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$26.class -> lastModified(1513330260706)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$27.class -> lastModified(1513330260709)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$28$$anonfun$apply$14.class -> lastModified(1513330260717)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$28.class -> lastModified(1513330260713)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$29.class -> lastModified(1513330260721)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$3.class -> lastModified(1513330260725)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$30.class -> lastModified(1513330260731)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$31$$anonfun$apply$1.class -> lastModified(1513330260738)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$31.class -> lastModified(1513330260735)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$32.class -> lastModified(1513330260742)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$33.class -> lastModified(1513330260747)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$34.class -> lastModified(1513330260751)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$35.class -> lastModified(1513330260755)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$36.class -> lastModified(1513330260759)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$37.class -> lastModified(1513330260764)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$38.class -> lastModified(1513330260768)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$39.class -> lastModified(1513330260772)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$4.class -> lastModified(1513330260785)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$40.class -> lastModified(1513330260789)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$41$$anonfun$apply$15.class -> lastModified(1513330260797)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$41.class -> lastModified(1513330260793)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$42$$anonfun$apply$3.class -> lastModified(1513330260804)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$42.class -> lastModified(1513330260801)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$43$$anonfun$apply$4.class -> lastModified(1513330260812)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$43.class -> lastModified(1513330260808)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$44$$anonfun$apply$5.class -> lastModified(1513330260819)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$44.class -> lastModified(1513330260816)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$45.class -> lastModified(1513330260822)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$46.class -> lastModified(1513330260826)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$47.class -> lastModified(1513330260829)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$48$$anonfun$apply$16.class -> lastModified(1513330260837)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$48.class -> lastModified(1513330260833)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$49.class -> lastModified(1513330260841)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$5.class -> lastModified(1513330260845)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$50.class -> lastModified(1513330260848)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$51.class -> lastModified(1513330260853)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$52.class -> lastModified(1513330260858)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$53.class -> lastModified(1513330260863)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$54.class -> lastModified(1513330260880)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$55.class -> lastModified(1513330260885)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$56.class -> lastModified(1513330260890)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$57.class -> lastModified(1513330260894)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$58.class -> lastModified(1513330260898)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$59.class -> lastModified(1513330260902)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$6.class -> lastModified(1513330260906)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$60.class -> lastModified(1513330260909)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$61$$anonfun$apply$6.class -> lastModified(1513330260917)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$61.class -> lastModified(1513330260913)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$62$$anonfun$apply$7.class -> lastModified(1513330260924)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$62.class -> lastModified(1513330260921)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$63$$anonfun$apply$8.class -> lastModified(1513330260931)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$63.class -> lastModified(1513330260928)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$64$$anonfun$apply$9.class -> lastModified(1513330260940)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$64.class -> lastModified(1513330260936)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$65$$anonfun$66.class -> lastModified(1513330260948)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$65.class -> lastModified(1513330260944)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$67.class -> lastModified(1513330260951)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$68.class -> lastModified(1513330260955)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$69.class -> lastModified(1513330260958)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$7.class -> lastModified(1513330260961)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$70.class -> lastModified(1513330260964)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$71.class -> lastModified(1513330260968)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$72.class -> lastModified(1513330260971)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$73.class -> lastModified(1513330260975)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$74.class -> lastModified(1513330260978)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$75.class -> lastModified(1513330260982)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$76.class -> lastModified(1513330260985)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$77.class -> lastModified(1513330260988)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$78.class -> lastModified(1513330260990)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$79.class -> lastModified(1513330260993)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$8.class -> lastModified(1513330260997)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$80$$anonfun$apply$17.class -> lastModified(1513330261004)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$80.class -> lastModified(1513330261000)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$81.class -> lastModified(1513330261007)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$82.class -> lastModified(1513330261011)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$83.class -> lastModified(1513330261014)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$84.class -> lastModified(1513330261017)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$9.class -> lastModified(1513330261022)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$1.class -> lastModified(1513330261025)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$2.class -> lastModified(1513330261029)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$3$$anonfun$apply$2.class -> lastModified(1513330261036)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$3.class -> lastModified(1513330261032)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$4.class -> lastModified(1513330261040)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$5.class -> lastModified(1513330261044)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$6.class -> lastModified(1513330261047)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$anonfun$main$7.class -> lastModified(1513330261051)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator1$1.class -> lastModified(1513330261055)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator10$1.class -> lastModified(1513330261058)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator11$1.class -> lastModified(1513330261062)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator12$1.class -> lastModified(1513330261065)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator13$1.class -> lastModified(1513330261069)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator2$1.class -> lastModified(1513330261073)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator3$1.class -> lastModified(1513330261076)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator4$1.class -> lastModified(1513330261080)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator5$1.class -> lastModified(1513330261084)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator6$1.class -> lastModified(1513330261088)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator7$1.class -> lastModified(1513330261091)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator8$1.class -> lastModified(1513330261095)
+D:\githubProjects\TransNet\bin\Service\SusVertices$$typecreator9$1.class -> lastModified(1513330261099)
+D:\githubProjects\TransNet\bin\Service\SusVertices$.class -> lastModified(1513330260614)
+D:\githubProjects\TransNet\bin\Service\SusVertices.class -> lastModified(1513330260582)
 D:\githubProjects\TransNet\bin\SortByTime$$anonfun$1.class -> lastModified(1491887228020)
 D:\githubProjects\TransNet\bin\SortByTime$$anonfun$BKDRHash$1.class -> lastModified(1491887228025)
 D:\githubProjects\TransNet\bin\SortByTime$$anonfun$main$1.class -> lastModified(1491887228027)
@@ -2544,7 +3007,7 @@ D:\githubProjects\TransNet\bin\WireFraud\StaticInOut$$anonfun$main$3.class -> la
 D:\githubProjects\TransNet\bin\WireFraud\StaticInOut$.class -> lastModified(1491887228166)
 D:\githubProjects\TransNet\bin\WireFraud\StaticInOut.class -> lastModified(1491887228160)
 source stamps:
-43 items
+45 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> hash(d4e75d95be4cb356408c7ded048a79c094407161)
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> hash(77b29b228a076c3e2cc37964d87a26b99393d42a)
 D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala -> hash(189c97db21cf19ace3a41c5cf33f418a210db13c)
@@ -2571,7 +3034,9 @@ D:\githubProjects\TransNet\src\MultiEvent\MultiGraph.scala -> hash(db49cd6968290
 D:\githubProjects\TransNet\src\MultiEvent\MultiUtil.scala -> hash(02f97eb2e7339be359bda4527e8208c9a8b60f23)
 D:\githubProjects\TransNet\src\MultiEvent\StaticGraph.scala -> hash(936ead194dd9a091a8822368836c80d5f96e1379)
 D:\githubProjects\TransNet\src\ReplaceByDict.scala -> hash(3dbe8e8b09b480b4d1781dc265a00d216178a442)
-D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> hash(b541ba31fb39ab3d875ef050b393afe269db1e9f)
+D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> hash(3c527b5ec5a12bfb32b8f32a4d652f08ff5d5335)
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> hash(1a7ed6b92861fe0d94336682b75996258dbf49c4)
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> hash(ff32208d24bdf39be5a5de5ca427bcd3837fb5b8)
 D:\githubProjects\TransNet\src\SortByTime.scala -> hash(bb8d65ad1f0e849e1bcb6b4a952874f84ffb6430)
 D:\githubProjects\TransNet\src\SortDegree.scala -> hash(213c56eb9c03c511f90c54cee6b3d0f627617051)
 D:\githubProjects\TransNet\src\SumByWeek.scala -> hash(65b1fdf82c3cf1f70bab4fa093d7fd1d9ecea646)
@@ -2597,9 +3062,9 @@ class names:
 3 items
 C:\Program Files\Java\jre1.8.0_101\lib\jce.jar -> javax.crypto.spec.SecretKeySpec
 C:\Program Files\Java\jre1.8.0_101\lib\rt.jar -> java.lang.Object
-D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar -> scala.Tuple7
+D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar -> scala.Tuple18
 internal apis:
-43 items
+45 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAEm0zmAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAhQWxnb3JpdGhtVXRpbC5Db25uZWN0ZWRDb21wb25lbnRzdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AL3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4ALgBwc3EAfgAzc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AN3NxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA2dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA2c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgBTdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBUc3EAfgBHdAADQW55c3EAfgBLc3EAfgBOdXEAfgBRAAAAAnNxAH4AU3QABXNjYWxhcQB+AFp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AA1BbGdvcml0aG1VdGlsc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbW2hLjHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFNTnXZW+TLNWQIx97QSKecCUQHFh
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> 
@@ -2653,7 +3118,11 @@ rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhf
 D:\githubProjects\TransNet\src\ReplaceByDict.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC2IREqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAANUmVwbGFjZUJ5RGljdHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AC94cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AC4AcHNxAH4AM3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADdzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADZ0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA2c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBVdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4AQXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ASVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANnNxAH4ASHQABUFycmF5cQB+AE51cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ASHQABlN0cmluZ3NxAH4ATHNxAH4AT3VxAH4AUgAAAANzcQB+AFR0AARqYXZhc3EAfgBUdAAEbGFuZ3EAfgBZc3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cQB+AG0AAAACc3EAfgBIdAAGT2JqZWN0cQB+AHFzcQB+AEh0AANBbnlxAH4ATnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbW2hLjHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFD2+josJtIC00XgdwmWgDSFheKRC
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDpQu5IAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAASU2VydmljZS5HcmFwaF9Qcm9wdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AAdTZXJ2aWNlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFgRE0OBnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFLVBujH7Oas9h17wULOTr+Jp2x6f
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDpQu5IAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAASU2VydmljZS5HcmFwaF9Qcm9wdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AAdTZXJ2aWNlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFgWYMMi3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFDxSe17FoSv7MrjzKk1lLwj/XVM1
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBLriS8AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAaU2VydmljZS5NZXJnZV92ZXJ0aWNlX3Byb3B1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgAveHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgAuAHBzcQB+ADNzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA3c3EAfgAuAHBzcQB+ADN1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA2dAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANnNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AVXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AEF4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AElbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADZzcQB+AEh0AAVBcnJheXEAfgBOdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AEh0AAZTdHJpbmdzcQB+AExzcQB+AE91cQB+AFIAAAADc3EAfgBUdAAEamF2YXNxAH4AVHQABGxhbmdxAH4AWXNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgBtAAAAAnNxAH4ASHQABk9iamVjdHEAfgBxc3EAfgBIdAADQW55cQB+AE51cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AAdTZXJ2aWNlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFgWYMMi3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFBp+1rkoYf4NlDNmgrdZliWNv0nE
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAgNgAnAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAATU2VydmljZS5TdXNWZXJ0aWNlc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AC94cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AC4AcHNxAH4AM3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADdzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADZ0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA2c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBVdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4AQXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ASVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANnNxAH4ASHQABUFycmF5cQB+AE51cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ASHQABlN0cmluZ3NxAH4ATHNxAH4AT3VxAH4AUgAAAANzcQB+AFR0AARqYXZhc3EAfgBUdAAEbGFuZ3EAfgBZc3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cQB+AG0AAAACc3EAfgBIdAAGT2JqZWN0cQB+AHFzcQB+AEh0AANBbnlxAH4ATnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQAB1NlcnZpY2VzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWBZgwyLdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU/zIgjSS985vlpd5cpCe804N/tbg=
 D:\githubProjects\TransNet\src\SortByTime.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBOASzpAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAJTXVsdGlTb3J0dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgAveHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgAuAHBzcQB+ADNzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA3c3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADZ0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADZzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFRzcQB+AEdxAH4ASnNxAH4AS3NxAH4ATnVxAH4AUQAAAANzcQB+AFN0AARqYXZhc3EAfgBTdAACaW9xAH4AWHNyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ASFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANnNxAH4AR3QAB09yZGVyZWRzcQB+AEtzcQB+AE51cQB+AFEAAAADc3EAfgBTcQB+AFZzcQB+AFN0AARtYXRocQB+AFh1cQB+AEUAAAABc3EAfgBHdAAJTXVsdGlTb3J0c3EAfgBLc3EAfgBOdXEAfgBRAAAAAXEAfgBYc3EAfgBhc3EAfgBHdAAKQ29tcGFyYWJsZXNxAH4AS3NxAH4ATnVxAH4AUQAAAANzcQB+AFNxAH4AXnNxAH4AU3QABGxhbmdxAH4AWHVxAH4ARQAAAAFxAH4AbXNxAH4AR3QABk9iamVjdHEAfgB1c3EAfgBHdAADQW55cQB+AE1zcQB+ABJxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAKU29ydEJ5VGltZXVxAH4AJgAAAAB+cQB+ACh0AAZNb2R1bGV1cQB+ACwAAAAAc3EAfgAuAHBzcQB+ADNxAH4AOHNxAH4ALgBwc3EAfgAzc3EAfgA7c3EAfgAuAHBzcQB+ADN1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcQB+AEd0AARVbml0c3EAfgBLc3EAfgBOdXEAfgBRAAAAAnNxAH4AU3EAfgBWcQB+AFh1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgCReHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3EAfgBhc3EAfgBHdAAFQXJyYXlxAH4AmnVxAH4ARQAAAAFzcQB+AEd0AAZTdHJpbmdzcQB+AEtzcQB+AE51cQB+AFEAAAADc3EAfgBTcQB+AF5zcQB+AFNxAH4AenEAfgBYc3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cQB+AEUAAAACc3EAfgBHcQB+AH1xAH4AsnNxAH4AR3EAfgB/cQB+AJp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW1toS4x1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcYmludAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABS7jWWtHw6EnhvLa0qVKHT4T/tkMA==
 D:\githubProjects\TransNet\src\SortDegree.scala -> 
@@ -2689,7 +3158,7 @@ rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhf
 external apis:
 0 items
 source infos:
-43 items
+45 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> 
 AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> 
@@ -2744,6 +3213,10 @@ D:\githubProjects\TransNet\src\ReplaceByDict.scala ->
 AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> 
 AAAAAAAAAAA=
+D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> 
+AAAAAAAAAAA=
+D:\githubProjects\TransNet\src\Service\SusVertices.scala -> 
+AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\SortByTime.scala -> 
 AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\SortDegree.scala -> 
@@ -2777,7 +3250,7 @@ AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> 
 AAAAAAAAAAA=
 compilations:
-322 items
+334 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGFkvnt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGFl+Sx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGF7EAN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
@@ -3100,3 +3573,15 @@ compilations:
 319 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYEQ4zEx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
 320 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYERETFF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
 321 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYERNDgZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+322 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE1tQy91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+323 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE58RnV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+324 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE6Fl/R1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+325 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE6Fwst1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+326 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE6fa/V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+327 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE6fwbJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+328 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE6sAZx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+329 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYE62Iix1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+330 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYFfGngJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+331 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYFfayDp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+332 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYFgXDKl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+333 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYFmDDIt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
