@@ -1,5 +1,5 @@
 package Service
-
+//出现内存错误多考虑repartition
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.types._
@@ -15,6 +15,9 @@ import AlgorithmUtil._
 import scala.reflect.ClassTag
 import scala.collection.mutable
 import scala.collection.mutable.HashSet
+import org.apache.spark.sql.expressions.Window
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions 
 
 object SusVertices {
   private val startDate = "20170101"
@@ -646,6 +649,10 @@ object SusVertices {
     tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Foreign"))
     stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
     
+    tmp_DF = tot_agg.agg(count("region_cd") as "tot_Counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+    
     println("2")
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////         
@@ -745,9 +752,61 @@ object SusVertices {
 
     //    subG.edges.saveAsTextFile("xrli/TransNet/edges/subG_" + startDate + "_" + endDate)
 
-    stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card"), "left_outer")//.drop(stat_DF("card"))
-
+    stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card"), "left_outer").drop(stat_DF("card"))
+    println("stat_DF done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
     stat_DF.show(50)
+//    
+//    --------------------+---------+-----------+------------+---------+----------+-----------+-----------------+---------------+--------------------+---------------+------------+-----------+--------------+---------------+------------------+------------------+-----------------+---------------+----------------+------------------+------------------+------------------+-------------+--------------+----------+----------+--------------+---------------+-----------+-----------+--------------------+---------------+-----+------+------+------+------+------+------+------+------------------+------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+//|                card|Night_cnt|tot_regions|tot_term_ids|tot_Provs|tot_big500|tot_big1000|tot_large_integer|tot_HRloc_trans|tot_cardholder_fails|tot_abnorm_rate|tot_count_89|tot_Foreign|transin_counts|transin_amounts|       transin_avg|       transin_max|distinct_cards_in|transout_counts|transout_amounts|      transout_avg|      transout_max|distinct_cards_out|quxian_counts|quxian_amounts|quxian_avg|quxian_max|consume_counts|consume_amounts|consume_avg|consume_max|                card|             cc|ccNum|prop_1|prop_2|prop_3|prop_4|prop_5|prop_6|prop_7|            prop_8|            prop_9|prop_10|prop_11|prop_12|prop_13|prop_14|prop_15|prop_16|prop_17|prop_18|
+//+--------------------+---------+-----------+------------+---------+----------+-----------+-----------------+---------------+--------------------+---------------+------------+-----------+--------------+---------------+------------------+------------------+-----------------+---------------+----------------+------------------+------------------+------------------+-------------+--------------+----------+----------+--------------+---------------+-----------+-----------+--------------------+---------------+-----+------+------+------+------+------+------+------+------------------+------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+//|02ad41e30e88ca07f...|      0.0|          1|           1|        1|       0.0|        0.0|              0.0|            0.0|                 0.0|            0.0|         0.0|        1.0|          null|           null|              null|              null|             null|              1|             714|             714.0|             714.0|              null|         null|          null|      null|      null|          null|           null|       null|       null|02ad41e30e88ca07f...|  8164238894595|   42|     5|     1|    41|    41|     1|     0|  41.0|           10627.5|             123.0|    0.0|   41.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|
+//|080f10147f5115670...|      0.0|          1|           1|        1|       1.0|        1.0|              0.0|            0.0|                 0.0|            0.0|         0.0|        2.0|          null|           null|              null|              null|             null|              1|             301|             301.0|             301.0|              null|         null|          null|      null|      null|          null|           null|       null|       null|080f10147f5115670...| 49189099591446|   17|     5|     1|    16|    16|     1|     0|  16.0|           23341.0|              48.0|    0.0|   16.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|
+//|08c1b9b0b1ec9c218...|      0.0|          1|           1|        1|       0.0|        0.0|              0.0|            0.0|                 0.0|            0.0|         0.0|        1.0|             1|           1700|            1700.0|            1700.0|                1|           null|            null|              null|              null|                 1|         null|          null|      null|      null|          null|           null|       null|       null|08c1b9b0b1ec9c218...| 87043834091103|    6|     5|     5|     1|     5|     1|     0|   5.0|           14905.0|              15.0|    0.0|    5.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|
+//|09850b642278b4911...|      0.0|          2|           2|        2|       0.0|        0.0|              0.0|            0.0|                 0.0|            0.0|         3.0|        9.0|             7|              7|               1.0|               1.0|                1|           null|            null|              null|              null|                 7|         null|          null|      null|      null|             1|             39|       39.0|       39.0|09850b642278b4911...|199569447742943|    8|     5|     1|     7|     7|     1|     0|   7.0|               7.0|              21.0|    0.0|    7.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|    1.0|
+//|0aafdd6edc596e5f1...|      0.0|          1|           1|        1|       2.0|        2.0|              2.0|            0.0|                 0.0|            0.0|         2.0|        4.0|          null|           null|              null|              null|             null|              2|           10840|            5420.0|            5420.0|              null|         null|          null|      null|      null|          null|           null|       null|       null|0aafdd6edc596e5f1...| 46337449065880|    5|     5|     1|     4|     4|     1|     0|   5.0|           43540.0|              19.0|    0.0|    5.0|    1.0|    1.0|    6.0|   10.0|    2.0|    1.0|    1.0|
+
+    
+//    var savepath = "xrli/TeleTrans/stat_DF.csv"
+//    val saveOptions = Map("header" -> "true", "path" -> savepath)
+//    stat_DF.write.format("com.databricks.spark.csv").mode(SaveMode.Overwrite).options(saveOptions).save()
+//    println("stat_DF saved in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
+    
+    stat_DF.saveAsTable("xrli_stat_DF")
+    
+    
+    //分组排序取topN，取每一个团体中可以度最高的前20个
+    
+     
+   /////////////// 
+    var ranked_DF_2 = stat_DF.withColumn("ranks", row_number.over(Window.partitionBy("cc").orderBy(desc("Night_cnt"))))
+    ranked_DF_2 = ranked_DF_2.filter(ranked_DF_2("ranks")<20)
+    println("ranked_DF_2 done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
+  //////////////////////  
+    
+    
+    
+    
+    var ranked_DF = stat_DF.withColumn("ranks", row_number.over(Window.partitionBy("cc").orderBy(desc("Night_cnt"),desc("tot_regions"),desc("tot_Counts"),desc("prop_1"),desc("prop_2"))))
+    ranked_DF = ranked_DF.filter(ranked_DF("ranks")<20)
+    println("ranked_DF done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
+    println("ranked_DF count: ", ranked_DF.count)
+    ranked_DF.show(20)
+    
+    
+    
+   
+  
+    
+    
+//    var groupcc = stat_DF.groupBy("cc")
+//
+//    val topK=groupcc.map(tu=>{val key=tu._1  
+//                                val values=tu._2
+//                                val sortValues=values.toList.sortWith(_>_).take(4)
+//                                (key,sortValues) 
+//                                }
+//                         )
+       
 
     println("All flow done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
 
