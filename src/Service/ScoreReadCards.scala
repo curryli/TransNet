@@ -1,5 +1,16 @@
 package Service
-//出现内存错误多考虑repartition .取前top_CCs(100)个可疑的团体，每个团体的前top_vs(10)个顶点上报
+/*
+spark-submit \
+--class Service.ScoreReadCards \
+--master yarn \
+--deploy-mode cluster \
+--queue root.default \
+--driver-memory 15g \
+--executor-memory 15G \
+--num-executors 300 \
+TeleTrans.jar "20170511" "20170511" "xrli/AML/Inputs/seedCards_test.csv" "xrli/AML/Outputs/CardsScore_test.csv"
+*/
+
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.types._
@@ -19,12 +30,10 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.functions 
 
-object SusCC_TopVs {
-  private val startDate = "20170101"
-  private val endDate = "20170107"
-  private val KMax = 8
-  private val top_CCs = 100
-  private val top_vs = 100
+object ScoreReadCards {
+
+  private val KMax = 5
+ 
 
   def any_to_double[T: ClassTag](b: T): Double = {
     if (b == true)
@@ -42,7 +51,7 @@ object SusCC_TopVs {
     Logger.getLogger("hive").setLevel(Level.OFF);
     Logger.getLogger("parse").setLevel(Level.OFF);
 
-    val sparkConf = new SparkConf().setAppName("transGraph")
+    val sparkConf = new SparkConf().setAppName("ScoreReadCards")
     val sc = new SparkContext(sparkConf)
     val hc = new HiveContext(sc)
     val sqlContext = new SQLContext(sc)
@@ -56,6 +65,17 @@ object SusCC_TopVs {
       s"set mapreduce.jobtracker.split.metainfo.maxsize = -1" +
       s"set mapreduce.job.queuename=root.queue2")
 
+ 
+    val startDate = args(0)
+    val endDate = args(1)  
+    val inputFile = args(2)
+    val outputFile = args(3)
+    
+      
+    //val seedList = sc.textFile("xrli/AML/Inputs/seedCards_test.csv").collect() 
+    
+    val seedList = sc.textFile(inputFile).collect() 
+    
     var Alldata = hc.sql(
       s"select tfr_in_acct_no," +
         s"tfr_out_acct_no, " +
@@ -84,14 +104,277 @@ object SusCC_TopVs {
       .toDF("srccard", "dstcard", "money", "date", "time", "region_cd", "trans_md", "mchnt_tp", "mchnt_cd", "trans_chnl",
         "term_id", "fwd_ins_id_cd", "rcv_ins_id_cd", "card_class", "resp_cd4", "acpt_ins_tp", "auth_id_resp_cd", "acpt_bank", "charge", "fwd_settle_conv_rt", "trans_id", "card")
       .repartition(1000).persist(StorageLevel.MEMORY_AND_DISK_SER)
+ 
+ 
+      
+    var Useddata = Alldata.filter(Alldata("card").isin(seedList: _*)).repartition(100).persist(StorageLevel.MEMORY_AND_DISK_SER)
+      
+    var transferList = antiSearch(Alldata,startDate,endDate,seedList) 
+    println("antiSearch done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
 
-    //data.show(5)
-    //Alldata = Alldata.sample(false, 0.01)
+    
+    var graphata =  Alldata.filter(Alldata("srccard").isin(transferList : _*) or Alldata("dstcard").isin(transferList : _*))
+  
+    //var graphata =  Alldata.filter(Alldata("srccard").isin(seedList : _*) or Alldata("dstcard").isin(seedList : _*))
+     
+    //graphata.show(5)
+    
+    Alldata.unpersist(blocking = false)
+    
+     
+    /////////////////////////////////////交易标记//////////////////////////////////////////         
+    val get_hour = udf[Int, String] { xstr => 
+       var result = 0
+     try{
+        result = xstr.substring(0, 2).toInt 
+        }
+     catch{
+       case ex: java.lang.StringIndexOutOfBoundsException => {result = -1}
+        } 
+      result
+    }
+    
+    Useddata = Useddata.withColumn("hour", get_hour(Useddata("time")))
 
-    println("SQL done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
+    println("is_Night")
+    val is_Night = udf[Double, String] { xstr =>
+      val h = xstr.toInt
+      val night_list = List(23, 0, 1, 2, 3, 4, 5)
+      any_to_double(night_list.contains(h))
+    }
 
-    var graphata = Alldata.filter(Alldata("trans_id").===("S33"))
+    Useddata = Useddata.withColumn("is_Night", is_Night(Useddata("hour")))
 
+    val getProvince = udf[String, String] { xstr => xstr.substring(0, 2) }
+    Useddata = Useddata.withColumn("Prov", getProvince(Useddata("region_cd")))
+
+    val getRMB = udf[Long, String] { xstr => (xstr.toDouble / 100).toLong }
+    Useddata = Useddata.withColumn("RMB", getRMB(Useddata("money")))
+
+    val is_RMB_500 = udf[Double, Long] { xstr => any_to_double(xstr.toDouble % 500 == 0) }
+    Useddata = Useddata.withColumn("is_bigRMB_500", is_RMB_500(Useddata("RMB")))
+
+    val is_RMB_1000 = udf[Double, Long] { xstr => any_to_double(xstr.toDouble % 1000 == 0) }
+    Useddata = Useddata.withColumn("is_bigRMB_1000", is_RMB_1000(Useddata("RMB")))
+
+    //println("智策大额整额定义")
+    println("is_large_integer")
+    val is_large_integer = udf[Double, Long] { a =>
+      val b = a.toString.size
+      val c = a.toDouble / (math.pow(10, (b - 1)))
+      val d = math.abs(c - math.round(c))
+      val e = d.toDouble / b.toDouble
+      any_to_double(e < 0.01 && a > 1000)
+    }
+    Useddata = Useddata.withColumn("is_large_integer", is_large_integer(Useddata("RMB")))
+
+    //println("交易金额中8和9的个数")
+    println("count_89")
+    val count_89 = udf[Double, String] { xstr =>
+      var cnt = 0
+      xstr.foreach { x => if (x == '8' || x == '9') cnt = cnt + 1 }
+      cnt.toDouble
+    }
+    Useddata = Useddata.withColumn("count_89", count_89(Useddata("money")))
+
+    println("is_highrisk_loc")
+    val HighRisk_Loc = List("1425", "4050", "4338", "5624", "5923", "6123", "6431", "3974", //电信诈骗
+      "5810", "5972", "5880", "6054", "6582", "6852", "6851", "6762", "7035", "7095", "6314", "6366", "6266", "6927", "8991", "7517", "7580", "7517", "3371", "3336", "3724", "7975", "7910", "5119", "5118", "8737", "8360", "6125", "5625", "7035", "6754", "6900", "7155", "7096", "6574", "6761", "6717", "7091", "5546", "6623", "7039", "6755", "5654", "6900", "6900", "5210", "7348") //涉毒
+    val is_highrisk_loc = udf[Double, String] { xstr => any_to_double(HighRisk_Loc.contains(xstr.substring(0, 2))) }
+    Useddata = Useddata.withColumn("is_highrisk_loc", is_highrisk_loc(Useddata("region_cd")))
+
+    //println("持卡人原因导致的失败交易")
+    println("is_cardholder_fail")
+    val is_cardholder_fail = udf[Double, String] { xstr => any_to_double(List("51", "55", "61", "65", "75").contains(xstr)) }
+    Useddata = Useddata.withColumn("is_cardholder_fail", is_cardholder_fail(Useddata("resp_cd4")))
+
+    //println("是否正常汇率")
+    println("not_norm_rate")
+    val not_norm_rate = udf[Double, String] { xstr => any_to_double(xstr != "30001000" && xstr != "61000000") }
+    Useddata = Useddata.withColumn("not_norm_rate", not_norm_rate(Useddata("fwd_settle_conv_rt")))
+
+    val isForeign = udf[Double, String] { xstr => any_to_double(!xstr.equals("1")) }
+    Useddata = Useddata.withColumn("isForeign", isForeign(Useddata("trans_md")))
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////     
+
+    ////////////////////////整体group///////////////////////////////    
+    val tot_agg = Useddata.groupBy("card")
+    var stat_DF = tot_agg.agg(sum("is_Night") as "Night_cnt")
+
+    println("1")
+    
+    var tmp_DF = tot_agg.agg(countDistinct("region_cd") as "tot_regions")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_regions"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(countDistinct("term_id") as "tot_term_ids")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_term_ids"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(countDistinct("Prov") as "tot_Provs")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Provs"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("is_bigRMB_500") as "tot_big500")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_big500"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("is_bigRMB_1000") as "tot_big1000")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_big1000"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("is_large_integer") as "tot_large_integer")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_large_integer"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("is_highrisk_loc") as "tot_HRloc_trans")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_HRloc_trans"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("is_cardholder_fail") as "tot_cardholder_fails")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_cardholder_fails"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("not_norm_rate") as "tot_abnorm_rate")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_abnorm_rate"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("count_89") as "tot_count_89")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_count_89"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = tot_agg.agg(sum("isForeign") as "tot_Foreign")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Foreign"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+    
+    tmp_DF = tot_agg.agg(count("region_cd") as "tot_Counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+    
+    tmp_DF = tot_agg.agg(sum("RMB") as "tot_Amounts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Amounts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+      
+    /////////////////////////////////////////////////////////////////////////////////////////////////////         
+
+    var transinData = Useddata.filter(Useddata("trans_id").===("S33"))
+    var transoutData = Useddata.filter(Useddata("trans_id").===("S25"))
+    var quxianData = Useddata.filter(Useddata("trans_id").===("S24"))
+    var queryData = Useddata.filter(Useddata("trans_id").===("S00"))
+    var consumeData = Useddata.filter(Useddata("trans_id").===("S22"))
+    var daifuData = Useddata.filter(Useddata("trans_id").===("S31"))
+
+    val transin_gb = transinData.groupBy("card")
+    val transout_gb = transoutData.groupBy("card")
+    val quxian_gb = quxianData.groupBy("card")
+    val query_gb = queryData.groupBy("card")
+    val consume_gb = consumeData.groupBy("card")
+    val daifu_gb = daifuData.groupBy("card")
+     
+
+    println("3")
+    ////////////////////////整体group///////////////////////////////   
+
+    tmp_DF = transin_gb.agg(count("RMB") as "transin_counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transin_gb.agg(sum("RMB") as "transin_amounts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_amounts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transin_gb.agg(avg("RMB") as "transin_avg")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_avg"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transin_gb.agg(avg("RMB") as "transin_max")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_max"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transin_gb.agg(countDistinct("srccard") as "distinct_cards_in")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("distinct_cards_in"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+ 
+    tmp_DF = transout_gb.agg(count("RMB") as "transout_counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transout_gb.agg(sum("RMB") as "transout_amounts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_amounts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transout_gb.agg(avg("RMB") as "transout_avg")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_avg"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transout_gb.agg(avg("RMB") as "transout_max")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_max"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = transin_gb.agg(countDistinct("dstcard") as "distinct_cards_out")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("distinct_cards_out"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = quxian_gb.agg(count("RMB") as "quxian_counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = quxian_gb.agg(sum("RMB") as "quxian_amounts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_amounts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = quxian_gb.agg(avg("RMB") as "quxian_avg")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_avg"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = quxian_gb.agg(avg("RMB") as "quxian_max")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_max"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = consume_gb.agg(count("RMB") as "consume_counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = consume_gb.agg(sum("RMB") as "consume_amounts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_amounts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = consume_gb.agg(avg("RMB") as "consume_avg")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_avg"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = consume_gb.agg(avg("RMB") as "consume_max")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_max"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+    
+    
+    tmp_DF = daifu_gb.agg(count("RMB") as "daifu_counts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("daifu_counts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = daifu_gb.agg(sum("RMB") as "daifu_amounts")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("daifu_amounts"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = daifu_gb.agg(avg("RMB") as "daifu_avg")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("daifu_avg"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+
+    tmp_DF = daifu_gb.agg(avg("RMB") as "daifu_max")
+    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("daifu_max"))
+    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
+    
+ 
+    //stat_DF.show() 
+    stat_DF.persist(StorageLevel.MEMORY_AND_DISK_SER)
+    
+    
+    println("Stage1 done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
+    
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    println("start stating graph props.")
+    
     import sqlContext.implicits._
     val InPairRdd = graphata.map(line => (HashEncode.HashMD5(line.getString(0)), line.getString(0)))
     val OutPairRdd = graphata.map(line => (HashEncode.HashMD5(line.getString(1)), line.getString(1)))
@@ -141,9 +424,9 @@ object SusCC_TopVs {
     var origraph = Graph(verticeRDD, edgeRDD).partitionBy(PartitionStrategy.RandomVertexCut) //必须在调用groupEdges之前调用Graph.partitionBy 。
 
     println("origraph")
-    println("origraph Vertex Num is: " + origraph.numVertices)
-    println("origraph Edge Num is: " + origraph.numEdges)
-    origraph.edges.take(5).foreach(println)
+//    println("origraph Vertex Num is: " + origraph.numVertices)
+//    println("origraph Edge Num is: " + origraph.numEdges)
+    //origraph.edges.take(5).foreach(println)
     //    println("need origraph")
     //    origraph.edges.filter(f=>f.attr._4.toInt==1).take(5).foreach(println)
 
@@ -208,8 +491,8 @@ object SusCC_TopVs {
 
     println("graph group edges done.")
 
-    println("graph Vertex Num is: " + graph.numVertices)
-    println("graph Edge Num is: " + graph.numEdges)
+//    println("graph Vertex Num is: " + graph.numVertices)
+//    println("graph Edge Num is: " + graph.numEdges)
 
     graph = graph.mapEdges(edge =>
       if (edge.attr._1 > 1)
@@ -267,12 +550,12 @@ object SusCC_TopVs {
     println("create dataframe done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
 
     var joinedDF = cVDF.join(cCDF, cVDF("cc") === cCDF("cc"), "left_outer").drop(cVDF("cc"))
-    joinedDF.show(5) //(vid,顶点名称，对应团体, 规模) 
+    //joinedDF.show(5) //(vid,顶点名称，对应团体, 规模) 
 
     val VidconnectedCount = joinedDF.map(row => (row.getLong(0), (row.getString(1), row.getLong(2), row.getInt(3)))) //(vid,顶点名称，对应团体,团体规模)
 
     println("create VidconnectedCount done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
-    VidconnectedCount.take(5).foreach(println)
+    //VidconnectedCount.take(5).foreach(println)
 
     //VidconnectedCount    RDD(Vid, (顶点名称(即原密卡号)，对应团体, 对应团体规模)) 
 
@@ -328,7 +611,7 @@ object SusCC_TopVs {
 
     //3.3.4  计算净金额
     var InOutDF = sumInVDF.join(sumOutVDF, sumInVDF("vid") === sumOutVDF("vid"), "left_outer").drop(sumInVDF("vid"))
-    InOutDF.show(10)
+    //InOutDF.show()
     InOutDF = InOutDF.filter(InOutDF("sumIn").isNotNull && InOutDF("sumOut").isNotNull)
     val pureSum = InOutDF.map(row => (row.getLong(1), (math.abs(row.getDouble(0) - row.getDouble(2)), math.abs(row.getDouble(0) - row.getDouble(2)) / math.abs(row.getDouble(0) + row.getDouble(2)))))
 
@@ -472,302 +755,159 @@ object SusCC_TopVs {
     })
 
     ccgraphRdd = ccgraphRdd.filter(f => f._1 != 0L).distinct()
-
-    //ccLabel, 团体规模, 最大K, 最大入度, 最大出度, 最大度, BigK数目, 过渡节点数
-    // transCount,money,charge,nightCount,foreignCount,   most_mchnt_tp,most_trans_chnl,  acpt_bank_discnt,mchnt_cd_discnt,term_id_discnt,fwd_ins_id_cd_discnt,rcv_ins_id_cd_discnt
-
-    //ccLabel,ccNum, maxK, maxInDeg, maxOutDeg, maxDeg, BigKNum, TransNum, transCount,money,charge,nightCount,foreignCount,   most_mchnt_tp,most_trans_chnl,  acpt_bank_discnt,mchnt_cd_discnt,term_id_discnt,fwd_ins_id_cd_discnt,rcv_ins_id_cd_discnt,regionCount, mchnttpCount, mchntcdCount, addrDetailCount
-
-    println("ccgraphRdd created in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
-
-    ccgraphRdd.take(5).foreach(println)
-
-    //ccgraphRdd.saveAsTextFile("xrli/TeleFraud/" + startDate + "_" + (endDate.toLong-startDate.toLong).toString()  + "/graphProp")
-
-    //var filtered_cc_rdd = ccgraphRdd.filter(f=>(f._2 > 5) & (f._3 > 5 ) & (f._6 > 5)))
-    
-   //////////////////////过滤/////////////////////////////
-    var filtered_cc_rdd = ccgraphRdd.filter(f => ((f._2 <2000))).distinct //ccNum 不要太大，否则可能是正常大商户
-    filtered_cc_rdd = filtered_cc_rdd.sortBy(f=>(f._6, f._7, f._10.toString().toDouble, f._3, f._9.toString().toDouble), false)  //maxDeg, BigKNum, money,ccNum,transCount
-     
-     
-    var filtered_ccs = filtered_cc_rdd.take(top_CCs).map(_._1).toSeq.toSet
-
-    println("filtered_ccs count: " + filtered_ccs.size)
-
-    var subG = cCountgraph.subgraph(vpred = (id, property) => filtered_ccs.contains(property._2), //过滤过得感兴趣的团体包含的点和边
-      epred = epred => filtered_ccs.contains(epred.srcAttr._2) || filtered_ccs.contains(epred.dstAttr._2))
-
-    println("subG.vertices.count(): " + subG.vertices.count())
-
+ 
     var ccprop_rdd = ccgraphRdd.map { f => (f._1, (f._2, f._3, f._4, f._5, f._6, f._7, f._8, f._9.toString.toDouble, f._10.toString.toDouble, f._11.toString.toDouble, f._12.toString.toDouble, f._13.toString.toDouble, f._14.toString.toDouble, f._15.toString.toDouble, f._16.toString.toDouble, f._17.toString.toDouble, f._18.toString.toDouble, f._19.toString.toDouble, f._20.toString.toDouble, f._21.toString.toDouble, f._22.toString.toDouble)) }
-
-    var cc_RDD = subG.vertices.map(f => (f._2._2, (f._2._1, f._2._3))) //(顶点名称,团体规模)
+ 
+    var cc_RDD = cCountgraph.vertices.map(f => (f._2._2, (f._2._1, f._2._3))) //(顶点名称,团体规模)
     var v_rdd = cc_RDD.join(ccprop_rdd)
-
-    println("v_rdd count: " + v_rdd.count)
  
     var vertice_cc = v_rdd.map { f => (f._2._1._1, f._1, f._2._2._1, f._2._2._2, f._2._2._3, f._2._2._4, f._2._2._5, f._2._2._6, f._2._2._7, f._2._2._8, f._2._2._9, f._2._2._10, f._2._2._11, f._2._2._12, f._2._2._13, f._2._2._14, f._2._2._15, f._2._2._16, f._2._2._19, f._2._2._20, f._2._2._21) }
-    var vertice_cc_df = vertice_cc.toDF("card", "cc", "ccNum", "prop_1", "prop_2", "prop_3", "prop_4", "prop_5", "prop_6", "prop_7", "prop_8", "prop_9", "prop_10", "prop_11", "prop_12", "prop_13", "prop_14", "prop_15", "prop_16", "prop_17", "prop_18")
-    //vertice_cc_df.show(10)
-    /////////////////////////////////////////////////////////////////////////////////////////////////////  
-    ///////////////////////////////////////////////////////////////////////////////////////////////////// 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////// 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////// 
-
-    var transferList = v_rdd.map(f => f._2._1._1).collect
-
-    var Useddata = Alldata.filter(Alldata("card").isin(transferList: _*)).repartition(1000).persist(StorageLevel.MEMORY_AND_DISK_SER)
-    Alldata.unpersist(blocking = false)
-
-    /////////////////////////////////////交易标记//////////////////////////////////////////         
-    val get_hour = udf[Int, String] { xstr => 
-       var result = 0
-     try{
-        result = xstr.substring(0, 2).toInt 
-        }
-     catch{
-       case ex: java.lang.StringIndexOutOfBoundsException => {result = -1}
-        } 
-      result
+    var vertice_cc_df = vertice_cc.toDF("card_v", "cc", "ccNum", "prop_1", "prop_2", "prop_3", "prop_4", "prop_5", "prop_6", "prop_7", "prop_8", "prop_9", "prop_10", "prop_11", "prop_12", "prop_13", "prop_14", "prop_15", "prop_16", "prop_17", "prop_18")
+      
+    
+    vertice_cc_df = vertice_cc_df.filter(vertice_cc_df("card_v").isNotNull)
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    println("vertice_cc_df")
+    //vertice_cc_df.show()
+    
+    
+    
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+    stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card_v"), "left_outer") 
+    stat_DF = stat_DF.na.fill(0) 
+    
+    //stat_DF.show() 
+//    stat_DF = stat_DF.sort("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7",
+//        "tot_big1000","tot_Provs","tot_big500","tot_HRloc_trans","tot_cardholder_fails","tot_abnorm_rate","tot_count_89",
+//        "tot_Foreign","transin_counts","transin_amounts","transin_avg","transin_max","distinct_cards_in",
+//        "transout_counts","transout_amounts","transout_avg","transout_max","distinct_cards_out",
+//        "quxian_counts","quxian_amounts","quxian_avg","quxian_max","consume_counts","consume_amounts","consume_avg","consume_max",
+//        "prop_2","prop_3","prop_5","prop_8","prop_9","prop_10","prop_11","prop_12","prop_13","prop_14","prop_15","prop_16","prop_17","prop_18")
+    
+    
+    val ListIP1 = List("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_big1000","tot_cardholder_fails","tot_count_89","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7")
+    val ListIP2 = List("tot_Provs","tot_big500","tot_HRloc_trans","tot_abnorm_rate","tot_count_89",
+                       "tot_Foreign","transin_counts","transin_amounts","transin_avg","transin_max","distinct_cards_in",
+                       "transout_counts","transout_amounts","transout_avg","transout_max","distinct_cards_out",
+                       "quxian_counts","quxian_amounts","quxian_avg","quxian_max","consume_counts","consume_amounts","consume_avg","consume_max","daifu_counts","daifu_amounts","daifu_avg","daifu_max")
+                       
+    val ListIP3 = List("prop_2","prop_3","prop_5","prop_8","prop_9","prop_10","prop_11","prop_12","prop_13","prop_14","prop_15","prop_16","prop_17","prop_18")
+    
+    
+    var cur_rank = "sum_rank_0"
+    var last_rank = "sum_rank_0"
+    stat_DF = stat_DF.withColumn(cur_rank, dense_rank.over(Window.partitionBy(lit(1)).orderBy(ListIP1(0))))
+    
+    var i = 1
+    for(item<-ListIP1.drop(1)){ 
+      var rank_col = "rank_" + item 
+      stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+      
+      cur_rank = "sum_rank_" + i
+      stat_DF = stat_DF.withColumn(cur_rank, stat_DF(rank_col) + stat_DF(last_rank))
+      last_rank = cur_rank
+      i=i+1
     }
     
-    Useddata = Useddata.withColumn("hour", get_hour(Useddata("time")))
-
-    println("is_Night")
-    val is_Night = udf[Double, String] { xstr =>
-      val h = xstr.toInt
-      val night_list = List(23, 0, 1, 2, 3, 4, 5)
-      any_to_double(night_list.contains(h))
+    
+    val rank_ratio = udf((xin: Long, ratio: Int) => xin.toDouble/ratio.toDouble)
+    
+    for(item<-ListIP2){ 
+      var rank_col = "rank_" + item 
+      stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+      
+      cur_rank = "sum_rank_" + i
+      stat_DF = stat_DF.withColumn(cur_rank, stat_DF(last_rank) + rank_ratio((stat_DF(rank_col)), lit(2)))
+      last_rank = cur_rank
+      i=i+1
     }
-
-    Useddata = Useddata.withColumn("is_Night", is_Night(Useddata("hour")))
-
-    val getProvince = udf[String, String] { xstr => xstr.substring(0, 2) }
-    Useddata = Useddata.withColumn("Prov", getProvince(Useddata("region_cd")))
-
-    val getRMB = udf[Long, String] { xstr => (xstr.toDouble / 100).toLong }
-    Useddata = Useddata.withColumn("RMB", getRMB(Useddata("money")))
-
-    val is_RMB_500 = udf[Double, Long] { xstr => any_to_double(xstr.toDouble % 500 == 0) }
-    Useddata = Useddata.withColumn("is_bigRMB_500", is_RMB_500(Useddata("RMB")))
-
-    val is_RMB_1000 = udf[Double, Long] { xstr => any_to_double(xstr.toDouble % 1000 == 0) }
-    Useddata = Useddata.withColumn("is_bigRMB_1000", is_RMB_1000(Useddata("RMB")))
-
-    //println("智策大额整额定义")
-    println("is_large_integer")
-    val is_large_integer = udf[Double, Long] { a =>
-      val b = a.toString.size
-      val c = a.toDouble / (math.pow(10, (b - 1)))
-      val d = math.abs(c - math.round(c))
-      val e = d.toDouble / b.toDouble
-      any_to_double(e < 0.01 && a > 1000)
+    
+    for(item<-ListIP3){ 
+      var rank_col = "rank_" + item 
+      stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+      
+      cur_rank = "sum_rank_" + i
+      stat_DF = stat_DF.withColumn(cur_rank, stat_DF(last_rank) + rank_ratio((stat_DF(rank_col)), lit(4)))
+      last_rank = cur_rank
+      i=i+1
     }
-    Useddata = Useddata.withColumn("is_large_integer", is_large_integer(Useddata("RMB")))
-
-    //println("交易金额中8和9的个数")
-    println("count_89")
-    val count_89 = udf[Double, String] { xstr =>
-      var cnt = 0
-      xstr.foreach { x => if (x == '8' || x == '9') cnt = cnt + 1 }
-      cnt.toDouble
-    }
-    Useddata = Useddata.withColumn("count_89", count_89(Useddata("money")))
-
-    println("is_highrisk_loc")
-    val HighRisk_Loc = List("1425", "4050", "4338", "5624", "5923", "6123", "6431", "3974", //电信诈骗
-      "5810", "5972", "5880", "6054", "6582", "6852", "6851", "6762", "7035", "7095", "6314", "6366", "6266", "6927", "8991", "7517", "7580", "7517", "3371", "3336", "3724", "7975", "7910", "5119", "5118", "8737", "8360", "6125", "5625", "7035", "6754", "6900", "7155", "7096", "6574", "6761", "6717", "7091", "5546", "6623", "7039", "6755", "5654", "6900", "6900", "5210", "7348") //涉毒
-    val is_highrisk_loc = udf[Double, String] { xstr => any_to_double(HighRisk_Loc.contains(xstr.substring(0, 2))) }
-    Useddata = Useddata.withColumn("is_highrisk_loc", is_highrisk_loc(Useddata("region_cd")))
-
-    //println("持卡人原因导致的失败交易")
-    println("is_cardholder_fail")
-    val is_cardholder_fail = udf[Double, String] { xstr => any_to_double(List("51", "55", "61", "65", "75").contains(xstr)) }
-    Useddata = Useddata.withColumn("is_cardholder_fail", is_cardholder_fail(Useddata("resp_cd4")))
-
-    //println("是否正常汇率")
-    println("not_norm_rate")
-    val not_norm_rate = udf[Double, String] { xstr => any_to_double(xstr != "30001000" && xstr != "61000000") }
-    Useddata = Useddata.withColumn("not_norm_rate", not_norm_rate(Useddata("fwd_settle_conv_rt")))
-
-    val isForeign = udf[Double, String] { xstr => any_to_double(!xstr.equals("1")) }
-    Useddata = Useddata.withColumn("isForeign", isForeign(Useddata("trans_md")))
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////     
-
-    ////////////////////////整体group///////////////////////////////    
-    val tot_agg = Useddata.groupBy("card")
-    var stat_DF = tot_agg.agg(sum("is_Night") as "Night_cnt")
-
-    println("1")
-    
-    var tmp_DF = tot_agg.agg(countDistinct("region_cd") as "tot_regions")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_regions"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(countDistinct("term_id") as "tot_term_ids")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_term_ids"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(countDistinct("Prov") as "tot_Provs")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Provs"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("is_bigRMB_500") as "tot_big500")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_big500"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("is_bigRMB_1000") as "tot_big1000")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_big1000"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("is_large_integer") as "tot_large_integer")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_large_integer"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("is_highrisk_loc") as "tot_HRloc_trans")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_HRloc_trans"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("is_cardholder_fail") as "tot_cardholder_fails")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_cardholder_fails"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("not_norm_rate") as "tot_abnorm_rate")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_abnorm_rate"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("count_89") as "tot_count_89")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_count_89"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = tot_agg.agg(sum("isForeign") as "tot_Foreign")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Foreign"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-    
-    tmp_DF = tot_agg.agg(count("region_cd") as "tot_Counts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Counts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-    
-    tmp_DF = tot_agg.agg(sum("RMB") as "tot_Amounts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("tot_Amounts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-    
-    println("2")
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////         
-
-    var transinData = Useddata.filter(Useddata("trans_id").===("S33"))
-    var transoutData = Useddata.filter(Useddata("trans_id").===("S25"))
-    var quxianData = Useddata.filter(Useddata("trans_id").===("S24"))
-    var queryData = Useddata.filter(Useddata("trans_id").===("S00"))
-    var consumeData = Useddata.filter(Useddata("trans_id").===("S22"))
-
-    val transin_gb = transinData.groupBy("card")
-    val transout_gb = transoutData.groupBy("card")
-    val quxian_gb = quxianData.groupBy("card")
-    val query_gb = queryData.groupBy("card")
-    val consume_gb = consumeData.groupBy("card")
-
-    println("3")
-    ////////////////////////整体group///////////////////////////////   
-
-    tmp_DF = transin_gb.agg(count("RMB") as "transin_counts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_counts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transin_gb.agg(sum("RMB") as "transin_amounts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_amounts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transin_gb.agg(avg("RMB") as "transin_avg")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_avg"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transin_gb.agg(avg("RMB") as "transin_max")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transin_max"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transin_gb.agg(countDistinct("srccard") as "distinct_cards_in")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("distinct_cards_in"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
- 
-    tmp_DF = transout_gb.agg(count("RMB") as "transout_counts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_counts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transout_gb.agg(sum("RMB") as "transout_amounts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_amounts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transout_gb.agg(avg("RMB") as "transout_avg")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_avg"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transout_gb.agg(avg("RMB") as "transout_max")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("transout_max"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = transin_gb.agg(countDistinct("dstcard") as "distinct_cards_out")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("distinct_cards_out"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = quxian_gb.agg(count("RMB") as "quxian_counts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_counts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = quxian_gb.agg(sum("RMB") as "quxian_amounts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_amounts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = quxian_gb.agg(avg("RMB") as "quxian_avg")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_avg"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = quxian_gb.agg(avg("RMB") as "quxian_max")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("quxian_max"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = consume_gb.agg(count("RMB") as "consume_counts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_counts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = consume_gb.agg(sum("RMB") as "consume_amounts")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_amounts"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = consume_gb.agg(avg("RMB") as "consume_avg")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_avg"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    tmp_DF = consume_gb.agg(avg("RMB") as "consume_max")
-    tmp_DF = tmp_DF.select(tmp_DF("card").as("card_2"), tmp_DF("consume_max"))
-    stat_DF = stat_DF.join(tmp_DF, stat_DF("card") === tmp_DF("card_2"), "left_outer").drop("card_2")
-
-    stat_DF.show(50)
- 
-    stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card"), "left_outer").drop(stat_DF("card"))
-    println("stat_DF done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
-    stat_DF.show(50)
- 
-    //stat_DF.saveAsTable("xrli_stat_DF")
-    
-    //|Night_cnt|tot_regions|tot_term_ids|tot_Provs|tot_big500|tot_big1000|tot_large_integer|tot_HRloc_trans|tot_cardholder_fails|tot_abnorm_rate|tot_count_89|tot_Foreign|tot_Counts|transin_counts|transin_amounts|transin_avg|transin_max|distinct_cards_in|transout_counts|transout_amounts|     transout_avg|     transout_max|distinct_cards_out|quxian_counts|quxian_amounts|quxian_avg|quxian_max|consume_counts|consume_amounts|consume_avg|consume_max|                card|            cc|ccNum|prop_1|prop_2|prop_3|prop_4|prop_5|prop_6|prop_7| prop_8|prop_9|prop_10|prop_11|prop_12|prop_13|prop_14|prop_15|prop_16|prop_17|prop_18|ranks|
-
-    //分组排序取topN，取每一个团体中可以度最高的前20个
      
-    var ranked_DF = stat_DF.withColumn("ranks", row_number.over(Window.partitionBy("cc").orderBy(desc("tot_Counts"),desc("tot_Amounts"),desc("tot_regions"),desc("tot_big1000"),desc("tot_large_integer"),desc("tot_term_ids"),desc("Night_cnt"))))
-    ranked_DF = ranked_DF.filter(ranked_DF("ranks")<top_vs)
-    println("ranked_DF done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
-    println("ranked_DF count: ", ranked_DF.count)
-    ranked_DF.show(20)
-    ranked_DF.save("xrli/TeleTrans/ranked_DF_1701_07")
-
+    stat_DF.show()
+    
+    
+    val last_DF = stat_DF.select("card", cur_rank).coalesce(1).sort(desc(cur_rank))
+    println("last_DF:")
+    last_DF.show(100)
+    
+    last_DF.rdd.map(_.mkString(",")).saveAsTextFile(outputFile)
+    
+//    val saveOptions = Map("header" -> "true", "path" -> outputFile) //spark 2才支持这样
+//    last_DF.write.format("com.databricks.spark.csv").mode(SaveMode.Overwrite).options(saveOptions).save()
+    
     println("All flow done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
 
     sc.stop()
 
   }
 
+  
+  
+  
+  
+  
+  def antiSearch(Alldata: DataFrame, beginDate: String, endDate: String, seedList: Array[String]) = {
+      val maxitertimes =5
+      var currentDataSize = seedList.length.toLong
+ 
+      var lastDataSize=0L
+  
+      var tempData=null 
+      var cardList=seedList
+ 
+      var i=0
+      
+      while(i<maxitertimes && lastDataSize!=currentDataSize){
+         i=i+1
+         println("Start iteration " + i)
+         var tempData= Alldata.filter(Alldata("srccard").isin(cardList: _*) or Alldata("dstcard").isin(cardList: _*)).select(s"srccard",s"dstcard").distinct()    
+         var dataFrame1=tempData.select(s"srccard").distinct()
+         var dataFrame2=tempData.select(s"dstcard").distinct() 
+         var temp= dataFrame1.unionAll(dataFrame2).distinct().map{r => r.getString(0)}
+         cardList=temp.collect()  
+
+         lastDataSize=currentDataSize
+         currentDataSize=temp.count()
+         println("currentDataSize: ", currentDataSize)
+
+        }
+      println("cardList", cardList.mkString(","))
+      cardList
+    }
+  
+  
+  
+  def dfZipWithIndex(df: DataFrame, offset: Int = 1, colName: String = "row_idx", inFront: Boolean = true) : DataFrame = {
+      df.sqlContext.createDataFrame(
+        df.rdd.zipWithIndex.map(ln =>
+          Row.fromSeq(
+            (if (inFront) Seq(ln._2 + offset) else Seq())
+              ++ ln._1.toSeq ++
+            (if (inFront) Seq() else Seq(ln._2 + offset))
+          )
+        ),
+        StructType(
+          (if (inFront) Array(StructField(colName,LongType,false)) else Array[StructField]()) 
+            ++ df.schema.fields ++ 
+          (if (inFront) Array[StructField]() else Array(StructField(colName,LongType,false)))
+        )
+      ) 
+  }
+      
 } 
+
+
+
+
+
+// select fwd_settle_conv_rt, trans_curr_cd from tbl_common_his_trans where pdate='20170511' and  fwd_settle_conv_rt="30001000" limit 10;   61000000: 156
