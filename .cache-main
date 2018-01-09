@@ -28,7 +28,7 @@ name hashing:
 1 items
 0 -> false
 products:
-1462 items
+1588 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$1.class
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$2.class
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$3.class
@@ -872,6 +872,8 @@ D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> D:\githubProjects
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\RankGivenCards$$typecreator9$1.class
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\RankGivenCards$.class
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\RankGivenCards.class
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> D:\githubProjects\TransNet\bin\Service\ScoreCardsQueue$.class
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> D:\githubProjects\TransNet\bin\Service\ScoreCardsQueue.class
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$anonfun$1.class
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$anonfun$10.class
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$anonfun$11.class
@@ -994,6 +996,130 @@ D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProject
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$typecreator9$1.class
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$.class
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreGivenCards.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$10.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$11.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$12.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$13.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$14.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$15$$anonfun$apply$10.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$15.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$16.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$17.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$18.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$19.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$2.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$20.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$21.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$22.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$23.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$24.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$25$$anonfun$apply$11.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$25.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$26.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$27.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$28.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$29$$anonfun$apply$12.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$29.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$3.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$30.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$31.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$32.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$33$$anonfun$apply$13.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$33.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$34.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$35.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$36.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$37$$anonfun$apply$14.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$37.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$38.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$39.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$4.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$40.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$41$$anonfun$apply$15.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$41.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$42.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$43.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$44$$anonfun$apply$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$44.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$45.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$46.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$47.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$48.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$49.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$5.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$50.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$51.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$52.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$53.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$54$$anonfun$apply$16.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$54.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$55$$anonfun$apply$3.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$55.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$56$$anonfun$apply$4.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$56.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$57$$anonfun$apply$5.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$57.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$58.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$59.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$6.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$60.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$61$$anonfun$apply$17.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$61.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$62.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$63.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$64.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$65.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$66.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$67.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$68.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$69.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$7.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$70.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$71.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$72.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$73.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$74$$anonfun$apply$6.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$74.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$75$$anonfun$apply$7.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$75.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$76$$anonfun$apply$8.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$76.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$77$$anonfun$apply$9.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$77.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$78$$anonfun$79.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$78.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$8.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$80.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$81.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$82.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$83.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$84.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$9.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$dfZipWithIndex$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$2$$anonfun$apply$2.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$2.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$3.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$4.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$5.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$6.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator1$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator10$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator11$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator12$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator13$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator14$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator2$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator3$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator4$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator5$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator6$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator7$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator8$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator9$1.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$.class
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards.class
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$1.class
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$10.class
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$11.class
@@ -1492,7 +1618,7 @@ D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\githubProjects\
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\githubProjects\TransNet\bin\WireFraud\StaticInOut$.class
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\githubProjects\TransNet\bin\WireFraud\StaticInOut.class
 binary dependencies:
-85 items
+89 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> C:\Program Files\Java\jre1.8.0_101\lib\jce.jar
@@ -1554,8 +1680,12 @@ D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> C:\Program Fi
 D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 D:\githubProjects\TransNet\src\Service\SusCC_TopVs.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
@@ -1579,7 +1709,7 @@ D:\githubProjects\TransNet\src\WireFraud\StaticGraphx.scala -> D:\scala-SDK-4.3.
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> C:\Program Files\Java\jre1.8.0_101\lib\rt.jar
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar
 direct source dependencies:
-31 items
+34 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\Pregel.scala
 D:\githubProjects\TransNet\src\FraudFlow\Kcorestest.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
 D:\githubProjects\TransNet\src\FraudFlow\StaticForConnected.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
@@ -1602,6 +1732,9 @@ D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> D:\githubProjects
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala
@@ -1626,7 +1759,7 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-1462 items
+1588 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents$
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> AlgorithmUtil.ConnectedComponents$$anonfun$1
@@ -2470,6 +2603,8 @@ D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> Service.RankGiven
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> Service.RankGivenCards$$typecreator7$1
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> Service.RankGivenCards$$typecreator8$1
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> Service.RankGivenCards$$typecreator9$1
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> Service.ScoreCardsQueue
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> Service.ScoreCardsQueue$
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGivenCards
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGivenCards$
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGivenCards$$anonfun$1
@@ -2592,6 +2727,130 @@ D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGiv
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGivenCards$$typecreator7$1
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGivenCards$$typecreator8$1
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> Service.ScoreGivenCards$$typecreator9$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$10
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$11
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$12
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$13
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$14
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$15
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$15$$anonfun$apply$10
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$16
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$17
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$18
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$19
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$2
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$20
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$21
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$22
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$23
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$24
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$25
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$25$$anonfun$apply$11
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$26
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$27
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$28
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$29
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$29$$anonfun$apply$12
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$3
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$30
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$31
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$32
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$33
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$33$$anonfun$apply$13
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$34
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$35
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$36
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$37
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$37$$anonfun$apply$14
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$38
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$39
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$4
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$40
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$41
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$41$$anonfun$apply$15
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$42
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$43
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$44
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$44$$anonfun$apply$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$45
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$46
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$47
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$48
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$49
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$5
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$50
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$51
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$52
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$53
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$54
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$54$$anonfun$apply$16
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$55
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$55$$anonfun$apply$3
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$56
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$56$$anonfun$apply$4
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$57
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$57$$anonfun$apply$5
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$58
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$59
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$6
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$60
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$61
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$61$$anonfun$apply$17
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$62
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$63
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$64
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$65
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$66
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$67
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$68
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$69
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$7
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$70
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$71
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$72
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$73
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$74
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$74$$anonfun$apply$6
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$75
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$75$$anonfun$apply$7
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$76
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$76$$anonfun$apply$8
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$77
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$77$$anonfun$apply$9
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$78
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$78$$anonfun$79
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$8
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$80
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$81
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$82
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$83
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$84
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$9
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$dfZipWithIndex$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$2
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$2$$anonfun$apply$2
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$3
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$4
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$5
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$anonfun$main$6
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator1$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator10$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator11$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator12$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator13$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator14$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator2$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator3$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator4$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator5$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator6$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator7$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator8$1
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> Service.ScoreMd5Cards$$typecreator9$1
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> Service.ScoreReadCards
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> Service.ScoreReadCards$
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> Service.ScoreReadCards$$anonfun$1
@@ -3092,7 +3351,7 @@ D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> WireFraud.StaticIn
 used names:
 0 items
 product stamps:
-1462 items
+1588 items
 D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$1.class -> lastModified(1491887226706)
 D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$2.class -> lastModified(1491887226710)
 D:\githubProjects\TransNet\bin\AlgorithmUtil\ConnectedComponents$$anonfun$3.class -> lastModified(1491887226712)
@@ -3937,6 +4196,8 @@ D:\githubProjects\TransNet\bin\Service\RankGivenCards$$typecreator8$1.class -> l
 D:\githubProjects\TransNet\bin\Service\RankGivenCards$$typecreator9$1.class -> lastModified(1514883441520)
 D:\githubProjects\TransNet\bin\Service\RankGivenCards$.class -> lastModified(1514883440979)
 D:\githubProjects\TransNet\bin\Service\RankGivenCards.class -> lastModified(1514883440850)
+D:\githubProjects\TransNet\bin\Service\ScoreCardsQueue$.class -> lastModified(1515393779656)
+D:\githubProjects\TransNet\bin\Service\ScoreCardsQueue.class -> lastModified(1515393779623)
 D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$anonfun$1.class -> lastModified(1514956581642)
 D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$anonfun$10.class -> lastModified(1514956581649)
 D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$anonfun$11.class -> lastModified(1514956581656)
@@ -4059,127 +4320,251 @@ D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$typecreator8$1.class -> 
 D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$$typecreator9$1.class -> lastModified(1514956582387)
 D:\githubProjects\TransNet\bin\Service\ScoreGivenCards$.class -> lastModified(1514956581627)
 D:\githubProjects\TransNet\bin\Service\ScoreGivenCards.class -> lastModified(1514956581488)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$1.class -> lastModified(1515058620763)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$10.class -> lastModified(1515058620770)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$11.class -> lastModified(1515058620776)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$12$$anonfun$apply$10.class -> lastModified(1515058620788)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$12.class -> lastModified(1515058620782)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$13.class -> lastModified(1515058620794)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$14.class -> lastModified(1515058620800)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$15.class -> lastModified(1515058620807)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$16.class -> lastModified(1515058620813)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$17.class -> lastModified(1515058620819)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$18.class -> lastModified(1515058620824)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$19.class -> lastModified(1515058620837)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$2.class -> lastModified(1515058620843)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$20.class -> lastModified(1515058620849)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$21.class -> lastModified(1515058620856)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$22$$anonfun$apply$11.class -> lastModified(1515058620872)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$22.class -> lastModified(1515058620864)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$23.class -> lastModified(1515058620878)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$24.class -> lastModified(1515058620883)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$25.class -> lastModified(1515058620888)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$26$$anonfun$apply$12.class -> lastModified(1515058620901)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$26.class -> lastModified(1515058620894)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$27.class -> lastModified(1515058620906)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$28.class -> lastModified(1515058620912)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$29.class -> lastModified(1515058620919)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$3.class -> lastModified(1515058620925)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$30$$anonfun$apply$13.class -> lastModified(1515058620938)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$30.class -> lastModified(1515058620932)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$31.class -> lastModified(1515058620945)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$32.class -> lastModified(1515058620951)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$33.class -> lastModified(1515058620956)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$34$$anonfun$apply$14.class -> lastModified(1515058620969)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$34.class -> lastModified(1515058620962)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$35.class -> lastModified(1515058620975)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$36.class -> lastModified(1515058620981)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$37.class -> lastModified(1515058620987)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$38$$anonfun$apply$15.class -> lastModified(1515058621000)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$38.class -> lastModified(1515058620993)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$39.class -> lastModified(1515058621006)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$4.class -> lastModified(1515058621012)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$40.class -> lastModified(1515058621022)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$41$$anonfun$apply$1.class -> lastModified(1515058621034)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$41.class -> lastModified(1515058621028)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$42.class -> lastModified(1515058621041)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$43.class -> lastModified(1515058621047)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$44.class -> lastModified(1515058621053)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$45.class -> lastModified(1515058621059)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$46.class -> lastModified(1515058621065)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$47.class -> lastModified(1515058621071)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$48.class -> lastModified(1515058621078)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$49.class -> lastModified(1515058621084)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$5.class -> lastModified(1515058621090)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$50.class -> lastModified(1515058621097)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$51$$anonfun$apply$16.class -> lastModified(1515058621111)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$51.class -> lastModified(1515058621104)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$52$$anonfun$apply$3.class -> lastModified(1515058621123)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$52.class -> lastModified(1515058621117)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$53$$anonfun$apply$4.class -> lastModified(1515058621135)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$53.class -> lastModified(1515058621129)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$54$$anonfun$apply$5.class -> lastModified(1515058621148)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$54.class -> lastModified(1515058621142)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$55.class -> lastModified(1515058621154)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$56.class -> lastModified(1515058621160)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$57.class -> lastModified(1515058621166)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$58$$anonfun$apply$17.class -> lastModified(1515058621179)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$58.class -> lastModified(1515058621173)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$59.class -> lastModified(1515058621186)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$6.class -> lastModified(1515058621192)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$60.class -> lastModified(1515058621198)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$61.class -> lastModified(1515058621206)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$62.class -> lastModified(1515058621214)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$63.class -> lastModified(1515058621222)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$64.class -> lastModified(1515058621230)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$65.class -> lastModified(1515058621242)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$66.class -> lastModified(1515058621254)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$67.class -> lastModified(1515058621260)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$68.class -> lastModified(1515058621266)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$69.class -> lastModified(1515058621272)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$7.class -> lastModified(1515058621278)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$70.class -> lastModified(1515058621284)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$71$$anonfun$apply$6.class -> lastModified(1515058621304)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$71.class -> lastModified(1515058621299)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$72$$anonfun$apply$7.class -> lastModified(1515058621318)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$72.class -> lastModified(1515058621312)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$73$$anonfun$apply$8.class -> lastModified(1515058621333)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$73.class -> lastModified(1515058621327)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$74$$anonfun$apply$9.class -> lastModified(1515058621347)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$74.class -> lastModified(1515058621341)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$75$$anonfun$76.class -> lastModified(1515058621365)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$75.class -> lastModified(1515058621359)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$77.class -> lastModified(1515058621373)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$78.class -> lastModified(1515058621379)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$79.class -> lastModified(1515058621387)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$8.class -> lastModified(1515058621394)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$80.class -> lastModified(1515058621399)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$9.class -> lastModified(1515058621404)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$dfZipWithIndex$1.class -> lastModified(1515058621411)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$1.class -> lastModified(1515058621417)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$2$$anonfun$apply$2.class -> lastModified(1515058621428)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$2.class -> lastModified(1515058621423)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$3.class -> lastModified(1515058621434)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$4.class -> lastModified(1515058621440)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$5.class -> lastModified(1515058621446)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$6.class -> lastModified(1515058621453)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$7.class -> lastModified(1515058621459)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator1$1.class -> lastModified(1515058621469)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator10$1.class -> lastModified(1515058621476)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator11$1.class -> lastModified(1515058621484)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator12$1.class -> lastModified(1515058621491)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator13$1.class -> lastModified(1515058621497)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator14$1.class -> lastModified(1515058621505)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator2$1.class -> lastModified(1515058621510)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator3$1.class -> lastModified(1515058621522)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator4$1.class -> lastModified(1515058621527)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator5$1.class -> lastModified(1515058621533)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator6$1.class -> lastModified(1515058621540)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator7$1.class -> lastModified(1515058621546)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator8$1.class -> lastModified(1515058621551)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator9$1.class -> lastModified(1515058621559)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards$.class -> lastModified(1515058620693)
-D:\githubProjects\TransNet\bin\Service\ScoreReadCards.class -> lastModified(1515058620562)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$1.class -> lastModified(1515490853295)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$10.class -> lastModified(1515490853302)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$11.class -> lastModified(1515490853315)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$12.class -> lastModified(1515490853320)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$13.class -> lastModified(1515490853326)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$14.class -> lastModified(1515490853334)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$15$$anonfun$apply$10.class -> lastModified(1515490853347)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$15.class -> lastModified(1515490853341)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$16.class -> lastModified(1515490853353)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$17.class -> lastModified(1515490853358)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$18.class -> lastModified(1515490853364)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$19.class -> lastModified(1515490853370)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$2.class -> lastModified(1515490853375)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$20.class -> lastModified(1515490853380)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$21.class -> lastModified(1515490853387)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$22.class -> lastModified(1515490853395)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$23.class -> lastModified(1515490853401)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$24.class -> lastModified(1515490853407)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$25$$anonfun$apply$11.class -> lastModified(1515490853417)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$25.class -> lastModified(1515490853412)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$26.class -> lastModified(1515490853422)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$27.class -> lastModified(1515490853426)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$28.class -> lastModified(1515490853431)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$29$$anonfun$apply$12.class -> lastModified(1515490853440)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$29.class -> lastModified(1515490853436)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$3.class -> lastModified(1515490853446)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$30.class -> lastModified(1515490853451)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$31.class -> lastModified(1515490853456)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$32.class -> lastModified(1515490853460)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$33$$anonfun$apply$13.class -> lastModified(1515490853470)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$33.class -> lastModified(1515490853466)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$34.class -> lastModified(1515490853475)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$35.class -> lastModified(1515490853480)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$36.class -> lastModified(1515490853485)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$37$$anonfun$apply$14.class -> lastModified(1515490853496)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$37.class -> lastModified(1515490853490)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$38.class -> lastModified(1515490853505)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$39.class -> lastModified(1515490853511)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$4.class -> lastModified(1515490853516)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$40.class -> lastModified(1515490853521)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$41$$anonfun$apply$15.class -> lastModified(1515490853531)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$41.class -> lastModified(1515490853527)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$42.class -> lastModified(1515490853536)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$43.class -> lastModified(1515490853548)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$44$$anonfun$apply$1.class -> lastModified(1515490853562)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$44.class -> lastModified(1515490853556)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$45.class -> lastModified(1515490853568)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$46.class -> lastModified(1515490853573)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$47.class -> lastModified(1515490853578)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$48.class -> lastModified(1515490853582)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$49.class -> lastModified(1515490853587)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$5.class -> lastModified(1515490853592)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$50.class -> lastModified(1515490853597)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$51.class -> lastModified(1515490853603)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$52.class -> lastModified(1515490853607)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$53.class -> lastModified(1515490853619)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$54$$anonfun$apply$16.class -> lastModified(1515490853632)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$54.class -> lastModified(1515490853627)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$55$$anonfun$apply$3.class -> lastModified(1515490853645)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$55.class -> lastModified(1515490853641)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$56$$anonfun$apply$4.class -> lastModified(1515490853655)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$56.class -> lastModified(1515490853651)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$57$$anonfun$apply$5.class -> lastModified(1515490853684)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$57.class -> lastModified(1515490853679)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$58.class -> lastModified(1515490853689)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$59.class -> lastModified(1515490853694)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$6.class -> lastModified(1515490853700)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$60.class -> lastModified(1515490853705)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$61$$anonfun$apply$17.class -> lastModified(1515490853715)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$61.class -> lastModified(1515490853710)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$62.class -> lastModified(1515490853721)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$63.class -> lastModified(1515490853726)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$64.class -> lastModified(1515490853733)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$65.class -> lastModified(1515490853740)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$66.class -> lastModified(1515490853747)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$67.class -> lastModified(1515490853754)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$68.class -> lastModified(1515490853760)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$69.class -> lastModified(1515490853766)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$7.class -> lastModified(1515490853770)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$70.class -> lastModified(1515490853774)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$71.class -> lastModified(1515490853778)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$72.class -> lastModified(1515490853783)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$73.class -> lastModified(1515490853789)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$74$$anonfun$apply$6.class -> lastModified(1515490853799)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$74.class -> lastModified(1515490853795)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$75$$anonfun$apply$7.class -> lastModified(1515490853810)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$75.class -> lastModified(1515490853806)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$76$$anonfun$apply$8.class -> lastModified(1515490853819)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$76.class -> lastModified(1515490853815)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$77$$anonfun$apply$9.class -> lastModified(1515490853830)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$77.class -> lastModified(1515490853825)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$78$$anonfun$79.class -> lastModified(1515490853841)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$78.class -> lastModified(1515490853835)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$8.class -> lastModified(1515490853846)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$80.class -> lastModified(1515490853852)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$81.class -> lastModified(1515490853856)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$82.class -> lastModified(1515490853862)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$83.class -> lastModified(1515490853866)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$84.class -> lastModified(1515490853870)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$9.class -> lastModified(1515490853874)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$dfZipWithIndex$1.class -> lastModified(1515490853880)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$1.class -> lastModified(1515490853886)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$2$$anonfun$apply$2.class -> lastModified(1515490853897)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$2.class -> lastModified(1515490853891)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$3.class -> lastModified(1515490853903)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$4.class -> lastModified(1515490853909)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$5.class -> lastModified(1515490853915)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$anonfun$main$6.class -> lastModified(1515490853921)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator1$1.class -> lastModified(1515490853946)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator10$1.class -> lastModified(1515490853951)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator11$1.class -> lastModified(1515490853956)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator12$1.class -> lastModified(1515490853961)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator13$1.class -> lastModified(1515490853967)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator14$1.class -> lastModified(1515490853973)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator2$1.class -> lastModified(1515490853979)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator3$1.class -> lastModified(1515490853983)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator4$1.class -> lastModified(1515490853988)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator5$1.class -> lastModified(1515490853993)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator6$1.class -> lastModified(1515490853998)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator7$1.class -> lastModified(1515490854004)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator8$1.class -> lastModified(1515490854011)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$$typecreator9$1.class -> lastModified(1515490854016)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards$.class -> lastModified(1515490853283)
+D:\githubProjects\TransNet\bin\Service\ScoreMd5Cards.class -> lastModified(1515490853179)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$1.class -> lastModified(1515378166013)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$10.class -> lastModified(1515378166019)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$11.class -> lastModified(1515378166024)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$12$$anonfun$apply$10.class -> lastModified(1515378166038)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$12.class -> lastModified(1515378166030)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$13.class -> lastModified(1515378166042)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$14.class -> lastModified(1515378166046)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$15.class -> lastModified(1515378166060)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$16.class -> lastModified(1515378166068)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$17.class -> lastModified(1515378166072)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$18.class -> lastModified(1515378166076)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$19.class -> lastModified(1515378166088)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$2.class -> lastModified(1515378166092)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$20.class -> lastModified(1515378166097)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$21.class -> lastModified(1515378166102)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$22$$anonfun$apply$11.class -> lastModified(1515378166116)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$22.class -> lastModified(1515378166109)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$23.class -> lastModified(1515378166120)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$24.class -> lastModified(1515378166125)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$25.class -> lastModified(1515378166132)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$26$$anonfun$apply$12.class -> lastModified(1515378166146)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$26.class -> lastModified(1515378166140)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$27.class -> lastModified(1515378166153)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$28.class -> lastModified(1515378166157)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$29.class -> lastModified(1515378166164)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$3.class -> lastModified(1515378166171)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$30$$anonfun$apply$13.class -> lastModified(1515378166181)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$30.class -> lastModified(1515378166177)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$31.class -> lastModified(1515378166195)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$32.class -> lastModified(1515378166202)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$33.class -> lastModified(1515378166208)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$34$$anonfun$apply$14.class -> lastModified(1515378166219)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$34.class -> lastModified(1515378166212)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$35.class -> lastModified(1515378166222)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$36.class -> lastModified(1515378166227)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$37.class -> lastModified(1515378166233)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$38$$anonfun$apply$15.class -> lastModified(1515378166242)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$38.class -> lastModified(1515378166237)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$39.class -> lastModified(1515378166246)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$4.class -> lastModified(1515378166251)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$40.class -> lastModified(1515378166259)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$41$$anonfun$apply$1.class -> lastModified(1515378166267)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$41.class -> lastModified(1515378166263)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$42.class -> lastModified(1515378166271)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$43.class -> lastModified(1515378166276)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$44.class -> lastModified(1515378166283)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$45.class -> lastModified(1515378166287)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$46.class -> lastModified(1515378166291)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$47.class -> lastModified(1515378166297)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$48.class -> lastModified(1515378166301)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$49.class -> lastModified(1515378166305)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$5.class -> lastModified(1515378166310)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$50.class -> lastModified(1515378166316)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$51$$anonfun$apply$16.class -> lastModified(1515378166326)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$51.class -> lastModified(1515378166322)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$52$$anonfun$apply$3.class -> lastModified(1515378166335)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$52.class -> lastModified(1515378166331)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$53$$anonfun$apply$4.class -> lastModified(1515378166343)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$53.class -> lastModified(1515378166339)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$54$$anonfun$apply$5.class -> lastModified(1515378166353)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$54.class -> lastModified(1515378166349)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$55.class -> lastModified(1515378166358)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$56.class -> lastModified(1515378166362)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$57.class -> lastModified(1515378166367)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$58$$anonfun$apply$17.class -> lastModified(1515378166375)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$58.class -> lastModified(1515378166371)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$59.class -> lastModified(1515378166380)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$6.class -> lastModified(1515378166386)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$60.class -> lastModified(1515378166391)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$61.class -> lastModified(1515378166400)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$62.class -> lastModified(1515378166406)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$63.class -> lastModified(1515378166412)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$64.class -> lastModified(1515378166418)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$65.class -> lastModified(1515378166424)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$66.class -> lastModified(1515378166429)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$67.class -> lastModified(1515378166434)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$68.class -> lastModified(1515378166438)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$69.class -> lastModified(1515378166442)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$7.class -> lastModified(1515378166446)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$70.class -> lastModified(1515378166450)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$71$$anonfun$apply$6.class -> lastModified(1515378166462)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$71.class -> lastModified(1515378166458)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$72$$anonfun$apply$7.class -> lastModified(1515378166475)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$72.class -> lastModified(1515378166470)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$73$$anonfun$apply$8.class -> lastModified(1515378166484)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$73.class -> lastModified(1515378166480)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$74$$anonfun$apply$9.class -> lastModified(1515378166494)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$74.class -> lastModified(1515378166489)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$75$$anonfun$76.class -> lastModified(1515378166504)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$75.class -> lastModified(1515378166500)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$77.class -> lastModified(1515378166513)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$78.class -> lastModified(1515378166518)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$79.class -> lastModified(1515378166524)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$8.class -> lastModified(1515378166528)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$80.class -> lastModified(1515378166534)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$9.class -> lastModified(1515378166540)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$dfZipWithIndex$1.class -> lastModified(1515378166548)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$1.class -> lastModified(1515378166564)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$2$$anonfun$apply$2.class -> lastModified(1515378166575)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$2.class -> lastModified(1515378166571)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$3.class -> lastModified(1515378166579)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$4.class -> lastModified(1515378166584)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$5.class -> lastModified(1515378166592)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$6.class -> lastModified(1515378166600)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$anonfun$main$7.class -> lastModified(1515378166604)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator1$1.class -> lastModified(1515378166610)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator10$1.class -> lastModified(1515378166615)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator11$1.class -> lastModified(1515378166619)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator12$1.class -> lastModified(1515378166623)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator13$1.class -> lastModified(1515378166628)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator14$1.class -> lastModified(1515378166633)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator2$1.class -> lastModified(1515378166639)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator3$1.class -> lastModified(1515378166643)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator4$1.class -> lastModified(1515378166646)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator5$1.class -> lastModified(1515378166650)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator6$1.class -> lastModified(1515378166655)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator7$1.class -> lastModified(1515378166659)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator8$1.class -> lastModified(1515378166664)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$$typecreator9$1.class -> lastModified(1515378166668)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards$.class -> lastModified(1515378166001)
+D:\githubProjects\TransNet\bin\Service\ScoreReadCards.class -> lastModified(1515378165883)
 D:\githubProjects\TransNet\bin\Service\SusCC_TopVs$$anonfun$1.class -> lastModified(1513816801920)
 D:\githubProjects\TransNet\bin\Service\SusCC_TopVs$$anonfun$10.class -> lastModified(1513816801927)
 D:\githubProjects\TransNet\bin\Service\SusCC_TopVs$$anonfun$11.class -> lastModified(1513816801931)
@@ -4556,7 +4941,7 @@ D:\githubProjects\TransNet\bin\WireFraud\StaticInOut$$anonfun$main$3.class -> la
 D:\githubProjects\TransNet\bin\WireFraud\StaticInOut$.class -> lastModified(1491887228166)
 D:\githubProjects\TransNet\bin\WireFraud\StaticInOut.class -> lastModified(1491887228160)
 source stamps:
-50 items
+52 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> hash(d4e75d95be4cb356408c7ded048a79c094407161)
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> hash(77b29b228a076c3e2cc37964d87a26b99393d42a)
 D:\githubProjects\TransNet\src\AlgorithmUtil\KcoresLabel.scala -> hash(189c97db21cf19ace3a41c5cf33f418a210db13c)
@@ -4587,8 +4972,10 @@ D:\githubProjects\TransNet\src\Service\DF_row_index.scala -> hash(3dcccc90d243ea
 D:\githubProjects\TransNet\src\Service\Graph_Prop.scala -> hash(3c527b5ec5a12bfb32b8f32a4d652f08ff5d5335)
 D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala -> hash(1a7ed6b92861fe0d94336682b75996258dbf49c4)
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> hash(055e7caade2abebe82c870dc2d4df60900015e3d)
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> hash(540f260a1c5ca7ccc1b187d7f51c21654d7a3a05)
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> hash(b38e0756fc4a88513a2e564ddf5a92a3ea06af31)
-D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> hash(ca8a74de8c6ed472ab8d1c8dbfe3d604f6dc127d)
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> hash(4b0d5ed3e6a6d5d79b0ec32585a162d61a166e96)
+D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> hash(33e9fc7eac53bae72dd0e75c2dfedb253b1ccc87)
 D:\githubProjects\TransNet\src\Service\SusCC_TopVs.scala -> hash(72760029e31455423dbdfafb73ff6e442277dc9b)
 D:\githubProjects\TransNet\src\Service\SusVertices.scala -> hash(be14ea6dc973e5bb46f7c29848024c4409bcfdc0)
 D:\githubProjects\TransNet\src\SortByTime.scala -> hash(bb8d65ad1f0e849e1bcb6b4a952874f84ffb6430)
@@ -4616,9 +5003,9 @@ class names:
 3 items
 C:\Program Files\Java\jre1.8.0_101\lib\jce.jar -> javax.crypto.spec.SecretKeySpec
 C:\Program Files\Java\jre1.8.0_101\lib\rt.jar -> java.lang.Object
-D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar -> scala.Tuple21
+D:\scala-SDK-4.3.0-vfinal-2.11-win32.win32.x86_64\eclipse\sparkJars\spark1\spark-assembly-1.6.1-hadoop2.6.0.jar -> scala.Tuple17
 internal apis:
-50 items
+52 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAEm0zmAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAhQWxnb3JpdGhtVXRpbC5Db25uZWN0ZWRDb21wb25lbnRzdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AL3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4ALgBwc3EAfgAzc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AN3NxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA2dAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA2c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgBTdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBUc3EAfgBHdAADQW55c3EAfgBLc3EAfgBOdXEAfgBRAAAAAnNxAH4AU3QABXNjYWxhcQB+AFp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AA1BbGdvcml0aG1VdGlsc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFbW2hLjHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFNTnXZW+TLNWQIx97QSKecCUQHFh
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> 
@@ -4679,10 +5066,14 @@ D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala ->
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBLriS8AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAaU2VydmljZS5NZXJnZV92ZXJ0aWNlX3Byb3B1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgAveHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgAuAHBzcQB+ADNzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA3c3EAfgAuAHBzcQB+ADN1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA2dAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANnNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AVXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AEF4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AElbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADZzcQB+AEh0AAVBcnJheXEAfgBOdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AEh0AAZTdHJpbmdzcQB+AExzcQB+AE91cQB+AFIAAAADc3EAfgBUdAAEamF2YXNxAH4AVHQABGxhbmdxAH4AWXNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgBtAAAAAnNxAH4ASHQABk9iamVjdHEAfgBxc3EAfgBIdAADQW55cQB+AE51cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AAdTZXJ2aWNlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFgWYMMi3VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFBp+1rkoYf4NlDNmgrdZliWNv0nE
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAVQNQqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAWU2VydmljZS5SYW5rR2l2ZW5DYXJkc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AC94cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AC4AcHNxAH4AM3NyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADdzcQB+AC4AcHNxAH4AM3VxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADZ0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA2c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBVdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4AQXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ASVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANnNxAH4ASHQABUFycmF5cQB+AE51cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ASHQABlN0cmluZ3NxAH4ATHNxAH4AT3VxAH4AUgAAAANzcQB+AFR0AARqYXZhc3EAfgBUdAAEbGFuZ3EAfgBZc3EAfgAuAHBzcQB+ADN1cQB+ABAAAAAAc3EAfgAuAHBzcQB+ADN1cQB+AG0AAAACc3EAfgBIdAAGT2JqZWN0cQB+AHFzcQB+AEh0AANBbnlxAH4ATnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQAB1NlcnZpY2VzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWC2Fsj5dXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUBV58qt4qvr6CyHDcLU32CQABXj0=
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAJZXrtAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAXU2VydmljZS5TY29yZUNhcmRzUXVldWV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AUXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AD14cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AEVbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADRzcQB+AER0AAVBcnJheXEAfgBKdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AER0AAZTdHJpbmdzcQB+AEhzcQB+AEt1cQB+AE4AAAADc3EAfgBQdAAEamF2YXNxAH4AUHQABGxhbmdxAH4AVXBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgBpAAAAAnNxAH4ARHQABk9iamVjdHEAfgBtc3EAfgBEdAADQW55cQB+AEpwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQAB1NlcnZpY2VzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWDUgdM1dXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUVA8mChxcp8zBsYfX9RwhZU16OgU=
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDYC4rqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAXU2VydmljZS5TY29yZUdpdmVuQ2FyZHN1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGw7kU8R9EVMyQIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHABc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHBzcQB+AC4Bc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4ANXNxAH4ALgF1cQB+ABAAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+ABZxAH4AIHVxAH4AIQAAAABzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA0dAAEVW5pdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4ANHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AUXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AD14cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AEVbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADRzcQB+AER0AAVBcnJheXEAfgBKdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AER0AAZTdHJpbmdzcQB+AEhzcQB+AEt1cQB+AE4AAAADc3EAfgBQdAAEamF2YXNxAH4AUHQABGxhbmdxAH4AVXBzcQB+AC4BdXEAfgAQAAAAAHBzcQB+AC4BdXEAfgBpAAAAAnNxAH4ARHQABk9iamVjdHEAfgBtc3EAfgBEdAADQW55cQB+AEpwcHVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAABc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+ABx4cHQAB1NlcnZpY2VzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAWC6crSUdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUs44HVvxKiFE6LlZN31qSo+oGrzE=
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB75PHQAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAVU2VydmljZS5TY29yZU1kNUNhcmRzdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAXNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBwc3EAfgAuAXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADVzcQB+AC4BdXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAAAc3EAfgAjAHQABG1haW51cQB+ACYAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAcTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4ANHQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADRzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AFF1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgA9eHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBFWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA0c3EAfgBEdAAFQXJyYXlxAH4ASnVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBEdAAGU3RyaW5nc3EAfgBIc3EAfgBLdXEAfgBOAAAAA3NxAH4AUHQABGphdmFzcQB+AFB0AARsYW5ncQB+AFVwc3EAfgAuAXVxAH4AEAAAAABwc3EAfgAuAXVxAH4AaQAAAAJzcQB+AER0AAZPYmplY3RxAH4AbXNxAH4ARHQAA0FueXEAfgBKcHB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgAceHB0AAdTZXJ2aWNlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFg2ksewHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxiaW50AB5EOlxnaXRodWJQcm9qZWN0c1xUcmFuc05ldFxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFEsNXtPmptXXmw7DJYWhYtYaFm6W
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCCdcc5AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAWU2VydmljZS5TY29yZVJlYWRDYXJkc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4AHHhwdAAHU2VydmljZXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYMCHui51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcYmludAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABTKinTejG7UcquNHI2/49YE9twSfQ==
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCCdcc5AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAWU2VydmljZS5TY29yZVJlYWRDYXJkc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4AHHhwdAAHU2VydmljZXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNOTqlp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcYmludAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABQz6fx+rFO65y3Q51wt/tslOxzMhw==
 D:\githubProjects\TransNet\src\Service\SusCC_TopVs.scala -> 
 rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHANVCqgAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAATU2VydmljZS5TdXNDQ19Ub3BWc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cAFzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwcHNxAH4ALgFzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AFUwACWluaGVyaXRlZHEAfgAVTAAHcGFyZW50c3EAfgAVeHEAfgA1c3EAfgAuAXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADR0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgA0c3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4AHHhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgBRdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+ABxMAAN0cGVxAH4APXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AKXQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ARVsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4ANHNxAH4ARHQABUFycmF5cQB+AEp1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4ARHQABlN0cmluZ3NxAH4ASHNxAH4AS3VxAH4ATgAAAANzcQB+AFB0AARqYXZhc3EAfgBQdAAEbGFuZ3EAfgBVcHNxAH4ALgF1cQB+ABAAAAAAcHNxAH4ALgF1cQB+AGkAAAACc3EAfgBEdAAGT2JqZWN0cQB+AG1zcQB+AER0AANBbnlxAH4ASnBwdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAFzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4AHHhwdAAHU2VydmljZXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYHaDIJ51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcYmludAAeRDpcZ2l0aHViUHJvamVjdHNcVHJhbnNOZXRcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABRydgAp4xRVQj29+vtz/25EInfcmw==
 D:\githubProjects\TransNet\src\Service\SusVertices.scala -> 
@@ -4722,7 +5113,7 @@ rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhf
 external apis:
 0 items
 source infos:
-50 items
+52 items
 D:\githubProjects\TransNet\src\AlgorithmUtil\ConnectedComponents.scala -> 
 AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\AlgorithmUtil\HashEncode.scala -> 
@@ -4783,7 +5174,11 @@ D:\githubProjects\TransNet\src\Service\Merge_vertice_prop.scala ->
 AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\Service\RankGivenCards.scala -> 
 AAAAAAAAAAA=
+D:\githubProjects\TransNet\src\Service\ScoreCardsQueue.scala -> 
+AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\Service\ScoreGivenCards.scala -> 
+AAAAAAAAAAA=
+D:\githubProjects\TransNet\src\Service\ScoreMd5Cards.scala -> 
 AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\Service\ScoreReadCards.scala -> 
 AAAAAAAAAAA=
@@ -4824,7 +5219,7 @@ AAAAAAAAAAA=
 D:\githubProjects\TransNet\src\WireFraud\StaticInOut.scala -> 
 AAAAAAAAAAA=
 compilations:
-392 items
+415 items
 000 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGFkvnt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 001 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGFl+Sx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
 002 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWGF7EAN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAK0M6XFVzZXJzXEFkbWluaXN0cmF0b3JcRGVza3RvcFxUcmFuc05ldFxiaW50ACtDOlxVc2Vyc1xBZG1pbmlzdHJhdG9yXERlc2t0b3BcVHJhbnNOZXRcc3Jj
@@ -5217,3 +5612,26 @@ compilations:
 389 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYLqEn+J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
 390 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYLq9GPx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
 391 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYMCHui51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+392 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYMT2nZZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+393 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNN5Sdh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+394 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNOKTyN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+395 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNOTqlp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+396 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNOjEwN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+397 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNOskfx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+398 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNO4mPh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+399 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNSB0zV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+400 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNUm/Ml1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+401 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNh2l5J1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+402 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNh22Ih1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+403 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNmCZKF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+404 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNmQ0QN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+405 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNmQ/NV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+406 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNmk8g51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+407 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNnE/v11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+408 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNoGydx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+409 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNoKD/d1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+410 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNoRD/d1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+411 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNogp0B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+412 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNohC8B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+413 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNo4WC91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==
+414 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABYNpLHsB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XGJpbnQAHkQ6XGdpdGh1YlByb2plY3RzXFRyYW5zTmV0XHNyYw==

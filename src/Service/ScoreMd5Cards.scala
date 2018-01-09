@@ -8,7 +8,7 @@ spark-submit \
 --driver-memory 15g \
 --executor-memory 15G \
 --num-executors 300 \
-TeleTrans.jar "20170511" "20170511" "xrli/AML/Inputs/seedCards_test.csv" "xrli/AML/Outputs/CardsScore_test.csv"
+TeleTrans.jar "20170511" "20170511"
 */
 
 import org.apache.spark._
@@ -30,7 +30,7 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.functions 
 
-object ScoreReadCards {
+object ScoreMd5Cards {
 
   private val KMax = 5
  
@@ -61,23 +61,40 @@ object ScoreReadCards {
 
     val startTime = System.currentTimeMillis();
 
+//    hc.sql("add jar /opt/cloudera/parcels/CDH/lib/hive/auxlib/csv-serde-1.1.2.jar")
+//    
+//    println("Add csv-serde to hive")
+    
     hc.sql(s"set hive.input.format=org.apache.hadoop.hive.ql.io.CombineHiveInputFormat" +
       s"set mapred.max.split.size=10240000000" +
       s"set mapred.min.split.size.per.node=10240000000" +
       s"set mapred.min.split.size.per.rack=10240000000" +
       s"set mapreduce.jobtracker.split.metainfo.maxsize = -1" +
       s"set mapreduce.job.queuename=root.queue_hdrisk")
+    
 
  
     val startDate = args(0)
     val endDate = args(1)  
-    val inputFile = args(2)
-    val outputFile = args(3)
+//    val inputFile = args(2)
+//    val outputFile = args(3)
     
       
     //val seedList = sc.textFile("xrli/AML/Inputs/seedCards_test.csv").collect() 
     
-    val seedList = sc.textFile(inputFile).collect() 
+    
+    val inputFile = "/user/hdrisk/AML/MD5_card"
+    val MD5Pair = sc.textFile(inputFile).map{x => List(x.split(",")(0),x.split(",")(1))}   
+    
+    val Row_RDD = MD5Pair.map{f=>
+           Row.fromSeq(f.toSeq)
+       }
+  
+    val schemaPair = StructType(StructField("oricard",StringType,true)::StructField("md5card",StringType,true)::Nil)
+    var MD5PairDF = sqlContext.createDataFrame(Row_RDD, schemaPair).persist(StorageLevel.MEMORY_AND_DISK_SER)
+        
+    val seedList = MD5Pair.map(f=>f(1)).collect() 
+    
     
     var Alldata = hc.sql(
       s"select tfr_in_acct_no," +
@@ -102,7 +119,8 @@ object ScoreReadCards {
         s"trans_curr_cd, " +
         s"trans_id, " +
         s"pri_acct_no_conv " +
-        s"from tbl_common_his_trans where " +
+        //s"from tbl_common_his_trans where " +
+        s"from 00010000_default.viw_common_his_trans where " +
         s"pdate>=$startDate and pdate<=$endDate ")
       .toDF("srccard", "dstcard", "money", "date", "time", "region_cd", "trans_md", "mchnt_tp", "mchnt_cd", "trans_chnl",
         "term_id", "fwd_ins_id_cd", "rcv_ins_id_cd", "card_class", "resp_cd4", "acpt_ins_tp", "auth_id_resp_cd", "acpt_bank", "charge", "trans_curr_cd", "trans_id", "card")
@@ -797,6 +815,7 @@ object ScoreReadCards {
                        
     val ListIP3 = List("prop_2","prop_3","prop_5","prop_8","prop_9","prop_10","prop_11","prop_12","prop_13","prop_14","prop_15","prop_16","prop_17","prop_18")
     
+     
     
     var cur_rank = "sum_rank_0"
     var last_rank = "sum_rank_0"
@@ -836,17 +855,17 @@ object ScoreReadCards {
       i=i+1
     }
      
+     
+    stat_DF = stat_DF.join(MD5PairDF, stat_DF("card") === MD5PairDF("md5card"), "right_outer") 
     stat_DF.show()
-    
-    
-    val last_DF = stat_DF.select("card", cur_rank).coalesce(1).sort(desc(cur_rank))
+     
+    val last_DF = stat_DF.select("oricard", cur_rank).coalesce(1).sort(desc(cur_rank))
     println("last_DF:")
     last_DF.show(100)
-    
-    last_DF.rdd.map(_.mkString(",")).saveAsTextFile(outputFile)
-    
-//    val saveOptions = Map("header" -> "true", "path" -> outputFile) //spark 2才支持这样
-//    last_DF.write.format("com.databricks.spark.csv").mode(SaveMode.Overwrite).options(saveOptions).save()
+     
+    val outputFile = "/user/hdrisk/AML/output_Score"
+    last_DF.rdd.map(_.mkString(",")).coalesce(1).saveAsTextFile(outputFile)
+     
     
     println("All flow done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
 
