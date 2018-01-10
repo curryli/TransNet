@@ -84,6 +84,7 @@ object ScoreMd5Cards {
     
     
     val inputFile = "/user/hdrisk/AML/MD5_card"
+    val outputFile = "/user/hdrisk/AML/output_Score"
     val MD5Pair = sc.textFile(inputFile).map{x => List(x.split(",")(0),x.split(",")(1))}   
     
     val Row_RDD = MD5Pair.map{f=>
@@ -95,6 +96,23 @@ object ScoreMd5Cards {
         
     val seedList = MD5Pair.map(f=>f(1)).collect() 
     
+    
+    
+    var All_pairs = hc.sql(
+        s"select tfr_in_acct_no," +
+        s"tfr_out_acct_no " +
+        s"from 00010000_default.viw_common_his_trans where " +
+        s"pdate>=$startDate and pdate<=$endDate ")
+      .toDF("srccard", "dstcard").repartition(5000).persist(StorageLevel.MEMORY_AND_DISK_SER)
+      
+     
+    var transferList = antiSearch(All_pairs,startDate,endDate,seedList) 
+    println("antiSearch done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
+     
+    All_pairs.unpersist(blocking = false)
+    
+    
+    println("AntiSearch done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
     
     var Alldata = hc.sql(
       s"select tfr_in_acct_no," +
@@ -124,17 +142,12 @@ object ScoreMd5Cards {
         s"pdate>=$startDate and pdate<=$endDate ")
       .toDF("srccard", "dstcard", "money", "date", "time", "region_cd", "trans_md", "mchnt_tp", "mchnt_cd", "trans_chnl",
         "term_id", "fwd_ins_id_cd", "rcv_ins_id_cd", "card_class", "resp_cd4", "acpt_ins_tp", "auth_id_resp_cd", "acpt_bank", "charge", "trans_curr_cd", "trans_id", "card")
-      .repartition(1000).persist(StorageLevel.MEMORY_AND_DISK_SER)
- 
-   
+      .repartition(10000).persist(StorageLevel.MEMORY_AND_DISK_SER)
       
+       
     var Useddata = Alldata.filter(Alldata("card").isin(seedList: _*)).repartition(100).persist(StorageLevel.MEMORY_AND_DISK_SER)
-      
-    var transferList = antiSearch(Alldata,startDate,endDate,seedList) 
-    println("antiSearch done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
-
-    
-    var graphata =  Alldata.filter(Alldata("srccard").isin(transferList : _*) or Alldata("dstcard").isin(transferList : _*))
+       
+    var graphata =  Alldata.filter(Alldata("srccard").isin(transferList : _*) or Alldata("dstcard").isin(transferList : _*)).repartition(100).persist(StorageLevel.MEMORY_AND_DISK_SER)
   
     //var graphata =  Alldata.filter(Alldata("srccard").isin(seedList : _*) or Alldata("dstcard").isin(seedList : _*))
      
@@ -142,6 +155,8 @@ object ScoreMd5Cards {
     
     Alldata.unpersist(blocking = false)
     
+    
+    println("All data obtained done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
      
     /////////////////////////////////////交易标记//////////////////////////////////////////         
     val get_hour = udf[Int, String] { xstr => 
@@ -389,6 +404,8 @@ object ScoreMd5Cards {
  
     //stat_DF.show() 
     stat_DF.persist(StorageLevel.MEMORY_AND_DISK_SER)
+    
+    Useddata.unpersist(blocking=false)
     
     
     println("Stage1 done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
@@ -787,85 +804,112 @@ object ScoreMd5Cards {
       
     
     vertice_cc_df = vertice_cc_df.filter(vertice_cc_df("card_v").isNotNull)
+    graphata.unpersist(blocking=false)
+    
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
-    println("vertice_cc_df")
+    val vertice_cc_cnt = vertice_cc_df.count
+    val stat_DF_cnt = stat_DF.count
+    
+    
+    println("vertice_cc_df: " + vertice_cc_cnt)
     //vertice_cc_df.show()
     
+    println("stat_DF:" + stat_DF_cnt)
+    //stat_DF.show()
     
     
+
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-    stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card_v"), "left_outer") 
-    stat_DF = stat_DF.na.fill(0) 
     
-    //stat_DF.show() 
-//    stat_DF = stat_DF.sort("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7",
-//        "tot_big1000","tot_Provs","tot_big500","tot_HRloc_trans","tot_cardholder_fails","tot_abnorm_rate","tot_count_89",
-//        "tot_Foreign","transin_counts","transin_amounts","transin_avg","transin_max","distinct_cards_in",
-//        "transout_counts","transout_amounts","transout_avg","transout_max","distinct_cards_out",
-//        "quxian_counts","quxian_amounts","quxian_avg","quxian_max","consume_counts","consume_amounts","consume_avg","consume_max",
-//        "prop_2","prop_3","prop_5","prop_8","prop_9","prop_10","prop_11","prop_12","prop_13","prop_14","prop_15","prop_16","prop_17","prop_18")
-    
-    
-    val ListIP1 = List("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_big1000","tot_cardholder_fails","tot_count_89","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7")
-    val ListIP2 = List("tot_Provs","tot_big500","tot_HRloc_trans","tot_abnorm_rate","tot_count_89",
-                       "tot_Foreign","transin_counts","transin_amounts","transin_avg","transin_max","distinct_cards_in",
-                       "transout_counts","transout_amounts","transout_avg","transout_max","distinct_cards_out",
-                       "quxian_counts","quxian_amounts","quxian_avg","quxian_max","consume_counts","consume_amounts","consume_avg","consume_max","daifu_counts","daifu_amounts","daifu_avg","daifu_max")
-                       
-    val ListIP3 = List("prop_2","prop_3","prop_5","prop_8","prop_9","prop_10","prop_11","prop_12","prop_13","prop_14","prop_15","prop_16","prop_17","prop_18")
-    
-     
-    
-    var cur_rank = "sum_rank_0"
-    var last_rank = "sum_rank_0"
-    stat_DF = stat_DF.withColumn(cur_rank, dense_rank.over(Window.partitionBy(lit(1)).orderBy(ListIP1(0))))
-    
-    var i = 1
-    for(item<-ListIP1.drop(1)){ 
-      var rank_col = "rank_" + item 
-      stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+    if((stat_DF_cnt+vertice_cc_cnt) >0){
       
-      cur_rank = "sum_rank_" + i
-      stat_DF = stat_DF.withColumn(cur_rank, stat_DF(rank_col) + stat_DF(last_rank))
-      last_rank = cur_rank
-      i=i+1
+      if(vertice_cc_cnt==0)
+         stat_DF = stat_DF
+      else if (stat_DF_cnt==0)
+         stat_DF = vertice_cc_df
+      else
+         stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card_v"), "left_outer") 
+       
+      stat_DF = stat_DF.na.fill(0)
+ 
+    
+      
+      
+      
+      
+      val ListIP1 = List("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_big1000","tot_cardholder_fails","tot_count_89","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7")
+      val ListIP2 = List("tot_Provs","tot_big500","tot_HRloc_trans","tot_abnorm_rate","tot_count_89",
+                         "tot_Foreign","transin_counts","transin_amounts","transin_avg","transin_max","distinct_cards_in",
+                         "transout_counts","transout_amounts","transout_avg","transout_max","distinct_cards_out",
+                         "quxian_counts","quxian_amounts","quxian_avg","quxian_max","consume_counts","consume_amounts","consume_avg","consume_max","daifu_counts","daifu_amounts","daifu_avg","daifu_max")
+                         
+      val ListIP3 = List("prop_2","prop_3","prop_5","prop_8","prop_9","prop_10","prop_11","prop_12","prop_13","prop_14","prop_15","prop_16","prop_17","prop_18")
+      
+       
+      
+      var cur_rank = "sum_rank_0"
+      var last_rank = "sum_rank_0"
+      
+      stat_DF = stat_DF.withColumn(cur_rank, dense_rank.over(Window.partitionBy(lit(1)).orderBy(ListIP1(0))))
+      
+      var i = 1
+      for(item<-ListIP1.drop(1)){ 
+        if(stat_DF.columns.contains(item)){
+          var rank_col = "rank_" + item 
+          stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+          
+          cur_rank = "sum_rank_" + i
+          stat_DF = stat_DF.withColumn(cur_rank, stat_DF(rank_col) + stat_DF(last_rank))
+          last_rank = cur_rank
+          i=i+1
+          
+        }
+          
+      }
+      
+      
+      val rank_ratio = udf((xin: Long, ratio: Int) => xin.toDouble/ratio.toDouble)
+      
+      for(item<-ListIP2){ 
+        if(stat_DF.columns.contains(item)){
+          var rank_col = "rank_" + item 
+          stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+          
+          cur_rank = "sum_rank_" + i
+          stat_DF = stat_DF.withColumn(cur_rank, stat_DF(last_rank) + rank_ratio((stat_DF(rank_col)), lit(2)))
+          last_rank = cur_rank
+          i=i+1
+        }
+      }
+      
+      for(item<-ListIP3){ 
+        if(stat_DF.columns.contains(item)){
+          var rank_col = "rank_" + item 
+          stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
+          
+          cur_rank = "sum_rank_" + i
+          stat_DF = stat_DF.withColumn(cur_rank, stat_DF(last_rank) + rank_ratio((stat_DF(rank_col)), lit(4)))
+          last_rank = cur_rank
+          i=i+1
+        }
+      }
+       
+       
+      stat_DF = stat_DF.join(MD5PairDF, stat_DF("card") === MD5PairDF("md5card"), "right_outer") 
+      stat_DF.show()
+       
+      val last_DF = stat_DF.select("oricard", cur_rank).coalesce(1).sort(desc(cur_rank))
+      println("last_DF:")
+      last_DF.show(100)
+      last_DF.rdd.map(_.mkString(",")).coalesce(1).saveAsTextFile(outputFile)
+    }
+    else{
+      val lastRdd = sc.makeRDD("No transactions for all input_card at all.")
+      lastRdd.saveAsTextFile(outputFile)
     }
     
     
-    val rank_ratio = udf((xin: Long, ratio: Int) => xin.toDouble/ratio.toDouble)
-    
-    for(item<-ListIP2){ 
-      var rank_col = "rank_" + item 
-      stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
-      
-      cur_rank = "sum_rank_" + i
-      stat_DF = stat_DF.withColumn(cur_rank, stat_DF(last_rank) + rank_ratio((stat_DF(rank_col)), lit(2)))
-      last_rank = cur_rank
-      i=i+1
-    }
-    
-    for(item<-ListIP3){ 
-      var rank_col = "rank_" + item 
-      stat_DF = stat_DF.withColumn(rank_col, dense_rank.over(Window.partitionBy(lit(1)).orderBy(item)))
-      
-      cur_rank = "sum_rank_" + i
-      stat_DF = stat_DF.withColumn(cur_rank, stat_DF(last_rank) + rank_ratio((stat_DF(rank_col)), lit(4)))
-      last_rank = cur_rank
-      i=i+1
-    }
-     
-     
-    stat_DF = stat_DF.join(MD5PairDF, stat_DF("card") === MD5PairDF("md5card"), "right_outer") 
-    stat_DF.show()
-     
-    val last_DF = stat_DF.select("oricard", cur_rank).coalesce(1).sort(desc(cur_rank))
-    println("last_DF:")
-    last_DF.show(100)
-     
-    val outputFile = "/user/hdrisk/AML/output_Score"
-    last_DF.rdd.map(_.mkString(",")).coalesce(1).saveAsTextFile(outputFile)
-     
     
     println("All flow done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.")
 
@@ -878,7 +922,7 @@ object ScoreMd5Cards {
   
   
   
-  def antiSearch(Alldata: DataFrame, beginDate: String, endDate: String, seedList: Array[String]) = {
+  def antiSearch(All_pairs: DataFrame, beginDate: String, endDate: String, seedList: Array[String]) = {
       val maxitertimes =5
       var currentDataSize = seedList.length.toLong
  
@@ -892,16 +936,16 @@ object ScoreMd5Cards {
       while(i<maxitertimes && lastDataSize!=currentDataSize){
          i=i+1
          println("Start iteration " + i)
-         var tempData= Alldata.filter(Alldata("srccard").isin(cardList: _*) or Alldata("dstcard").isin(cardList: _*)).select(s"srccard",s"dstcard").distinct()    
+         var tempData= All_pairs.filter(All_pairs("srccard").isin(cardList: _*) or All_pairs("dstcard").isin(cardList: _*)).select(s"srccard",s"dstcard").distinct()    
          var dataFrame1=tempData.select(s"srccard").distinct()
          var dataFrame2=tempData.select(s"dstcard").distinct() 
          var temp= dataFrame1.unionAll(dataFrame2).distinct().map{r => r.getString(0)}
+         
+         currentDataSize=temp.count()
+         println("currentDataSize: ", currentDataSize)
          cardList=temp.collect()  
 
          lastDataSize=currentDataSize
-         currentDataSize=temp.count()
-         println("currentDataSize: ", currentDataSize)
-
         }
       println("cardList", cardList.mkString(","))
       cardList

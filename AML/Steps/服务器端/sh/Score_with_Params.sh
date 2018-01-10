@@ -1,3 +1,4 @@
+rm -rf /home/hdrisk/output_Score/output_Score.csv
 hadoop fs -rm -r /user/hdrisk/AML/input_card
 hadoop fs -rm -r /user/hdrisk/AML/MD5_card
 hadoop fs -rm -r /user/hdrisk/AML/output_Score
