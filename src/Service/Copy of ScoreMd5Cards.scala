@@ -30,7 +30,7 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.functions 
 
-object ScoreMd5Cards {
+object ScoreMd5Cards_copy {
 
   private val KMax = 5
  
@@ -238,7 +238,7 @@ object ScoreMd5Cards {
 
     ////////////////////////整体group///////////////////////////////    
     val tot_agg = Useddata.groupBy("card")
-    var stat_DF = tot_agg.agg(sum("is_Night") as "Night_cnt").repartition(5000).persist(StorageLevel.MEMORY_AND_DISK_SER)
+    var stat_DF = tot_agg.agg(sum("is_Night") as "Night_cnt")
 
     println("1")
     
@@ -405,7 +405,7 @@ object ScoreMd5Cards {
     
  
     //stat_DF.show() 
-    stat_DF.repartition(5000).persist(StorageLevel.MEMORY_AND_DISK_SER)
+    stat_DF.persist(StorageLevel.MEMORY_AND_DISK_SER)
     
     Useddata.unpersist(blocking=false)
     
@@ -811,18 +811,34 @@ object ScoreMd5Cards {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     
     val vertice_cc_cnt = vertice_cc_df.count
-     
+    val stat_DF_cnt = stat_DF.count
+    
+    
     println("vertice_cc_df: " + vertice_cc_cnt)
-     
+    //vertice_cc_df.show()
+    
+    println("stat_DF:" + stat_DF_cnt)
+    //stat_DF.show()
+    
+    
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
     
-   
+    if((stat_DF_cnt+vertice_cc_cnt) >0){
+      
       if(vertice_cc_cnt==0)
+         stat_DF = stat_DF
+      else if (stat_DF_cnt==0)
+         stat_DF = vertice_cc_df
+      else
          stat_DF = stat_DF.join(vertice_cc_df, stat_DF("card") === vertice_cc_df("card_v"), "left_outer") 
-          
+       
       stat_DF = stat_DF.na.fill(0)
-  
+ 
+    
+      
+      
+      
       
       val ListIP1 = List("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_big1000","tot_cardholder_fails","tot_count_89","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7")
       val ListIP2 = List("tot_Provs","tot_big500","tot_HRloc_trans","tot_abnorm_rate","tot_count_89",
@@ -889,7 +905,11 @@ object ScoreMd5Cards {
       println("last_DF:")
       last_DF.show(100)
       last_DF.rdd.map(_.mkString(",")).coalesce(1).saveAsTextFile(outputFile)
-    
+    }
+    else{
+      val lastRdd = sc.makeRDD("No transactions for all input_card at all.")
+      lastRdd.saveAsTextFile(outputFile)
+    }
     
     
     
