@@ -19,9 +19,9 @@ public class Score_Main {
     	String startdate =  args[1];
     	String enddate =  args[2];
 
-    	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+    	SimpleDateFormat df = new SimpleDateFormat("MM-dd-HH-mm");//设置日期格式
     	String cur_time = df.format(new Date());
-    	String save_Score = ".output/Score_" + cur_time + ".csv";
+    	String save_Score = "output/Score_" + cur_time + ".csv";
     	
     	try {
         	System.out.println("Starting...");
@@ -43,7 +43,6 @@ public class Score_Main {
              
             // 下载原始卡号评分
             JSchUtils.download("/home/hdrisk/output_Score/output_Score.csv", "output_Score.csv");
-              
             JSchUtils.download("/home/hdrisk/output_Score/output_Score.csv", save_Score);
             
             System.out.println("快速浏览：当前文件夹下的 " + "output_Score.csv");

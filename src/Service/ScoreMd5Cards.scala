@@ -881,13 +881,15 @@ object ScoreMd5Cards {
         }
       }
        
-       
+      
+      println("Rank done in " + (System.currentTimeMillis() - startTime) / (1000 * 60) + " minutes.") 
+      
       stat_DF = stat_DF.join(MD5PairDF, stat_DF("card") === MD5PairDF("md5card"), "right_outer") 
       //stat_DF.show()
        
       val last_DF = stat_DF.select("oricard", cur_rank).coalesce(1).sort(desc(cur_rank))
       println("last_DF:")
-      last_DF.show(100)
+//      last_DF.show(100)
       last_DF.rdd.map(_.mkString(",")).coalesce(1).saveAsTextFile(outputFile)
     
     

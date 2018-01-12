@@ -1,5 +1,7 @@
 package Service
 /*
+ * impala
+ * select pri_acct_no_conv,trans_id,pdate from `00010000_default`.viw_common_his_trans_success_parquet where pri_acct_no_conv='514b2c52e50b742ae747290142e05d2b' and pdate ='20170621';
 spark-submit \
 --class Service.ScoreReadCards \
 --master yarn \

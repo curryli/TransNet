@@ -18,8 +18,9 @@ public class KillSpark {
         	JSchUtils.connect("hdrisk", "zaq@1808", "172.18.160.50", 22);  //由于session是static，所以第一次调用connect函数的时候就初始化了一个session,后面所有JSchUtils函数都共享这个session
 
             // 执行相关的命令
-            String yarn_rt = JSchUtils.exec2String("yarn application -list -queue root.queue_hdrisk -appTypes SPARK");
-           
+            //String yarn_rt = JSchUtils.exec2String("yarn application -list -queue root.queue_hdrisk -appTypes SPARK");
+            String yarn_rt = JSchUtils.exec2String("yarn application -list -queue root.queue_hdrisk");
+
             String[] arr = yarn_rt.split("\\s+");  //.getClass().toString());
             
             String AppID = null;
@@ -29,7 +30,7 @@ public class KillSpark {
             	  AppID =arr[i-4].substring(12);
               }
             }
-            System.out.println("强制结束Spark进程." + AppID); 
+            System.out.println("强制结束服务器进程." + AppID); 
             String kill_CMD = "yarn application -kill " + AppID;
             JSchUtils.exec2String(kill_CMD);
              
