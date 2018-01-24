@@ -1,0 +1,59 @@
+2018-01-24 05:49:16.111  INFO [           main] com.unionpay.aml.AmlApplication          : Starting AmlApplication v1.0 with PID 11086 (/home/ubuntu/aml-1.0.jar started by ubuntu in /home/ubuntu)
+2018-01-24 05:49:16.125  INFO [           main] com.unionpay.aml.AmlApplication          : No active profile set, falling back to default profiles: default
+2018-01-24 05:49:16.309  INFO [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2db0f6b2: startup date [Wed Jan 24 05:49:16 UTC 2018]; root of context hierarchy
+2018-01-24 05:49:19.571  INFO [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-01-24 05:49:19.622  INFO [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 05:49:19.626  INFO [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 05:49:19.909  INFO [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 05:49:19.924  INFO [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3619 ms
+2018-01-24 05:49:20.319  INFO [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 05:49:20.328  INFO [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 05:49:20.330  INFO [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 05:49:20.330  INFO [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 05:49:20.331  INFO [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 05:49:20.918  INFO [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-01-24 05:49:20.980  INFO [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-01-24 05:49:21.223  INFO [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-01-24 05:49:21.230  INFO [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-01-24 05:49:21.235  INFO [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-01-24 05:49:21.340  INFO [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-01-24 05:49:22.599  INFO [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-01-24 05:49:23.309  INFO [           main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-01-24 05:49:23.483  INFO [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-01-24 05:49:24.521  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2db0f6b2: startup date [Wed Jan 24 05:49:16 UTC 2018]; root of context hierarchy
+2018-01-24 05:49:24.697  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/csv/start],methods=[POST]}" onto public com.unionpay.aml.index.ResJson com.unionpay.aml.index.CsvController.analyse(java.lang.String,java.lang.String,java.lang.String)
+2018-01-24 05:49:24.698  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/csv/del],methods=[GET]}" onto public com.unionpay.aml.index.ResJson com.unionpay.aml.index.CsvController.del(java.lang.String)
+2018-01-24 05:49:24.699  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/csv/shutdown],methods=[GET]}" onto public com.unionpay.aml.index.ResJson com.unionpay.aml.index.CsvController.shutdown()
+2018-01-24 05:49:24.699  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/csv/stop],methods=[GET]}" onto public com.unionpay.aml.index.ResJson com.unionpay.aml.index.CsvController.stop(java.lang.String)
+2018-01-24 05:49:24.701  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/csv/status],methods=[GET]}" onto public com.unionpay.aml.index.ResJson com.unionpay.aml.index.CsvController.status(java.lang.String)
+2018-01-24 05:49:24.708  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/download/{filename:.*}],methods=[GET]}" onto public void com.unionpay.aml.index.IndexController.files(javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2018-01-24 05:49:24.708  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/captcha],methods=[GET]}" onto public void com.unionpay.aml.index.IndexController.captcha(javax.servlet.http.HttpServletResponse)
+2018-01-24 05:49:24.709  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[POST]}" onto public java.lang.String com.unionpay.aml.index.IndexController.login(org.springframework.ui.Model,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse)
+2018-01-24 05:49:24.709  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/401.html],methods=[GET]}" onto public java.lang.String com.unionpay.aml.index.IndexController.page401(org.springframework.ui.Model)
+2018-01-24 05:49:24.710  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/404.html],methods=[GET]}" onto public java.lang.String com.unionpay.aml.index.IndexController.page404(org.springframework.ui.Model)
+2018-01-24 05:49:24.714  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload],methods=[POST]}" onto public com.unionpay.aml.index.ResJson com.unionpay.aml.index.IndexController.upload(org.springframework.web.multipart.MultipartFile)
+2018-01-24 05:49:24.714  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.unionpay.aml.index.IndexController.index(java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletResponse)
+2018-01-24 05:49:24.715  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/exit],methods=[GET]}" onto public java.lang.String com.unionpay.aml.index.IndexController.exit(javax.servlet.http.HttpServletResponse)
+2018-01-24 05:49:24.721  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 05:49:24.722  INFO [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 05:49:24.771  INFO [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 05:49:24.771  INFO [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 05:49:24.847  INFO [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 05:49:25.212  INFO [           main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2db0f6b2: startup date [Wed Jan 24 05:49:16 UTC 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+2018-01-24 05:49:25.217  INFO [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-01-24 05:49:25.538  INFO [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 05:49:25.674  INFO [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-01-24 05:49:25.682  INFO [           main] com.unionpay.aml.AmlApplication          : Started AmlApplication in 10.743 seconds (JVM running for 11.788)
+2018-01-24 05:49:33.254  INFO [0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 05:49:33.255  INFO [0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 05:49:33.317  INFO [0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 61 ms
+2018-01-24 05:50:30.926  INFO [0.0-8080-exec-8] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-01-24 05:50:37.907  INFO [0.0-8080-exec-9] com.unionpay.aml.index.IndexController   : File saved /home/ubuntu/aml-input/db15f8f96bff45db9bfd28779777af8f.csv
+2018-01-24 05:50:40.889  INFO [pool-2-thread-1] com.unionpay.aml.index.JSchTask          : Begin...
+2018-01-24 05:50:40.962  INFO [pool-2-thread-1] com.unionpay.aml.index.JSchTask          : Connect server...
+2018-01-24 05:50:41.880  INFO [pool-2-thread-1] com.unionpay.aml.index.JSchTask          : Upload file...
+2018-01-24 05:50:41.927  INFO [pool-2-thread-1] com.unionpay.aml.index.JSchTask          : /home/hdrisk/input_card<=/home/ubuntu/aml-input/db15f8f96bff45db9bfd28779777af8f.csv
+2018-01-24 05:50:42.015  INFO [pool-2-thread-1] com.unionpay.aml.index.JSchTask          : Start the scoring model...
+2018-01-24 05:50:42.044  INFO [pool-2-thread-1] com.unionpay.aml.index.JSchTask          : sh /home/hdrisk/sh/Score_with_Params.sh db15f8f96bff45db9bfd28779777af8f.csv 20170511 20170511 41ebd020c9c34a0ba6fb64e72bb26cf6.csv
