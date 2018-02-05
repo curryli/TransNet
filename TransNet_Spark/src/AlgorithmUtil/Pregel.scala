@@ -117,7 +117,7 @@ object Pregel {
       // Receive the messages and update the vertices.
 //          println("Pregel start iteration " + i)
       prevG = g
-      g = g.joinVertices(messages)(vprog)
+      g = g.joinVertices(messages)(vprog).cache
 
       val oldMessages = messages
       ls_count=activeMessages
@@ -125,7 +125,7 @@ object Pregel {
       // messages so it can be materialized on the next line, allowing us to uncache the previous
       // iteration.
       messages = g.mapReduceTriplets(
-        sendMsg, mergeMsg, Some((oldMessages, activeDirection)))
+        sendMsg, mergeMsg, Some((oldMessages, activeDirection))).cache
       // The call to count() materializes `messages` and the vertices of `g`. This hides oldMessages
       // (depended on by the vertices of g) and the vertices of prevG (depended on by oldMessages
       // and the vertices of g).
