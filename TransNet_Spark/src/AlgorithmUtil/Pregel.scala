@@ -150,6 +150,7 @@ object Pregel {
       i += 1
     }
 
+    messages.unpersist(blocking=false)
     g
   } // end of apply
 

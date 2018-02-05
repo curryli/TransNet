@@ -30,7 +30,7 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.functions 
 
-object ScoreMd5Cards {
+object ScoreMd5Cards_2 {
 
   private val KMax = 5
  
@@ -55,9 +55,9 @@ object ScoreMd5Cards {
     val sc = new SparkContext(sparkConf)
     val hc = new HiveContext(sc)
     val sqlContext = new SQLContext(sc)
-    
-    sparkConf.set("spark.yarn.queue", "root.queue_hdrisk")
-    sparkConf.set("queue", "root.queue_hdrisk")
+//    
+//    sparkConf.set("spark.yarn.queue", "root.queue_hdrisk")
+//    sparkConf.set("queue", "root.queue_hdrisk")
 
     val startTime = System.currentTimeMillis();
 
@@ -823,7 +823,9 @@ object ScoreMd5Cards {
           
       stat_DF = stat_DF.na.fill(0)
   
-      
+      stat_DF.rdd.map(_.mkString(",")).saveAsTextFile(outputFile)
+         
+         
       val ListIP1 = List("tot_Counts","tot_Amounts","tot_regions","Night_cnt","tot_large_integer","tot_big1000","tot_cardholder_fails","tot_count_89","tot_term_ids","ccNum","prop_1","prop_4","prop_6","prop_7")
       val ListIP2 = List("tot_Provs","tot_big500","tot_HRloc_trans","tot_abnorm_rate","tot_count_89",
                          "tot_Foreign","transin_counts","transin_amounts","transin_avg","transin_max","distinct_cards_in",
