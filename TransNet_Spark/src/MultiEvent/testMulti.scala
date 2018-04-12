@@ -1,5 +1,5 @@
 package MultiEvent
-//这个好像可以成功
+//有问题  也不要用
 import org.apache.spark._
 import org.apache.spark.sql._
 import org.apache.spark.sql.types._
@@ -15,7 +15,7 @@ import AlgorithmUtil._
 import scala.reflect.ClassTag
 import org.apache.spark.rdd.RDD
 
-object MultiNode { 
+object testMulti  { 
    private val startDate = "20160707"
    private val endDate = "20160707"
    
@@ -23,14 +23,15 @@ object MultiNode {
    class EdgePropery()// extends Serializable 
    
    
-   case class prop_VP[U: ClassTag](
-     val prop: U
+   case class card_VP [+T] (
+     val  card: String
      ) extends VertexProperty
      
-   
-   case class prop_EP[U: ClassTag](
-     val prop: U
-     ) extends EdgePropery
+   case class region_VP(
+     val  region: String
+     ) extends VertexProperty
+     
+  
  
      
   def main(args: Array[String]) { 
@@ -100,10 +101,10 @@ object MultiNode {
       val InPairRdd = transdata.map(line => line.getString(0))                
       val OutPairRdd = transdata.map(line => line.getString(1)) 
       val QXcardRdd = quxiandata.map(line => line.getString(0)) 
-     
+  
       
     val cardRdd = InPairRdd.union(OutPairRdd).union(QXcardRdd).distinct().map{line => 
-      val card = new prop_VP(line.trim)
+      val card = new card_VP(line.trim)
       val vertexType = "card"
       (HashEncode.HashMD5(line.trim), (vertexType, card))
       }
@@ -112,71 +113,32 @@ object MultiNode {
     val QXregionRdd = quxiandata.map(line => line.getString(4)) 
      
     val regionRdd = transregionRdd.union(QXregionRdd).distinct().map{line => 
-      val region = new prop_VP(line.trim)
+      val region = new region_VP(line.trim)
       val vertexType = "region"
       (HashEncode.HashMD5(line.trim), (vertexType, region))
       }
    
-   
-    val verticeRDD = cardRdd.union(regionRdd)
+  
+    var graph: Graph[VertexProperty, String] = null
+    
+    val vertexArray = Array(
+      (1L, new card_VP("card1")),
+      (2L, new card_VP("card2")),
+      (3L, new region_VP("reg1")),
+      (4L, new region_VP("reg2"))
+    )
+    val vertexRDD = sc.parallelize(vertexArray)
+     
+    
+    //RDD不支持    协变与逆变 ？ 
+  // var verticeRDD: RDD[(Long, (String, testMulti.VertexProperty))] = cardRdd
     
     
     println("verticeRDD done in " + (System.currentTimeMillis()-startTime)/(1000*60) + " minutes." )    
     
 
-    
-    val trans_to_RDD = transdata.map { line=>
-        val srcId = HashEncode.HashMD5(line.getString(0))
-        val dstId = HashEncode.HashMD5(line.getString(1))
-        val trans_to_EP = new prop_EP(line.getLong(2),line.getString(3),line.getString(4),line.getString(6),line.getLong(11))
-        val edgeType = "trans_to"
-        Edge(srcId, dstId, (edgeType, trans_to_EP))
-    }
      
   
-    val trans_at_RDD = transdata.map { line=>
-        val srcId = HashEncode.HashMD5(line.getString(0))
-        val dstId = HashEncode.HashMD5(line.getString(5))
-        val trans_at_EP = new prop_EP(line.getLong(2),line.getString(3),line.getString(4),line.getString(6),line.getLong(11))
-        val edgeType = "trans_at"
-        Edge(srcId, dstId, (edgeType, trans_at_EP))
-    }
-    
-    val quxian_at_RDD = quxiandata.map { line=>
-        val srcId = HashEncode.HashMD5(line.getString(0))
-        val dstId = HashEncode.HashMD5(line.getString(4))
-        val quxian_at_EP = new prop_EP(line.getLong(1),line.getString(2),line.getString(3),line.getString(5),line.getLong(8))
-        val edgeType = "quxian_at"
-        Edge(srcId, dstId, (edgeType, quxian_at_EP))
-    }
-    
-    val edgeRDD = trans_to_RDD.union(trans_at_RDD).union(quxian_at_RDD)
-     
-     
-    transdata.unpersist(blocking=false)
-    quxiandata.unpersist(blocking=false)
-    
-    // 定义一个默认用户，避免有不存在用户的关系  
-    val graph = Graph(verticeRDD, edgeRDD).partitionBy(PartitionStrategy.RandomVertexCut)    //必须在调用groupEdges之前调用Graph.partitionBy 。
-    println("graph Edge Num is: " + graph.numEdges)
-    
-    println("card vertices:")
-    graph.vertices.filter(pred=> pred._2._1.equals("card")).take(2).foreach(println)
-    println("region vertices:")
-    graph.vertices.filter(pred=> pred._2._1.equals("region")).take(2).foreach(println)
-    println("mchnt_cd vertices:")
-    graph.vertices.filter(pred=> pred._2._1.equals("mchnt_cd")).take(2).foreach(println)
-    println("term_id vertices:")
-    graph.vertices.filter(pred=> pred._2._1.equals("term_id")).take(2).foreach(println)
-     
-    println("trans_to edges:")
-    graph.edges.filter(f=>f.attr._1.equals("trans_to")).take(2).foreach(println)
-    println("trans_at edges:")
-    graph.edges.filter(f=>f.attr._1.equals("trans_at")).take(2).foreach(println)
-    println("quxian_at edges:")
-    graph.edges.filter(f=>f.attr._1.equals("quxian_at")).take(2).foreach(println)
-
-    
     
     sc.stop()
     
